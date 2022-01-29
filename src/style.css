@@ -42,13 +42,14 @@ p {
   color: #002437;
 }
 
-.btn, .nav-bar .menu-bar .contact-btn, .header .contact-btn, .box, .operate .operate-flex .container1 .list-box1, .operate .operate-flex .container1 .list-box2, .operate .operate-flex .container1 .list-box3, .operate .operate-flex .container2 .list-box4, .operate .operate-flex .container2 .list-box5, .operate .operate-flex .container2 .list-box6 {
+.btn, .nav-bar .menu-bar .contact-btn, .header .contact-btn, .footer .contact-btn {
   font-family: sukhumvitB;
   font-size: 36px;
+  line-height: 62px;
   height: 64px;
   width: 235px;
   border-radius: 47px;
-  padding: 4px 48px 12px 49px;
+  padding: 2px 65px 12px 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 5px 5px 7px #00000029;
@@ -114,6 +115,8 @@ p {
 .nav-bar .menu-bar .contact-btn {
   background-color: #D8A64A;
   color: #FFFFFF;
+  padding-left: 49px;
+  white-space: nowrap;
 }
 
 .header {
@@ -158,15 +161,12 @@ p {
 .header .contact-btn {
   background-color: #A50037;
   color: #FFFFFF;
-  -webkit-box-shadow: 5px 5px 7px #00000029;
-          box-shadow: 5px 5px 7px #00000029;
   margin: auto;
   margin-top: 32px;
   margin-bottom: 96px;
   white-space: nowrap;
   position: relative;
   padding-right: 40px;
-  width: 260px;
   text-align: left;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
@@ -175,7 +175,7 @@ p {
 .header .contact-btn .arrow {
   right: 14px;
   top: 11px;
-  padding-left: 14px;
+  padding-left: 11px;
   line-height: 42px;
   position: absolute;
   background-color: #FFFFFF;
@@ -188,6 +188,8 @@ p {
   font-size: 32px;
   margin: 0;
   padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header .contact-btn:hover {
@@ -196,6 +198,7 @@ p {
 
 .header .contact-btn:hover .arrow {
   color: #f55173;
+  padding-left: 9px;
 }
 
 .bottom-flex {
@@ -608,7 +611,17 @@ p {
 }
 
 .box, .operate .operate-flex .container1 .list-box1, .operate .operate-flex .container1 .list-box2, .operate .operate-flex .container1 .list-box3, .operate .operate-flex .container2 .list-box4, .operate .operate-flex .container2 .list-box5, .operate .operate-flex .container2 .list-box6 {
+  font-family: sukhumvitB;
+  font-size: 36px;
   color: #002437;
+  height: 64px;
+  width: 235px;
+  border-radius: 47px;
+  padding: 4px 48px 12px 49px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 5px 7px #00000029;
+          box-shadow: 5px 5px 7px #00000029;
   background-color: #D8A64A;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,6 +660,10 @@ p {
   border-radius: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.operate {
+  margin-bottom: 224px;
 }
 
 .operate h1 {
@@ -783,5 +800,142 @@ p {
   left: 178px;
   padding-left: 11px;
   padding-top: 3px;
+}
+
+.footer {
+  background-color: #F7F4ED;
+  width: 100%;
+  height: 736px;
+  padding-top: 48px;
+  position: relative;
+}
+
+.footer .text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 98px;
+          column-gap: 98px;
+  background-color: #FFFFFF;
+  width: 1152px;
+  height: 352px;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 5px 15px #0000001A;
+          box-shadow: 5px 5px 15px #0000001A;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 48px 53px 73px 32px;
+}
+
+.footer .text-box h1 {
+  font-family: sukhumvitB;
+  font-size: 72px;
+  color: #A50037;
+  text-align: left;
+  line-height: 80px;
+}
+
+.footer .text-box h2 {
+  font-family: sukhumvitM;
+  font-size: 36px;
+  color: #002437;
+  line-height: 48px;
+}
+
+.footer .contact-btn {
+  margin: auto;
+  white-space: nowrap;
+  background-color: #A50037;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 13px;
+  position: relative;
+  -webkit-transform: translate(360px, -34px);
+          transform: translate(360px, -34px);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.footer .contact-btn h3 {
+  font-family: sukhumvitB;
+  font-size: 36px;
+  color: #FFFFFF;
+  line-height: 62px;
+}
+
+.footer .contact-btn .arrow {
+  position: absolute;
+  font-family: sukhumvitL;
+  font-size: 36px;
+  color: #A50037;
+  background-color: #FFFFFF;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100%;
+  left: 182px;
+  top: 11px;
+  padding-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .contact-btn:hover {
+  background-color: #f55173;
+}
+
+.footer .contact-btn:hover .arrow {
+  color: #f55173;
+  padding-left: 14px;
+}
+
+.footer #icon {
+  position: absolute;
+  width: 229px;
+  left: 48px;
+  bottom: 5px;
+}
+
+.footer .email-box {
+  position: absolute;
+  left: 368px;
+  bottom: 117px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .email-box #email {
+  width: 68px;
+}
+
+.footer .email-box h4 {
+  font-family: yaroRg;
+  font-size: 24px;
+  color: #002437;
+}
+
+.footer p {
+  position: absolute;
+  font-family: yaroRg;
+  font-size: 18px;
+  color: #002437;
+  left: 368px;
+  bottom: 35px;
 }
 /*# sourceMappingURL=style.css.map */

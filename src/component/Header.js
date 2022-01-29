@@ -21,8 +21,7 @@ const Header = () => {
             ให้ธุรกิจของคุณมีทุกอย่างที่จำเป็นสำหรับการรับมือกับโรคระบาด<br></br>
             เช่น COVID-19
           </p>
-          <h2 className="contact-btn">
-            ติดต่อเรา
+          <h2 className="contact-btn">ติดต่อเรา
             <p className='arrow'>{">"}</p>
           </h2>
         </div>

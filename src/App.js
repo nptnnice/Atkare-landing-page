@@ -5,6 +5,7 @@ import Vision from './component/Vision';
 import Certified from './component/Certified';
 import Whyus from './component/Whyus';
 import Operate from './component/Operate';
+import Footer from './component/Footer';
 import '../src/style.css'
 
 
@@ -17,6 +18,7 @@ const App = () => {
         <Certified />
         <Whyus />
         <Operate />
+        <Footer />
     </div>
 );
 }
