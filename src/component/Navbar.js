@@ -9,9 +9,10 @@ const Navbar = () => {
         </div>
         <div>
             <ul className='menu-bar'>
-                <li>Certified ATK</li>
-                <li>Why Us</li>
-                <li>Operate ATK</li>
+                <li className='move-pls'>Certified ATK</li>
+                <li className='move-pls'>Why Us</li>
+                <li className='move-pls'>Operate ATK</li>
+                <li className='shopee-btn move-pls'>Shopee</li>
                 <li className='contact-btn'>ติดต่อเรา</li>
             </ul>
         </div>

@@ -16,7 +16,7 @@ const Certified = () => {
             โดย คณะแพทยศาสตร์ โรงพยาบาลรามาธิบดี<br></br>
             และองค์การเภสัชกรรมเลือกใช้
           </p><br></br>
-          <h3>View the Certification {">"}</h3>
+          <h3>View the Certification <span>{">"}</span></h3>
         </div>
         <div className="container">
           <h2>SingClean</h2><br></br>
@@ -25,7 +25,7 @@ const Certified = () => {
             โดย คณะแพทยศาสตร์ โรงพยาบาลรามาธิบดี<br></br>
             และองค์การเภสัชกรรมเลือกใช้
           </p><br></br>
-          <h3>View the Certification {">"}</h3>
+          <h3>View the Certification <span>{">"}</span></h3>
         </div>
       </div>
     </div>
