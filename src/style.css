@@ -15,6 +15,11 @@
 }
 
 @font-face {
+  font-family: sukhumvitSemiB;
+  src: url("./assets/fonts/SukhumvitSet-SemiBold.ttf");
+}
+
+@font-face {
   font-family: sukhumvitL;
   src: url("./assets/fonts/SukhumvitSet-Light.ttf");
 }
@@ -84,6 +89,7 @@ p {
   padding-top: 16px;
   padding-bottom: 14px;
   margin: 0;
+  cursor: pointer;
 }
 
 .nav-bar img {
@@ -979,8 +985,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
   padding: 0;
   padding-left: 50px;
   margin-bottom: 16px;
@@ -1284,5 +1288,94 @@ p {
   color: #002437;
   left: 368px;
   bottom: 35px;
+}
+
+.head-contact {
+  font-family: sukhumvitB;
+  font-size: 60px;
+  color: #002437;
+  padding-top: 191px;
+  padding-left: 192px;
+}
+
+.toggle-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #A50037;
+  width: 688px;
+  height: 80px;
+  border-radius: 47px;
+  margin-left: 192px;
+  margin-top: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+}
+
+.toggle-btn .toggle1 {
+  margin-left: 11px;
+  margin-top: 2px;
+  background-color: #FFFFFF;
+  border-radius: 47px;
+  width: 324px;
+  height: 56.5px;
+}
+
+.toggle-btn .toggle1 h1 {
+  font-family: yaroB;
+  font-size: 36px;
+  color: #002437;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.toggle-btn h2 {
+  font-family: yaroB;
+  font-size: 36px;
+  color: #FFFFFF;
+  padding-top: 10px;
+}
+
+.B2B-box {
+  width: 1184px;
+  height: 1440px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 15px #00000029;
+          box-shadow: 5px 5px 15px #00000029;
+  background-color: #FFFFFF;
+  margin-top: 16px;
+  margin-left: 144px;
+  margin-bottom: 385px;
+  padding-top: 41px;
+  padding-left: 48px;
+}
+
+.B2B-box .B2B-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 121px;
+          column-gap: 121px;
+}
+
+.B2B-box .B2B-head h1 {
+  font-family: yaroB;
+  font-size: 60px;
+  color: #A50037;
+  width: 145px;
+}
+
+.B2B-box .B2B-head h1 h2 {
+  font-family: yaroRg;
+  font-size: 48px;
+}
+
+.B2B-box .B2B-head p {
+  font-family: sukhumvitSemiB;
+  font-size: 24px;
+  padding-top: 54px;
 }
 /*# sourceMappingURL=style.css.map */

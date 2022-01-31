@@ -19,6 +19,10 @@ $cream: #F7F4ED
     src: url('./assets/fonts/SukhumvitSet-Bold.ttf')
 
 @font-face
+    font-family: sukhumvitSemiB
+    src: url('./assets/fonts/SukhumvitSet-SemiBold.ttf')
+
+@font-face
     font-family: sukhumvitL
     src: url('./assets/fonts/SukhumvitSet-Light.ttf')
 
@@ -69,6 +73,7 @@ p
         padding-top: 16px
         padding-bottom: 14px
         margin: 0
+        cursor: pointer
     img
         width: 241px
         height: 66px
@@ -418,7 +423,7 @@ p
             transform: translate(-50%,30px)
         &.seventh
             opacity: 0
-            transform: translate(-50%,30px) 
+            transform: translate(-50%,30px)
 
     .seven
         transform: translate(-50%,30px)
@@ -443,7 +448,7 @@ p
             transform: translate(-50%,-250px)
         &.seventh
             opacity: 0
-            transform: translate(-50%,30px) 
+            transform: translate(-50%,30px)
 
     .eight
         transform: translate(-50%,30px)
@@ -468,7 +473,7 @@ p
             transform: translate(-50%,-250px)
         &.seventh
             opacity: 0
-            transform: translate(-50%,-250px) 
+            transform: translate(-50%,-250px)
 
     .middle
         color: #A50037
@@ -601,7 +606,6 @@ p
     display: flex
     align-items: center
     position: relative
-    transition: 0.2s ease-out
     padding: 0
     padding-left: 50px
     margin-bottom: 16px
@@ -796,3 +800,66 @@ p
         color: $black
         left: 368px
         bottom: 35px
+
+.head-contact
+    font-family: sukhumvitB
+    font-size: 60px
+    color: $black
+    padding-top: 191px
+    padding-left: 192px
+
+.toggle-btn
+    display: flex
+    background-color: $red
+    width: 688px
+    height: 80px
+    border-radius: 47px
+    margin-left: 192px
+    margin-top: 80px
+    align-items: center
+    column-gap: 80px
+    .toggle1
+        margin-left: 11px
+        margin-top: 2px
+        background-color: $white
+        border-radius: 47px
+        width: 324px
+        height: 56.5px
+        h1
+            font-family: yaroB
+            font-size: 36px
+            color: $black
+            padding-top: 10px
+            text-align: center
+    h2
+        font-family: yaroB
+        font-size: 36px
+        color: $white
+        padding-top: 10px
+
+.B2B-box
+    width: 1184px
+    height: 1440px
+    border-radius: 20px
+    box-shadow: 5px 5px 15px #00000029;
+    background-color: $white
+    margin-top: 16px
+    margin-left: 144px
+    margin-bottom: 385px
+    padding-top: 41px
+    padding-left: 48px
+    .B2B-head
+        display: flex
+        column-gap: 121px
+        h1
+            font-family: yaroB
+            font-size: 60px
+            color: $red
+            width: 145px
+            h2
+                font-family: yaroRg
+                font-size: 48px
+        p
+            font-family: sukhumvitSemiB
+            font-size: 24px
+            padding-top: 54px

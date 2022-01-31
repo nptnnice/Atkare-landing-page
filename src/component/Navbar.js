@@ -4,7 +4,9 @@ import logo from '../assets/images/logo.png';
 const Navbar = (props) => {
   return (
     <div className='nav-bar'>
-        <div className='logo'>
+        <div className='logo' onClick={()=>{
+                    props.setPage('home')
+                }}>
             <img alt="logo" src={logo} />
         </div>
         <div>

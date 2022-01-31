@@ -6,6 +6,7 @@ import Certified from './component/Certified';
 import Whyus from './component/Whyus';
 import Operate from './component/Operate';
 import Footer from './component/Footer';
+import Contact from './component/Contact';
 import '../src/style.css'
 import { useState } from 'react';
 
@@ -31,7 +32,8 @@ const App = () => {
   {
     return(
       <div>
-    
+        <Navbar setPage={setPage}/>
+        <Contact />
       </div>
     )
   }
