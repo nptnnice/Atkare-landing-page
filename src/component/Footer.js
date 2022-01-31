@@ -1,6 +1,6 @@
-import React from 'react';
-import icon from '../assets/images/icon.png';
-import email from '../assets/images/email.png';
+import React from "react";
+import icon from "../assets/images/icon.png";
+import email from "../assets/images/email.png";
 
 const Footer = () => {
   return (
@@ -19,13 +19,13 @@ const Footer = () => {
           การตรวจรายบุคคลสำหรับทั้งองค์กร
         </h2>
       </div>
-      <div className="contact-btn">
-        <h3>ติดต่อเรา</h3>
+      <h2 className="contact-btn">
+        ร่วมงานกับเรา
         <p className="arrow">{">"}</p>
-      </div>
-      <img src={icon} alt='icon' id='icon'></img>
-      <div className='email-box'>
-        <img src={email} alt='email' id='email'></img>
+      </h2>
+      <img src={icon} alt="icon" id="icon"></img>
+      <div className="email-box">
+        <img src={email} alt="email" id="email"></img>
         <h4>ATKareTH@gmail.com</h4>
       </div>
       <p>© 2022 Pinpoint Inter Group CO., LTD. All rights reserved.</p>

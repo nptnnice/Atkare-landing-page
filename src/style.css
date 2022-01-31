@@ -111,6 +111,28 @@ p {
   cursor: pointer;
   color: #D8A64A;
   font-size: 24px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.nav-bar .menu-bar li::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 3px;
+  background-color: #FFC625;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin-left: 50%;
+}
+
+.nav-bar .menu-bar li:hover {
+  color: #FFC625;
+}
+
+.nav-bar .menu-bar li:hover::after {
+  width: 100%;
+  margin-left: 0;
 }
 
 .nav-bar .menu-bar .shopee-btn {
@@ -295,6 +317,7 @@ p {
   padding-left: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-family: sukhumvitL;
 }
 
 .bottom-flex h3:hover {
@@ -357,7 +380,7 @@ p {
   border-bottom: none;
 }
 
-.animation .one, .animation .two, .animation .three, .animation .four, .animation .five {
+.animation .one, .animation .two, .animation .three, .animation .four, .animation .five, .animation .six, .animation .seven, .animation .eight {
   -webkit-transition: 1.2s ease;
   transition: 1.2s ease;
   position: absolute;
@@ -377,26 +400,45 @@ p {
 }
 
 .animation .one.second {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .one.third {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .one.fourth {
   opacity: 1;
   -webkit-transform: translate(-50%, -52px);
           transform: translate(-50%, -52px);
 }
 
-.animation .one.third {
+.animation .one.fifth {
   opacity: 1;
   -webkit-transform: translate(-50%, -180px);
           transform: translate(-50%, -180px);
 }
 
-.animation .one.forth {
+.animation .one.sixth {
   opacity: 1;
   -webkit-transform: translate(-50%, -190px);
           transform: translate(-50%, -190px);
 }
 
+.animation .one.seventh {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
+}
+
 .animation .two {
-  -webkit-transform: translate(-50%, -190px);
-          transform: translate(-50%, -190px);
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
+  opacity: 0;
 }
 
 .animation .two.first {
@@ -412,26 +454,44 @@ p {
 }
 
 .animation .two.third {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .two.fourth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .two.fifth {
   opacity: 1;
   -webkit-transform: translate(-50%, -52px);
           transform: translate(-50%, -52px);
 }
 
-.animation .two.forth {
+.animation .two.sixth {
   opacity: 1;
   -webkit-transform: translate(-50%, -180px);
           transform: translate(-50%, -180px);
 }
 
-.animation .three {
-  -webkit-transform: translate(-50%, -180px);
-          transform: translate(-50%, -180px);
-}
-
-.animation .three.first {
+.animation .two.seventh {
   opacity: 1;
   -webkit-transform: translate(-50%, -190px);
           transform: translate(-50%, -190px);
+}
+
+.animation .three {
+  -webkit-transform: translate(-50%, -190px);
+          transform: translate(-50%, -190px);
+}
+
+.animation .three.first {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
 }
 
 .animation .three.second {
@@ -446,27 +506,45 @@ p {
           transform: translate(-50%, 30px);
 }
 
-.animation .three.forth {
+.animation .three.fourth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .three.fifth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .three.sixth {
   opacity: 1;
   -webkit-transform: translate(-50%, -52px);
           transform: translate(-50%, -52px);
 }
 
-.animation .four {
-  -webkit-transform: translate(-50%, -52px);
-          transform: translate(-50%, -52px);
-}
-
-.animation .four.first {
+.animation .three.seventh {
   opacity: 1;
   -webkit-transform: translate(-50%, -180px);
           transform: translate(-50%, -180px);
 }
 
-.animation .four.second {
+.animation .four {
+  -webkit-transform: translate(-50%, -180px);
+          transform: translate(-50%, -180px);
+}
+
+.animation .four.first {
   opacity: 1;
   -webkit-transform: translate(-50%, -190px);
           transform: translate(-50%, -190px);
+}
+
+.animation .four.second {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
 }
 
 .animation .four.third {
@@ -475,37 +553,216 @@ p {
           transform: translate(-50%, -250px);
 }
 
-.animation .four.forth {
+.animation .four.fourth {
   opacity: 0;
   -webkit-transform: translate(-50%, 30px);
           transform: translate(-50%, 30px);
 }
 
-.animation .five {
+.animation .four.fifth {
+  opacity: 0;
   -webkit-transform: translate(-50%, 30px);
           transform: translate(-50%, 30px);
-  opacity: 0;
 }
 
-.animation .five.first {
+.animation .four.sixth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .four.seventh {
   opacity: 1;
   -webkit-transform: translate(-50%, -52px);
           transform: translate(-50%, -52px);
 }
 
-.animation .five.second {
+.animation .five {
+  -webkit-transform: translate(-50%, -52px);
+          transform: translate(-50%, -52px);
+}
+
+.animation .five.first {
   opacity: 1;
   -webkit-transform: translate(-50%, -180px);
           transform: translate(-50%, -180px);
 }
 
-.animation .five.third {
+.animation .five.second {
   opacity: 1;
   -webkit-transform: translate(-50%, -190px);
           transform: translate(-50%, -190px);
 }
 
-.animation .five.forth {
+.animation .five.third {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
+}
+
+.animation .five.fourth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
+}
+
+.animation .five.fifth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .five.sixth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .five.seventh {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .six {
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+  opacity: 0;
+}
+
+.animation .six.first {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -52px);
+          transform: translate(-50%, -52px);
+}
+
+.animation .six.second {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -180px);
+          transform: translate(-50%, -180px);
+}
+
+.animation .six.third {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -190px);
+          transform: translate(-50%, -190px);
+}
+
+.animation .six.fourth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
+}
+
+.animation .six.fifth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
+}
+
+.animation .six.sixth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .six.seventh {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .seven {
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+  opacity: 0;
+}
+
+.animation .seven.first {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .seven.second {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -52px);
+          transform: translate(-50%, -52px);
+}
+
+.animation .seven.third {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -180px);
+          transform: translate(-50%, -180px);
+}
+
+.animation .seven.fourth {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -190px);
+          transform: translate(-50%, -190px);
+}
+
+.animation .seven.fifth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
+}
+
+.animation .seven.sixth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
+}
+
+.animation .seven.seventh {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .eight {
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+  opacity: 0;
+}
+
+.animation .eight.first {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .eight.second {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+}
+
+.animation .eight.third {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -52px);
+          transform: translate(-50%, -52px);
+}
+
+.animation .eight.fourth {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -180px);
+          transform: translate(-50%, -180px);
+}
+
+.animation .eight.fifth {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -190px);
+          transform: translate(-50%, -190px);
+}
+
+.animation .eight.sixth {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -250px);
+          transform: translate(-50%, -250px);
+}
+
+.animation .eight.seventh {
   opacity: 0;
   -webkit-transform: translate(-50%, -250px);
           transform: translate(-50%, -250px);
@@ -513,8 +770,8 @@ p {
 
 .animation .middle {
   color: #A50037;
-  -webkit-transform: scale(1.4) translate(-35.71429%, -70px) !important;
-          transform: scale(1.4) translate(-35.71429%, -70px) !important;
+  -webkit-transform: scale(1.4) translate(-35.71429%, -72px) !important;
+          transform: scale(1.4) translate(-35.71429%, -72px) !important;
   margin-top: -20px;
   margin-left: 0px;
 }
@@ -646,6 +903,7 @@ p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding-left: 10px;
+  font-family: sukhumvitL;
 }
 
 .ATK .container h3:hover {
@@ -938,6 +1196,7 @@ p {
 }
 
 .footer .contact-btn {
+  width: 311px;
   margin: auto;
   white-space: nowrap;
   background-color: #A50037;
@@ -953,9 +1212,6 @@ p {
           transform: translate(360px, -34px);
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
-}
-
-.footer .contact-btn h3 {
   font-family: sukhumvitB;
   font-size: 36px;
   color: #FFFFFF;
@@ -974,9 +1230,9 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 100%;
-  left: 182px;
+  left: 258px;
   top: 11px;
-  padding-left: 10px;
+  padding-left: 11px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

@@ -85,6 +85,21 @@ p
             cursor: pointer
             color: $yellow
             font-size: 24px
+            transition: 0.1s
+            &::after
+                content: ""
+                display: block
+                width: 0px
+                height: 3px
+                background-color: $brightYellow
+                transition: 0.3s ease-in-out
+                // transform: translateX(100%)
+                margin-left: 50%
+            &:hover
+                color: $brightYellow
+                &::after
+                    width: 100%
+                    margin-left: 0
         .shopee-btn
             @extend .btn
             width: 187px
@@ -208,6 +223,7 @@ p
             position: absolute
             padding-left: 10px
             transition: 0.3s
+            font-family: sukhumvitL
         &:hover
             color: $brightYellow
             span
@@ -252,7 +268,7 @@ p
         border-top: #D8A64A solid 3px
         border-bottom: none
 
-    .one,.two,.three,.four,.five
+    .one,.two,.three,.four,.five,.six,.seven,.eight
         transition: 1.2s ease
         position: absolute
         left: 50%
@@ -264,17 +280,27 @@ p
             opacity: 0
             transform: translate(-50%,30px)
         &.second
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.third
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.fourth
             opacity: 1
             transform: translate(-50%,-52px)
-        &.third
+        &.fifth
             opacity: 1
             transform: translate(-50%,-180px)
-        &.forth
+        &.sixth
             opacity: 1
             transform: translate(-50%,-190px)
+        &.seventh
+            opacity: 0
+            transform: translate(-50%,-250px)
 
     .two
-        transform: translate(-50%,-190px)
+        transform: translate(-50%,-250px)
+        opacity: 0
         &.first
             opacity: 0
             transform: translate(-50%,-250px)
@@ -282,12 +308,46 @@ p
             opacity: 0
             transform: translate(-50%,30px)
         &.third
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.fourth
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.fifth
             opacity: 1
             transform: translate(-50%,-52px)
-        &.forth
+        &.sixth
             opacity: 1
             transform: translate(-50%,-180px)
+        &.seventh
+            opacity: 1
+            transform: translate(-50%,-190px)
+
     .three
+        transform: translate(-50%,-190px)
+        &.first
+            opacity: 0
+            transform: translate(-50%,-250px)
+        &.second
+            opacity: 0
+            transform: translate(-50%,-250px)
+        &.third
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.fourth
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.fifth
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.sixth
+            opacity: 1
+            transform: translate(-50%,-52px)
+        &.seventh
+            opacity: 1
+            transform: translate(-50%,-180px)
+
+    .four
         transform: translate(-50%,-180px)
         &.first
             opacity: 1
@@ -297,11 +357,21 @@ p
             transform: translate(-50%,-250px)
         &.third
             opacity: 0
+            transform: translate(-50%,-250px)
+        &.fourth
+            opacity: 0
+            transform: translate(-50%,30px )
+        &.fifth
+            opacity: 0
             transform: translate(-50%,30px)
-        &.forth
+        &.sixth
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.seventh
             opacity: 1
             transform: translate(-50%,-52px)
-    .four
+
+    .five
         transform: translate(-50%,-52px)
         &.first
             opacity: 1
@@ -312,10 +382,20 @@ p
         &.third
             opacity: 0
             transform: translate(-50%,-250px)
-        &.forth
+        &.fourth
+            opacity: 0
+            transform: translate(-50%,-250px)
+        &.fifth
             opacity: 0
             transform: translate(-50%,30px)
-    .five
+        &.sixth
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.seventh
+            opacity: 0
+            transform: translate(-50%,30px)
+
+    .six
         transform: translate(-50%,30px)
         opacity: 0
         &.first
@@ -327,13 +407,72 @@ p
         &.third
             opacity: 1
             transform: translate(-50%,-190px)
-        &.forth
+        &.fourth
             opacity: 0
             transform: translate(-50%,-250px)
+        &.fifth
+            opacity: 0
+            transform: translate(-50%,-250px)
+        &.sixth
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.seventh
+            opacity: 0
+            transform: translate(-50%,30px) 
+
+    .seven
+        transform: translate(-50%,30px)
+        opacity: 0
+        &.first
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.second
+            opacity: 1
+            transform: translate(-50%,-52px)
+        &.third
+            opacity: 1
+            transform: translate(-50%,-180px)
+        &.fourth
+            opacity: 1
+            transform: translate(-50%,-190px)
+        &.fifth
+            opacity: 0
+            transform: translate(-50%,-250px)
+        &.sixth
+            opacity: 0
+            transform: translate(-50%,-250px)
+        &.seventh
+            opacity: 0
+            transform: translate(-50%,30px) 
+
+    .eight
+        transform: translate(-50%,30px)
+        opacity: 0
+        &.first
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.second
+            opacity: 0
+            transform: translate(-50%,30px)
+        &.third
+            opacity: 1
+            transform: translate(-50%,-52px)
+        &.fourth
+            opacity: 1
+            transform: translate(-50%,-180px)
+        &.fifth
+            opacity: 1
+            transform: translate(-50%,-190px)
+        &.sixth
+            opacity: 0
+            transform: translate(-50%,-250px)
+        &.seventh
+            opacity: 0
+            transform: translate(-50%,-250px) 
 
     .middle
         color: #A50037
-        transform: scale(1.4) translate(-35.7142857143%,-70px) !important
+        transform: scale(1.4) translate(-35.7142857143%,-72px) !important
         margin-top: -20px
         margin-left: 0px
 
@@ -413,6 +552,7 @@ p
                 position: absolute
                 transition: 0.3s
                 padding-left: 10px
+                font-family: sukhumvitL
             &:hover
                 color: $brightYellow
                 span
@@ -597,6 +737,7 @@ p
             line-height: 48px
     .contact-btn
         @extend .btn
+        width: 311px
         margin: auto
         white-space: nowrap
         background-color: $red
@@ -606,11 +747,10 @@ p
         position: relative
         transform: translate(360px, -34px)
         transition: 0.2s ease-out
-        h3
-            font-family: sukhumvitB
-            font-size: 36px
-            color: $white
-            line-height: 62px
+        font-family: sukhumvitB
+        font-size: 36px
+        color: $white
+        line-height: 62px
         .arrow
             position: absolute
             font-family: sukhumvitL
@@ -622,9 +762,9 @@ p
             line-height: 42px
             box-sizing: border-box
             border-radius: 100%
-            left: 182px
+            left: 258px
             top: 11px
-            padding-left: 10px
+            padding-left: 11px
             transition: 0.3s
         &:hover
             background-color: $brightred

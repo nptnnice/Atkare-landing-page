@@ -7,20 +7,34 @@ import Whyus from './component/Whyus';
 import Operate from './component/Operate';
 import Footer from './component/Footer';
 import '../src/style.css'
-
+import { useState } from 'react';
 
 const App = () => {
-  return (
-    <div>
-        <Navbar />
-        <Header />
-        <Vision />
-        <Certified />
-        <Whyus />
-        <Operate />
-        <Footer />
-    </div>
-);
+
+  const [page,setPage] = useState('home')
+
+  if(page==='home')
+  {
+    return (
+      <div>
+          <Navbar setPage={setPage}/>
+          <Header setPage={setPage}/>
+          <Vision />
+          <Certified />
+          <Whyus />
+          <Operate />
+          <Footer setPage={setPage}/>
+      </div>
+  );
+  }
+  else if(page==='contact')
+  {
+    return(
+      <div>
+    
+      </div>
+    )
+  }
 }
 
 export default App;

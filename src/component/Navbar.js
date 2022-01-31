@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/images/logo.png';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className='nav-bar'>
         <div className='logo'>
@@ -12,8 +12,10 @@ const Navbar = () => {
                 <li className='move-pls'>Certified ATK</li>
                 <li className='move-pls'>Why Us</li>
                 <li className='move-pls'>Operate ATK</li>
-                <li className='shopee-btn move-pls'>Shopee</li>
-                <li className='contact-btn'>ติดต่อเรา</li>
+                <h2 className='shopee-btn move-pls'>Shopee</h2>
+                <h2 className='contact-btn' onClick={()=>{
+                    props.setPage('contact')
+                }}>ติดต่อเรา</h2>
             </ul>
         </div>
     </div>
