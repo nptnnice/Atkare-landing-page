@@ -37,7 +37,7 @@ body {
   margin: auto 0;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   cursor: default;
 }
@@ -1298,7 +1298,21 @@ p {
   padding-left: 192px;
 }
 
-.toggle-btn {
+.contact {
+  max-width: 1920px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 294px;
+          column-gap: 294px;
+}
+
+.contact img {
+  width: 256px;
+}
+
+.contact .toggle-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1315,7 +1329,7 @@ p {
           column-gap: 80px;
 }
 
-.toggle-btn .toggle1 {
+.contact .toggle-btn .toggle1 {
   margin-left: 11px;
   margin-top: 2px;
   background-color: #FFFFFF;
@@ -1324,7 +1338,7 @@ p {
   height: 56.5px;
 }
 
-.toggle-btn .toggle1 h1 {
+.contact .toggle-btn .toggle1 h1 {
   font-family: yaroB;
   font-size: 36px;
   color: #002437;
@@ -1332,16 +1346,19 @@ p {
   text-align: center;
 }
 
-.toggle-btn h2 {
+.contact .toggle-btn h2 {
   font-family: yaroB;
   font-size: 36px;
   color: #FFFFFF;
   padding-top: 10px;
 }
 
-.B2B-box {
+.contact .B2B-grid {
+  margin: auto;
   width: 1184px;
   height: 1440px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 15px #00000029;
           box-shadow: 5px 5px 15px #00000029;
@@ -1349,33 +1366,294 @@ p {
   margin-top: 16px;
   margin-left: 144px;
   margin-bottom: 385px;
-  padding-top: 41px;
-  padding-left: 48px;
+  padding: 41px 48px 32px 48px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 272px auto;
+      grid-template-columns: 272px auto;
+  -ms-grid-rows: 128px 327px 504px 408px;
+      grid-template-rows: 128px 327px 504px 408px;
+  color: #002437;
 }
 
-.B2B-box .B2B-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 121px;
-          column-gap: 121px;
-}
-
-.B2B-box .B2B-head h1 {
+.contact .B2B-grid h1 {
   font-family: yaroB;
   font-size: 60px;
   color: #A50037;
   width: 145px;
 }
 
-.B2B-box .B2B-head h1 h2 {
+.contact .B2B-grid h1 h6 {
   font-family: yaroRg;
   font-size: 48px;
 }
 
-.B2B-box .B2B-head p {
+.contact .B2B-grid p {
   font-family: sukhumvitSemiB;
   font-size: 24px;
   padding-top: 54px;
+}
+
+.contact .B2B-grid .general-topic {
+  font-family: sukhumvitSemiB;
+  font-size: 36px;
+  margin-top: 47px;
+}
+
+.contact .B2B-grid .general {
+  margin-top: 60px;
+}
+
+.contact .B2B-grid .general h5 {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.contact .B2B-grid .general .name-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.contact .B2B-grid .general .name-box h5::after {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #002437;
+  border-radius: 28px;
+  margin-top: 3px;
+  margin-bottom: 14px;
+}
+
+.contact .B2B-grid .general .job-box::after {
+  content: "Optional";
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-bottom: 16px;
+  color: #00243730;
+  display: block;
+  width: 360px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #002437;
+  border-radius: 28px;
+  margin-top: 3px;
+  margin-bottom: 14px;
+}
+
+.contact .B2B-grid .general .contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.contact .B2B-grid .general .contact-box .email-box::after {
+  content: "Optional";
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-bottom: 16px;
+  color: #00243730;
+  display: block;
+  width: 432px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #002437;
+  border-radius: 28px;
+  margin-top: 3px;
+  margin-bottom: 14px;
+}
+
+.contact .B2B-grid .general .contact-box .tel-box::after {
+  content: "";
+  display: block;
+  width: 288px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #002437;
+  border-radius: 28px;
+  margin-top: 3px;
+  margin-bottom: 14px;
+}
+
+.contact .B2B-grid .company-topic {
+  font-family: sukhumvitSemiB;
+  font-size: 36px;
+  margin-top: 80px;
+}
+
+.contact .B2B-grid .company h5 {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.contact .B2B-grid .company .company-box {
+  margin-top: 86px;
+}
+
+.contact .B2B-grid .company .company-box::after {
+  content: "";
+  display: block;
+  width: 736px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #002437;
+  border-radius: 28px;
+  margin-top: 3px;
+  margin-bottom: 25px;
+}
+
+.contact .B2B-grid .company .company-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.contact .B2B-grid .company .company-type .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 192px;
+  height: 192px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 5px 5px 15px #00000029;
+          box-shadow: 5px 5px 15px #00000029;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 16px;
+}
+
+.contact .B2B-grid .company .company-type .img-box h4 {
+  position: absolute;
+  bottom: 4px;
+  font-family: sukhumvitB;
+  font-size: 24px;
+}
+
+.contact .B2B-grid .company .company-type .img-box img {
+  position: absolute;
+  bottom: 48px;
+}
+
+.contact .B2B-grid .company .company-type .img-box #factory {
+  width: 126px;
+}
+
+.contact .B2B-grid .company .company-type .img-box #mall {
+  width: 169px;
+}
+
+.contact .B2B-grid .company .company-type .img-box #school {
+  width: 137.5px;
+}
+
+.contact .B2B-grid .company .company-type .img-box #condo {
+  width: 141px;
+}
+
+.contact .B2B-grid .company .other-box {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 5px 5px 15px #00000029;
+          box-shadow: 5px 5px 15px #00000029;
+  border-radius: 32px;
+  width: 176px;
+  height: 64px;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 13px;
+          column-gap: 13px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .B2B-grid .company .other-box img {
+  width: 43px;
+}
+
+.contact .B2B-grid .company .other-box h4 {
+  font-family: sukhumvitB;
+  font-size: 24px;
+  color: #002437;
+}
+
+.contact .B2B-grid .add-topic {
+  font-family: sukhumvitSemiB;
+  font-size: 36px;
+  margin-top: 59px;
+}
+
+.contact .B2B-grid .additional {
+  position: relative;
+  width: 736px;
+  margin-top: 59px;
+}
+
+.contact .B2B-grid .additional .add-box {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  color: #00243730;
+  padding-top: 13px;
+  padding-left: 22px;
+  width: 736px;
+  height: 253px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #002437;
+  border-radius: 28px;
+  margin-bottom: 32px;
+}
+
+.contact .B2B-grid .additional .send-btn {
+  position: absolute;
+  right: 0px;
+  font-family: sukhumvitB;
+  font-size: 36px;
+  color: #FFFFFF;
+  background-color: #D8A64A;
+  width: 176px;
+  height: 64px;
+  border-radius: 47px;
+  -webkit-box-shadow: 5px 5px 7px #00000029;
+          box-shadow: 5px 5px 7px #00000029;
+  text-align: center;
+  padding-top: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contact .B2B-grid .additional .send-btn:hover {
+  background-color: #FFC625;
 }
 /*# sourceMappingURL=style.css.map */
