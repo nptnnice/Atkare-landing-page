@@ -6,16 +6,27 @@ import condo from "../assets/images/condo.svg";
 import dot from "../assets/images/dot.svg";
 import contactbar from "../assets/images/contactbar.png";
 
-const Contact = () => {
+const B2Bbooth = (props) => {
   return (
-    <div className="contact">
+    <div className="b2b-booth">
       <div className="container">
         <h1 className="head-contact">ร่วมงานกับเรา</h1>
         <div className="toggle-btn">
-          <span className="toggle1">
-            <h1>B2B Booth</h1>
-          </span>
-          <h2>Retail ATK</h2>
+          <div className="move-btn"></div>
+          <h1
+            onClick={() => {
+              props.setPage("B2Bbooth");
+            }}
+          >
+            B2B Booth
+          </h1>
+          <h2
+            onClick={() => {
+              props.setPage("retail");
+            }}
+          >
+            Retail ATK
+          </h2>
         </div>
         <div className="B2B-grid">
           <h1>
@@ -69,7 +80,7 @@ const Contact = () => {
           </h2>
           <div className="additional">
             <div className="add-box">Optional</div>
-            <div className="send-btn">ส่ง</div>
+            <div className="send-btn"></div>
           </div>
         </div>
       </div>
@@ -78,4 +89,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default B2Bbooth;

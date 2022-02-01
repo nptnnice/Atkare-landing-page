@@ -808,7 +808,95 @@ p
     padding-top: 191px
     padding-left: 192px
 
-.contact
+.form-box
+    margin: auto
+    width: 1184px
+    height: 1440px
+    box-sizing: border-box
+    border-radius: 20px
+    box-shadow: 5px 5px 15px #00000029
+    background-color: $white
+    margin-top: 16px
+    margin-left: 144px
+    margin-bottom: 385px
+    padding: 41px 48px 32px 48px
+    display: grid
+    grid-template-columns: 272px auto
+    grid-template-rows: 128px 327px 504px 408px
+    color: $black
+
+// .toggle-bar
+//     display: flex
+//     background-color: $red
+//     width: 688px
+//     height: 80px
+//     border-radius: 47px
+//     margin-left: 192px
+//     margin-top: 80px
+//     align-items: center
+//     column-gap: 80px
+//     box-shadow: 8px 8px 15px #0000001A
+//     h1, h2
+//         cursor: pointer
+//         font-family: yaroB
+//         font-size: 36px
+//         padding-top: 10px
+//         text-align: center
+//     h1
+//         color: $black
+//     h2
+//         color: $white
+//     .toggle1
+//         margin-left: 11px
+//         margin-top: 2px
+//         background-color: $white
+//         border-radius: 47px
+//         width: 324px
+//         height: 56.5px
+//     .toggle2
+//         margin-right: 11.5px
+//         margin-top: 2px
+//         background-color: $white
+//         border-radius: 47px
+//         width: 324px
+//         height: 56.5px
+
+.toggle-bar
+    position: relative
+    display: flex
+    background-color: $red
+    width: 688px
+    height: 80px
+    border-radius: 47px
+    margin-left: 192px
+    margin-top: 80px
+    align-items: center
+    column-gap: 142px
+    box-shadow: 8px 8px 15px #0000001A
+    justify-content: center
+    .move-btn
+        background-color: $white
+        box-shadow: 8px 8px 15px #0000001A
+        width: 324px
+        height: 56.5px
+        border-radius: 29px
+        box-sizing: border-box
+        position: absolute
+        left: 11.5px
+        top: 11.75px
+    h1, h2
+        cursor: pointer
+        font-family: yaroB
+        font-size: 36px
+        padding-top: 10px
+        text-align: center
+        z-index: 2
+    h1
+        color: $black
+    h2
+        color: $white
+
+.b2b-booth
     max-width: 1920px
     margin: auto
     display: flex
@@ -816,50 +904,10 @@ p
     img
         width: 256px
     .toggle-btn
-        display: flex
-        background-color: $red
-        width: 688px
-        height: 80px
-        border-radius: 47px
-        margin-left: 192px
-        margin-top: 80px
-        align-items: center
-        column-gap: 80px
-        .toggle1
-            margin-left: 11px
-            margin-top: 2px
-            background-color: $white
-            border-radius: 47px
-            width: 324px
-            height: 56.5px
-            h1
-                font-family: yaroB
-                font-size: 36px
-                color: $black
-                padding-top: 10px
-                text-align: center
-        h2
-            font-family: yaroB
-            font-size: 36px
-            color: $white
-            padding-top: 10px
+        @extend .toggle-bar
 
     .B2B-grid
-        margin: auto
-        width: 1184px
-        height: 1440px
-        box-sizing: border-box
-        border-radius: 20px
-        box-shadow: 5px 5px 15px #00000029
-        background-color: $white
-        margin-top: 16px
-        margin-left: 144px
-        margin-bottom: 385px
-        padding: 41px 48px 32px 48px
-        display: grid
-        grid-template-columns: 272px auto
-        grid-template-rows: 128px 327px 504px 408px
-        color: $black
+        @extend .form-box
         h1
             font-family: yaroB
             font-size: 60px
@@ -896,6 +944,7 @@ p
                         border-radius: 28px
                         margin-top: 3px
                         margin-bottom: 14px
+                        cursor: pointer
             .job-box
                 &::after
                     content: "Optional"
@@ -911,6 +960,7 @@ p
                     border-radius: 28px
                     margin-top: 3px
                     margin-bottom: 14px
+                    cursor: pointer
             .contact-box
                 display: flex
                 column-gap: 16px
@@ -929,6 +979,7 @@ p
                         border-radius: 28px
                         margin-top: 3px
                         margin-bottom: 14px
+                        cursor: pointer
                 .tel-box
                     &::after
                         content: ""
@@ -940,12 +991,12 @@ p
                         border-radius: 28px
                         margin-top: 3px
                         margin-bottom: 14px
+                        cursor: pointer
 
         .company-topic
             font-family: sukhumvitSemiB
             font-size: 36px
             margin-top: 80px
-
         .company
             h5
                 font-family: sukhumvitSemiB
@@ -978,11 +1029,13 @@ p
                     box-sizing: border-box
                     border-radius: 20px
                     margin-top: 16px
+                    cursor: pointer
                     h4
                         position: absolute
                         bottom: 4px
                         font-family: sukhumvitB
                         font-size: 24px
+                        cursor: pointer
                     img
                         position: absolute
                         bottom: 48px
@@ -1005,18 +1058,19 @@ p
                 align-items: center
                 column-gap: 13px
                 justify-content: center
+                cursor: pointer
                 img
                     width: 43px
                 h4
                     font-family: sukhumvitB
                     font-size: 24px
                     color: $black
-        
+                    cursor: pointer
+
         .add-topic
             font-family: sukhumvitSemiB
             font-size: 36px
             margin-top: 59px
-
         .additional
             position: relative
             width: 736px
@@ -1033,6 +1087,7 @@ p
                 border: 1px solid $black
                 border-radius: 28px
                 margin-bottom: 32px
+                cursor: pointer
             .send-btn
                 position: absolute
                 right: 0px
@@ -1043,11 +1098,162 @@ p
                 width: 176px
                 height: 64px
                 border-radius: 47px
-                box-shadow: 5px 5px 7px #00000029;
+                box-shadow: 5px 5px 7px #00000029
                 text-align: center
-                padding-top: 3px
+                padding-top: 4px
                 box-sizing: border-box
                 transition: 0.3s
                 cursor: pointer
+                &::after
+                    content: "ส่ง"
+                &:hover
+                    background-color: $brightYellow
+
+.retail
+    max-width: 1920px
+    margin: auto
+    display: flex
+    column-gap: 294px
+    img
+        width: 256px
+    .toggle-btn
+        @extend .toggle-bar
+        .move-btn
+            transform: translateX(340px)
+
+    .retail-grid
+        @extend .form-box
+        height: 1152px
+        padding: 41px 128px 48px 48px
+        grid-template-rows: 128px 247px 285px 403px
+        h1
+            font-family: yaroB
+            font-size: 60px
+            color: $red
+            width: 178px
+            h6
+                font-family: yaroRg
+                font-size: 48px
+        p
+            font-family: sukhumvitSemiB
+            font-size: 24px
+            padding-top: 40px
+            span
+                font-size: 36px
+                color: $red
+        .general-topic
+            font-family: sukhumvitSemiB
+            font-size: 36px
+            margin-top: 47px
+        .general
+            margin-top: 60px
+            h5
+                font-family: sukhumvitSemiB
+                font-size: 21px
+                line-height: 21px
+            .name-box
+                display: flex
+                column-gap: 16px
+                h5
+                    &::after
+                        content: ""
+                        display: block
+                        width: 360px
+                        height: 56px
+                        box-sizing: border-box
+                        border: 1px solid $black
+                        border-radius: 28px
+                        margin-top: 3px
+                        margin-bottom: 30px
+                        cursor: pointer
+            .contact-box
+                display: flex
+                column-gap: 16px
+                .email-box
+                    &::after
+                        content: "Optional"
+                        padding-top: 17px
+                        padding-left: 22px
+                        padding-bottom: 16px
+                        color: #00243730
+                        display: block
+                        width: 432px
+                        height: 56px
+                        box-sizing: border-box
+                        border: 1px solid $black
+                        border-radius: 28px
+                        margin-top: 3px
+                        margin-bottom: 14px
+                        cursor: pointer
+                .tel-box
+                    &::after
+                        content: ""
+                        display: block
+                        width: 288px
+                        height: 56px
+                        box-sizing: border-box
+                        border: 1px solid $black
+                        border-radius: 28px
+                        margin-top: 3px
+                        margin-bottom: 14px
+                        cursor: pointer
+
+        .purpose-topic
+            font-family: sukhumvitSemiB
+            font-size: 36px
+            margin-top: 25px
+        .purpose-box
+            font-family: sukhumvitSemiB
+            font-size: 21px
+            color: #00243730
+            padding-top: 25px
+            padding-left: 22px
+            width: 736px
+            height: 253px
+            box-sizing: border-box
+            border: 1px solid $black
+            border-radius: 28px
+            margin-top: 32px
+            cursor: pointer
+
+        .add-topic
+            font-family: sukhumvitSemiB
+            font-size: 36px
+            margin-top: 43px
+        .additional
+            position: relative
+            width: 736px
+            margin-top: 35px
+            .add-box
+                font-family: sukhumvitSemiB
+                font-size: 21px
+                color: #00243730
+                padding-top: 25px
+                padding-left: 22px
+                width: 736px
+                height: 253px
+                box-sizing: border-box
+                border: 1px solid $black
+                border-radius: 28px
+                margin-bottom: 51px
+                cursor: pointer
+            .send-btn
+                position: absolute
+                right: 0px
+                font-family: sukhumvitB
+                font-size: 36px
+                color: $white
+                background-color: $yellow
+                width: 176px
+                height: 64px
+                border-radius: 47px
+                box-shadow: 5px 5px 7px #00000029
+                text-align: center
+                padding-top: 4px
+                box-sizing: border-box
+                transition: 0.3s
+                cursor: pointer
+                &::after
+                    content: "ส่ง"
                 &:hover
                     background-color: $brightYellow
