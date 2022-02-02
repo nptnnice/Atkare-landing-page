@@ -3,7 +3,7 @@ import AnimaHead from "./AnimaHead";
 import Leftbar from "../assets/images/leftbar.png";
 import Rightbar from "../assets/images/rightbar.png";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div>
       <div className="header">
@@ -21,7 +21,9 @@ const Header = () => {
             <br></br>
             มีทุกอย่างที่จำเป็นสำหรับการรับมือกับโรคระบาด เช่น COVID-19
           </p>
-          <h2 className="contact-btn">
+          <h2 className="contact-btn" onClick={()=>{
+                    props.setPage('contact')
+                }}>
             ร่วมงานกับเรา
             <p className="arrow">{">"}</p>
           </h2>

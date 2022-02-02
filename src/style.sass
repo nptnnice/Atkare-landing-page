@@ -40,6 +40,22 @@ h1,h2,h3,h4,h5,h6,p
     margin: 0
     cursor: default
 
+::placeholder
+    color: #00243730
+
+input, textarea
+    &:focus
+        outline-color: $brightYellow
+
+.img-selected
+    filter: brightness(0) invert(1)
+
+.selected
+    color: $white
+    background-color: $yellow
+    &:hover
+        background-color: $yellow !important
+
 p
     font-family: sukhumvitL
     font-size: 24px
@@ -114,12 +130,19 @@ p
             padding-top: 8px
             box-sizing: border-box
             white-space: nowrap
+            transition: 0.2s
+            &:hover
+                color: $brightYellow
+                border-color: $brightYellow
         .contact-btn
             @extend .btn
             background-color: $yellow
             color: $white
             padding-left: 49px
             white-space: nowrap
+            transition: 0.2s
+            &:hover
+                background-color: $brightYellow
         .move-pls
             transform: translateX(40px)
 
@@ -774,7 +797,7 @@ p
             background-color: $brightred
             .arrow
                 color: $brightred
-                padding-left: 14px
+                padding-left: 15px
     #icon
         position: absolute
         width: 229px
@@ -825,42 +848,6 @@ p
     grid-template-rows: 128px 327px 504px 408px
     color: $black
 
-// .toggle-bar
-//     display: flex
-//     background-color: $red
-//     width: 688px
-//     height: 80px
-//     border-radius: 47px
-//     margin-left: 192px
-//     margin-top: 80px
-//     align-items: center
-//     column-gap: 80px
-//     box-shadow: 8px 8px 15px #0000001A
-//     h1, h2
-//         cursor: pointer
-//         font-family: yaroB
-//         font-size: 36px
-//         padding-top: 10px
-//         text-align: center
-//     h1
-//         color: $black
-//     h2
-//         color: $white
-//     .toggle1
-//         margin-left: 11px
-//         margin-top: 2px
-//         background-color: $white
-//         border-radius: 47px
-//         width: 324px
-//         height: 56.5px
-//     .toggle2
-//         margin-right: 11.5px
-//         margin-top: 2px
-//         background-color: $white
-//         border-radius: 47px
-//         width: 324px
-//         height: 56.5px
-
 .toggle-bar
     position: relative
     display: flex
@@ -908,6 +895,7 @@ p
 
     .B2B-grid
         @extend .form-box
+        position: relative
         h1
             font-family: yaroB
             font-size: 60px
@@ -926,33 +914,20 @@ p
             margin-top: 47px
         .general
             margin-top: 60px
-            h5
-                font-family: sukhumvitSemiB
-                font-size: 21px
-                line-height: 21px
-            .name-box
+            font-family: sukhumvitSemiB
+            font-size: 21px
+            line-height: 21px
+            .name-flex
                 display: flex
                 column-gap: 16px
-                h5
-                    &::after
-                        content: ""
-                        display: block
-                        width: 360px
-                        height: 56px
-                        box-sizing: border-box
-                        border: 1px solid $black
-                        border-radius: 28px
-                        margin-top: 3px
-                        margin-bottom: 14px
-                        cursor: pointer
-            .job-box
-                &::after
-                    content: "Optional"
+                width: 736px
+                .firstname-box, .lastname-box
+                    font-family: sukhumvitSemiB
+                    font-size: 21px
+                    line-height: 21px
                     padding-top: 17px
                     padding-left: 22px
                     padding-bottom: 16px
-                    color: #00243730
-                    display: block
                     width: 360px
                     height: 56px
                     box-sizing: border-box
@@ -961,52 +936,75 @@ p
                     margin-top: 3px
                     margin-bottom: 14px
                     cursor: pointer
-            .contact-box
+            .job-box
+                font-family: sukhumvitSemiB
+                font-size: 21px
+                line-height: 21px
+                padding-top: 17px
+                padding-left: 22px
+                padding-bottom: 16px
+                display: block
+                width: 360px
+                height: 56px
+                box-sizing: border-box
+                border: 1px solid $black
+                border-radius: 28px
+                margin-top: 3px
+                margin-bottom: 14px
+                cursor: pointer
+            .contact-flex
                 display: flex
                 column-gap: 16px
+                width: 736px
                 .email-box
-                    &::after
-                        content: "Optional"
-                        padding-top: 17px
-                        padding-left: 22px
-                        padding-bottom: 16px
-                        color: #00243730
-                        display: block
-                        width: 432px
-                        height: 56px
-                        box-sizing: border-box
-                        border: 1px solid $black
-                        border-radius: 28px
-                        margin-top: 3px
-                        margin-bottom: 14px
-                        cursor: pointer
-                .tel-box
-                    &::after
-                        content: ""
-                        display: block
-                        width: 288px
-                        height: 56px
-                        box-sizing: border-box
-                        border: 1px solid $black
-                        border-radius: 28px
-                        margin-top: 3px
-                        margin-bottom: 14px
-                        cursor: pointer
+                    font-family: sukhumvitSemiB
+                    font-size: 21px
+                    line-height: 21px
+                    padding-top: 17px
+                    padding-left: 22px
+                    padding-bottom: 16px
+                    width: 432px
+                    height: 56px
+                    box-sizing: border-box
+                    border: 1px solid $black
+                    border-radius: 28px
+                    margin-top: 3px
+                    margin-bottom: 14px
+                    cursor: pointer
+                .phone-box
+                    font-family: sukhumvitSemiB
+                    font-size: 21px
+                    line-height: 21px
+                    padding-top: 17px
+                    padding-left: 22px
+                    padding-bottom: 16px
+                    width: 288px
+                    height: 56px
+                    box-sizing: border-box
+                    border: 1px solid $black
+                    border-radius: 28px
+                    margin-top: 3px
+                    margin-bottom: 14px
+                    cursor: pointer
 
         .company-topic
             font-family: sukhumvitSemiB
             font-size: 36px
             margin-top: 80px
         .company
-            h5
+            h5, label
                 font-family: sukhumvitSemiB
                 font-size: 21px
                 line-height: 21px
-            .company-box
+            .container
                 margin-top: 86px
-                &::after
-                    content: ""
-                    display: block
+                .company-box
+                    font-family: sukhumvitSemiB
+                    font-size: 21px
+                    line-height: 21px
+                    padding-top: 17px
+                    padding-left: 22px
+                    padding-bottom: 16px
                     width: 736px
                     height: 56px
                     box-sizing: border-box
@@ -1014,6 +1012,7 @@ p
                     border-radius: 28px
                     margin-top: 3px
                     margin-bottom: 25px
+                    cursor: pointer
             .company-type
                 display: flex
                 column-gap: 16px
@@ -1024,12 +1023,15 @@ p
                     align-items: center
                     width: 192px
                     height: 192px
-                    background-color: $white
+                    // background-color: $white
                     box-shadow: 5px 5px 15px #00000029
                     box-sizing: border-box
                     border-radius: 20px
                     margin-top: 16px
                     cursor: pointer
+                    transition: 0.1s ease-in
+                    &:hover
+                        background-color: #D8A64A20
                     h4
                         position: absolute
                         bottom: 4px
@@ -1048,7 +1050,6 @@ p
                     #condo
                         width: 141px
             .other-box
-                background-color: $white
                 box-shadow: 5px 5px 15px #00000029
                 border-radius: 32px
                 width: 176px
@@ -1059,55 +1060,53 @@ p
                 column-gap: 13px
                 justify-content: center
                 cursor: pointer
+                transition: 0.1s ease-in
+                &:hover
+                    background-color: #D8A64A20
                 img
                     width: 43px
                 h4
                     font-family: sukhumvitB
                     font-size: 24px
-                    color: $black
                     cursor: pointer
 
         .add-topic
             font-family: sukhumvitSemiB
             font-size: 36px
             margin-top: 59px
-        .additional
-            position: relative
-            width: 736px
+        .add-box
             margin-top: 59px
-            .add-box
-                font-family: sukhumvitSemiB
-                font-size: 21px
-                color: #00243730
-                padding-top: 13px
-                padding-left: 22px
-                width: 736px
-                height: 253px
-                box-sizing: border-box
-                border: 1px solid $black
-                border-radius: 28px
-                margin-bottom: 32px
-                cursor: pointer
-            .send-btn
-                position: absolute
-                right: 0px
-                font-family: sukhumvitB
-                font-size: 36px
-                color: $white
-                background-color: $yellow
-                width: 176px
-                height: 64px
-                border-radius: 47px
-                box-shadow: 5px 5px 7px #00000029
-                text-align: center
-                padding-top: 4px
-                box-sizing: border-box
-                transition: 0.3s
-                cursor: pointer
-                &::after
-                    content: "ส่ง"
-                &:hover
-                    background-color: $brightYellow
+            font-family: sukhumvitSemiB
+            font-size: 21px
+            line-height: 21px
+            padding: 22px 22px
+            width: 736px
+            height: 253px
+            box-sizing: border-box
+            border: 1px solid $black
+            border-radius: 28px
+            margin-bottom: 32px
+            cursor: pointer
+        .send-btn
+            position: absolute
+            right: 128px
+            bottom: 32px
+            font-family: sukhumvitB
+            font-size: 36px
+            color: $white
+            background-color: $yellow
+            width: 176px
+            height: 64px
+            border-radius: 47px
+            box-shadow: 5px 5px 7px #00000029
+            text-align: center
+            padding-top: 4px
+            box-sizing: border-box
+            transition: 0.3s
+            cursor: pointer
+            border: none
+            &:hover
+                background-color: $brightYellow
 
 .retail
     max-width: 1920px
@@ -1126,6 +1125,7 @@ p
         height: 1152px
         padding: 41px 128px 48px 48px
         grid-template-rows: 128px 247px 285px 403px
+        position: relative
         h1
             font-family: yaroB
             font-size: 60px
@@ -1147,56 +1147,68 @@ p
             margin-top: 47px
         .general
             margin-top: 60px
-            h5
+            label
                 font-family: sukhumvitSemiB
                 font-size: 21px
                 line-height: 21px
-            .name-box
+            .name-flex
                 display: flex
                 column-gap: 16px
-                h5
-                    &::after
-                        content: ""
-                        display: block
-                        width: 360px
-                        height: 56px
-                        box-sizing: border-box
-                        border: 1px solid $black
-                        border-radius: 28px
-                        margin-top: 3px
-                        margin-bottom: 30px
-                        cursor: pointer
-            .contact-box
+                .firstname-box, .lastname-box
+                    font-family: sukhumvitSemiB
+                    font-size: 21px
+                    line-height: 21px
+                    padding-top: 17px
+                    padding-left: 22px
+                    padding-bottom: 16px
+                    width: 360px
+                    height: 56px
+                    box-sizing: border-box
+                    border: 1px solid $black
+                    border-radius: 28px
+                    margin-top: 3px
+                    margin-bottom: 30px
+                    cursor: pointer
+            .contact-flex
                 display: flex
                 column-gap: 16px
                 .email-box
-                    &::after
-                        content: "Optional"
-                        padding-top: 17px
-                        padding-left: 22px
-                        padding-bottom: 16px
-                        color: #00243730
-                        display: block
-                        width: 432px
-                        height: 56px
-                        box-sizing: border-box
-                        border: 1px solid $black
-                        border-radius: 28px
-                        margin-top: 3px
-                        margin-bottom: 14px
-                        cursor: pointer
-                .tel-box
-                    &::after
-                        content: ""
-                        display: block
-                        width: 288px
-                        height: 56px
-                        box-sizing: border-box
-                        border: 1px solid $black
-                        border-radius: 28px
-                        margin-top: 3px
-                        margin-bottom: 14px
-                        cursor: pointer
+                    font-family: sukhumvitSemiB
+                    font-size: 21px
+                    line-height: 21px
+                    padding-top: 17px
+                    padding-left: 22px
+                    padding-bottom: 16px
+                    padding-left: 22px
+                    font-family: sukhumvitSemiB
+                    font-size: 21px
+                    line-height: 21px
+                    color: #002437
+                    display: block
+                    width: 432px
+                    height: 56px
+                    box-sizing: border-box
+                    border: 1px solid $black
+                    border-radius: 28px
+                    margin-top: 3px
+                    margin-bottom: 14px
+                    cursor: pointer
+                .phone-box
+                    font-family: sukhumvitSemiB
+                    font-size: 21px
+                    line-height: 21px
+                    padding-top: 17px
+                    padding-left: 22px
+                    padding-bottom: 16px
+                    display: block
+                    width: 288px
+                    height: 56px
+                    box-sizing: border-box
+                    border: 1px solid $black
+                    border-radius: 28px
+                    margin-top: 3px
+                    margin-bottom: 14px
+                    cursor: pointer
 
         .purpose-topic
             font-family: sukhumvitSemiB
@@ -1205,9 +1217,8 @@ p
         .purpose-box
             font-family: sukhumvitSemiB
             font-size: 21px
-            color: #00243730
-            padding-top: 25px
-            padding-left: 22px
+            // padding-top: 25px
+            padding: 22px 22px
             width: 736px
             height: 253px
             box-sizing: border-box
@@ -1220,40 +1231,41 @@ p
             font-family: sukhumvitSemiB
             font-size: 36px
             margin-top: 43px
-        .additional
-            position: relative
-            width: 736px
+        // .additional
+        //     position: relative
+        //     width: 736px
+        //     margin-top: 35px
+        .add-box
+            font-family: sukhumvitSemiB
+            font-size: 21px
+            line-height: 21px
+            // padding-top: 25px
             margin-top: 35px
-            .add-box
-                font-family: sukhumvitSemiB
-                font-size: 21px
-                color: #00243730
-                padding-top: 25px
-                padding-left: 22px
-                width: 736px
-                height: 253px
-                box-sizing: border-box
-                border: 1px solid $black
-                border-radius: 28px
-                margin-bottom: 51px
-                cursor: pointer
-            .send-btn
-                position: absolute
-                right: 0px
-                font-family: sukhumvitB
-                font-size: 36px
-                color: $white
-                background-color: $yellow
-                width: 176px
-                height: 64px
-                border-radius: 47px
-                box-shadow: 5px 5px 7px #00000029
-                text-align: center
-                padding-top: 4px
-                box-sizing: border-box
-                transition: 0.3s
-                cursor: pointer
-                &::after
-                    content: "ส่ง"
-                &:hover
-                    background-color: $brightYellow
+            padding: 22px 22px
+            width: 736px
+            height: 253px
+            box-sizing: border-box
+            border: 1px solid $black
+            border-radius: 28px
+            margin-bottom: 51px
+            cursor: pointer
+        .send-btn
+            position: absolute
+            right: 128px
+            bottom: 48px
+            font-family: sukhumvitB
+            font-size: 36px
+            color: $white
+            background-color: $yellow
+            width: 176px
+            height: 64px
+            border-radius: 47px
+            box-shadow: 5px 5px 7px #00000029
+            text-align: center
+            padding-top: 4px
+            box-sizing: border-box
+            transition: 0.3s
+            cursor: pointer
+            border: none
+            &:hover
+                background-color: $brightYellow

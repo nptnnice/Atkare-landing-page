@@ -6,8 +6,9 @@ import Certified from './component/Certified';
 import Whyus from './component/Whyus';
 import Operate from './component/Operate';
 import Footer from './component/Footer';
-import B2Bbooth from './component/B2Bbooth';
-import Retail from './component/Retail';
+// import B2Bbooth from './component/B2Bbooth';
+// import Retail from './component/Retail';
+import Contact from './component/Contact';
 import '../src/style.css'
 import { useState } from 'react';
 
@@ -29,24 +30,24 @@ const App = () => {
       </div>
   );
   }
-  else if(page==='B2Bbooth')
+  else if(page==='contact')
   {
     return(
       <div>
         <Navbar setPage={setPage}/>
-        <B2Bbooth setPage={setPage}/>
+        <Contact />
       </div>
     )
   }
-  else if(page==='retail')
-  {
-    return(
-      <div>
-        <Navbar setPage={setPage}/>
-        <Retail setPage={setPage}/>
-      </div>
-    )
-  }
+  // else if(page==='retail')
+  // {
+  //   return(
+  //     <div>
+  //       <Navbar setPage={setPage}/>
+  //       <Retail setPage={setPage}/>
+  //     </div>
+  //   )
+  // }
 }
 
 export default App;

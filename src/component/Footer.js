@@ -2,7 +2,7 @@ import React from "react";
 import icon from "../assets/images/icon.png";
 import email from "../assets/images/email.png";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className="footer">
       <div className="text-box">
@@ -19,7 +19,9 @@ const Footer = () => {
           การตรวจรายบุคคลสำหรับทั้งองค์กร
         </h2>
       </div>
-      <h2 className="contact-btn">
+      <h2 className="contact-btn" onClick={()=>{
+                    props.setPage('contact')
+                }}>
         ร่วมงานกับเรา
         <p className="arrow">{">"}</p>
       </h2>

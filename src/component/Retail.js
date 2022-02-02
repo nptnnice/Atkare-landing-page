@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import contactbar from "../assets/images/contactbar.png";
+import axios from 'axios'
 
 const Retail = (props) => {
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [purpose, setPurpose] = useState("");
+  const [add, setAdd] = useState("");
+  const [sendStatus,setSendStatus] = useState(false)
+
+  const onSend =(e)=>{
+    e.preventDefault()
+    // axios.post('https://murmuring-stream-75951.herokuapp.com/newContact',{
+    //   name : fname+ ' ' + lname,
+    //   email: email,
+    //   phone_number: phone,
+    //   purpose: purpose,
+    //   add: add,
+    //   type: 'retail'
+    // }).then(res=>{
+    //   alert('ส่งสำเร็จ')
+    // })
+    setSendStatus(true)
+  }
+
+  useEffect(()=>{
+    if(sendStatus==true)
+    {
+      let loop = setInterval(()=>{
+        setSendStatus(false)
+      }, 2000)
+      return () => clearInterval(loop)
+    }
+  },[sendStatus])
+
+
   return (
     <div className="retail">
       <div className="container">
@@ -10,20 +45,20 @@ const Retail = (props) => {
           <div className="move-btn"></div>
           <h2
             onClick={() => {
-              props.setPage("B2Bbooth");
+              props.setForm("B2Bbooth");
             }}
           >
             B2B Booth
           </h2>
           <h1
             onClick={() => {
-              props.setPage("retail");
+              props.setForm("retail");
             }}
           >
             Retail ATK
           </h1>
         </div>
-        <div className="retail-grid">
+        <form className="retail-grid">
           <h1>
             Retail<h6>ATK</h6>
           </h1>
@@ -33,27 +68,86 @@ const Retail = (props) => {
           </p>
           <h2 className="general-topic">ข้อมูลพื้นฐาน</h2>
           <div className="general">
-            <div className="name-box">
-              <h5>ชื่อ</h5>
-              <h5>นามสกุล</h5>
+            <div className="name-flex">
+              <div className="container">
+                <label>ชื่อ</label>
+                <input
+                  type="text"
+                  className="firstname-box"
+                  onChange={(e) => {
+                    setFname(e.target.value);
+                  }}
+                />
+              </div>
+              <div className="container">
+                <label>นามสกุล</label>
+                <input
+                  type="text"
+                  className="lastname-box"
+                  onChange={(e) => {
+                    setLname(e.target.value);
+                  }}
+                />
+              </div>
             </div>
-            <div className="contact-box">
-              <h5 className="email-box">E-mail สำหรับติดต่อกลับ</h5>
-              <h5 className="tel-box">เบอร์โทรศัพท์</h5>
+            <div className="contact-flex">
+              <div className="container">
+                <label>E-mail สำหรับติดต่อกลับ</label>
+                <input
+                  type="text"
+                  className="email-box"
+                  placeholder="Optional"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
+              </div>
+              <div className="container">
+                <label>เบอร์โทรศัพท์</label>
+                <input
+                  type="text"
+                  className="phone-box"
+                  onChange={(e) => {
+                    setPhone(e.target.value);
+                  }}
+                />
+              </div>
             </div>
           </div>
           <h2 className="purpose-topic">
             จุดประสงค์<br></br>การซื้อ ATK
           </h2>
-          <div className="purpose-box">ขายในร้านเภสัชกรของตนเอง (Optional)</div>
+          <textarea
+            type="text"
+            className="purpose-box"
+            placeholder="ขายในร้านเภสัชกรของตนเอง (Optional)"
+            onChange={(e) => {
+              setPurpose(e.target.value);
+            }}
+          />
           <h2 className="add-topic">
             คำถามอื่น ๆ<br></br>เพิ่มเติม
           </h2>
           <div className="additional">
-            <div className="add-box">Optional</div>
-            <div className="send-btn"></div>
+            <textarea
+              type="text"
+              className="add-box"
+              placeholder="Optional"
+              onChange={(e) => {
+                setAdd(e.target.value);
+              }}
+            />
+            {sendStatus==false? 
+            <button type="submit" className="send-btn" onClick={(e)=>onSend(e)}>
+              ส่ง
+            </button>:
+            <button type="submit" className="send-btn" onClick={(e)=>onSend(e)}> 
+              ส่งแล้ว
+            </button>
+            }
+           
           </div>
-        </div>
+        </form>
       </div>
       <img src={contactbar} alt="contactbar"></img>
     </div>

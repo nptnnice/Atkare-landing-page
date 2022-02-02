@@ -42,6 +42,40 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: default;
 }
 
+::-webkit-input-placeholder {
+  color: #00243730;
+}
+
+:-ms-input-placeholder {
+  color: #00243730;
+}
+
+::-ms-input-placeholder {
+  color: #00243730;
+}
+
+::placeholder {
+  color: #00243730;
+}
+
+input:focus, textarea:focus {
+  outline-color: #FFC625;
+}
+
+.img-selected {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.selected {
+  color: #FFFFFF;
+  background-color: #D8A64A;
+}
+
+.selected:hover {
+  background-color: #D8A64A !important;
+}
+
 p {
   font-family: sukhumvitL;
   font-size: 24px;
@@ -150,6 +184,13 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   white-space: nowrap;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav-bar .menu-bar .shopee-btn:hover {
+  color: #FFC625;
+  border-color: #FFC625;
 }
 
 .nav-bar .menu-bar .contact-btn {
@@ -157,6 +198,12 @@ p {
   color: #FFFFFF;
   padding-left: 49px;
   white-space: nowrap;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav-bar .menu-bar .contact-btn:hover {
+  background-color: #FFC625;
 }
 
 .nav-bar .menu-bar .move-pls {
@@ -1247,7 +1294,7 @@ p {
 
 .footer .contact-btn:hover .arrow {
   color: #f55173;
-  padding-left: 14px;
+  padding-left: 15px;
 }
 
 .footer #icon {
@@ -1389,6 +1436,10 @@ p {
   width: 256px;
 }
 
+.b2b-booth .B2B-grid {
+  position: relative;
+}
+
 .b2b-booth .B2B-grid h1 {
   font-family: yaroB;
   font-size: 60px;
@@ -1415,24 +1466,45 @@ p {
 
 .b2b-booth .B2B-grid .general {
   margin-top: 60px;
-}
-
-.b2b-booth .B2B-grid .general h5 {
   font-family: sukhumvitSemiB;
   font-size: 21px;
   line-height: 21px;
 }
 
-.b2b-booth .B2B-grid .general .name-box {
+.b2b-booth .B2B-grid .general .name-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 16px;
           column-gap: 16px;
+  width: 736px;
 }
 
-.b2b-booth .B2B-grid .general .name-box h5::after {
-  content: "";
+.b2b-booth .B2B-grid .general .name-flex .firstname-box, .b2b-booth .B2B-grid .general .name-flex .lastname-box {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-bottom: 16px;
+  width: 360px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #002437;
+  border-radius: 28px;
+  margin-top: 3px;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.b2b-booth .B2B-grid .general .job-box {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-bottom: 16px;
   display: block;
   width: 360px;
   height: 56px;
@@ -1445,39 +1517,22 @@ p {
   cursor: pointer;
 }
 
-.b2b-booth .B2B-grid .general .job-box::after {
-  content: "Optional";
-  padding-top: 17px;
-  padding-left: 22px;
-  padding-bottom: 16px;
-  color: #00243730;
-  display: block;
-  width: 360px;
-  height: 56px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #002437;
-  border-radius: 28px;
-  margin-top: 3px;
-  margin-bottom: 14px;
-  cursor: pointer;
-}
-
-.b2b-booth .B2B-grid .general .contact-box {
+.b2b-booth .B2B-grid .general .contact-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 16px;
           column-gap: 16px;
+  width: 736px;
 }
 
-.b2b-booth .B2B-grid .general .contact-box .email-box::after {
-  content: "Optional";
+.b2b-booth .B2B-grid .general .contact-flex .email-box {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
   padding-top: 17px;
   padding-left: 22px;
   padding-bottom: 16px;
-  color: #00243730;
-  display: block;
   width: 432px;
   height: 56px;
   -webkit-box-sizing: border-box;
@@ -1489,9 +1544,13 @@ p {
   cursor: pointer;
 }
 
-.b2b-booth .B2B-grid .general .contact-box .tel-box::after {
-  content: "";
-  display: block;
+.b2b-booth .B2B-grid .general .contact-flex .phone-box {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-bottom: 16px;
   width: 288px;
   height: 56px;
   -webkit-box-sizing: border-box;
@@ -1509,19 +1568,23 @@ p {
   margin-top: 80px;
 }
 
-.b2b-booth .B2B-grid .company h5 {
+.b2b-booth .B2B-grid .company h5, .b2b-booth .B2B-grid .company label {
   font-family: sukhumvitSemiB;
   font-size: 21px;
   line-height: 21px;
 }
 
-.b2b-booth .B2B-grid .company .company-box {
+.b2b-booth .B2B-grid .company .container {
   margin-top: 86px;
 }
 
-.b2b-booth .B2B-grid .company .company-box::after {
-  content: "";
-  display: block;
+.b2b-booth .B2B-grid .company .container .company-box {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-bottom: 16px;
   width: 736px;
   height: 56px;
   -webkit-box-sizing: border-box;
@@ -1530,6 +1593,7 @@ p {
   border-radius: 28px;
   margin-top: 3px;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .b2b-booth .B2B-grid .company .company-type {
@@ -1554,7 +1618,6 @@ p {
           align-items: center;
   width: 192px;
   height: 192px;
-  background-color: #FFFFFF;
   -webkit-box-shadow: 5px 5px 15px #00000029;
           box-shadow: 5px 5px 15px #00000029;
   -webkit-box-sizing: border-box;
@@ -1562,6 +1625,12 @@ p {
   border-radius: 20px;
   margin-top: 16px;
   cursor: pointer;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.b2b-booth .B2B-grid .company .company-type .img-box:hover {
+  background-color: #D8A64A20;
 }
 
 .b2b-booth .B2B-grid .company .company-type .img-box h4 {
@@ -1594,7 +1663,6 @@ p {
 }
 
 .b2b-booth .B2B-grid .company .other-box {
-  background-color: #FFFFFF;
   -webkit-box-shadow: 5px 5px 15px #00000029;
           box-shadow: 5px 5px 15px #00000029;
   border-radius: 32px;
@@ -1613,6 +1681,12 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.b2b-booth .B2B-grid .company .other-box:hover {
+  background-color: #D8A64A20;
 }
 
 .b2b-booth .B2B-grid .company .other-box img {
@@ -1622,7 +1696,6 @@ p {
 .b2b-booth .B2B-grid .company .other-box h4 {
   font-family: sukhumvitB;
   font-size: 24px;
-  color: #002437;
   cursor: pointer;
 }
 
@@ -1632,18 +1705,12 @@ p {
   margin-top: 59px;
 }
 
-.b2b-booth .B2B-grid .additional {
-  position: relative;
-  width: 736px;
+.b2b-booth .B2B-grid .add-box {
   margin-top: 59px;
-}
-
-.b2b-booth .B2B-grid .additional .add-box {
   font-family: sukhumvitSemiB;
   font-size: 21px;
-  color: #00243730;
-  padding-top: 13px;
-  padding-left: 22px;
+  line-height: 21px;
+  padding: 22px 22px;
   width: 736px;
   height: 253px;
   -webkit-box-sizing: border-box;
@@ -1654,9 +1721,10 @@ p {
   cursor: pointer;
 }
 
-.b2b-booth .B2B-grid .additional .send-btn {
+.b2b-booth .B2B-grid .send-btn {
   position: absolute;
-  right: 0px;
+  right: 128px;
+  bottom: 32px;
   font-family: sukhumvitB;
   font-size: 36px;
   color: #FFFFFF;
@@ -1673,13 +1741,10 @@ p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+  border: none;
 }
 
-.b2b-booth .B2B-grid .additional .send-btn::after {
-  content: "ส่ง";
-}
-
-.b2b-booth .B2B-grid .additional .send-btn:hover {
+.b2b-booth .B2B-grid .send-btn:hover {
   background-color: #FFC625;
 }
 
@@ -1707,6 +1772,7 @@ p {
   padding: 41px 128px 48px 48px;
   -ms-grid-rows: 128px 247px 285px 403px;
       grid-template-rows: 128px 247px 285px 403px;
+  position: relative;
 }
 
 .retail .retail-grid h1 {
@@ -1742,13 +1808,13 @@ p {
   margin-top: 60px;
 }
 
-.retail .retail-grid .general h5 {
+.retail .retail-grid .general label {
   font-family: sukhumvitSemiB;
   font-size: 21px;
   line-height: 21px;
 }
 
-.retail .retail-grid .general .name-box {
+.retail .retail-grid .general .name-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1756,9 +1822,13 @@ p {
           column-gap: 16px;
 }
 
-.retail .retail-grid .general .name-box h5::after {
-  content: "";
-  display: block;
+.retail .retail-grid .general .name-flex .firstname-box, .retail .retail-grid .general .name-flex .lastname-box {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-bottom: 16px;
   width: 360px;
   height: 56px;
   -webkit-box-sizing: border-box;
@@ -1770,7 +1840,7 @@ p {
   cursor: pointer;
 }
 
-.retail .retail-grid .general .contact-box {
+.retail .retail-grid .general .contact-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1778,12 +1848,18 @@ p {
           column-gap: 16px;
 }
 
-.retail .retail-grid .general .contact-box .email-box::after {
-  content: "Optional";
+.retail .retail-grid .general .contact-flex .email-box {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
   padding-top: 17px;
   padding-left: 22px;
   padding-bottom: 16px;
-  color: #00243730;
+  padding-left: 22px;
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
+  color: #002437;
   display: block;
   width: 432px;
   height: 56px;
@@ -1796,8 +1872,13 @@ p {
   cursor: pointer;
 }
 
-.retail .retail-grid .general .contact-box .tel-box::after {
-  content: "";
+.retail .retail-grid .general .contact-flex .phone-box {
+  font-family: sukhumvitSemiB;
+  font-size: 21px;
+  line-height: 21px;
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-bottom: 16px;
   display: block;
   width: 288px;
   height: 56px;
@@ -1819,9 +1900,7 @@ p {
 .retail .retail-grid .purpose-box {
   font-family: sukhumvitSemiB;
   font-size: 21px;
-  color: #00243730;
-  padding-top: 25px;
-  padding-left: 22px;
+  padding: 22px 22px;
   width: 736px;
   height: 253px;
   -webkit-box-sizing: border-box;
@@ -1838,18 +1917,12 @@ p {
   margin-top: 43px;
 }
 
-.retail .retail-grid .additional {
-  position: relative;
-  width: 736px;
-  margin-top: 35px;
-}
-
-.retail .retail-grid .additional .add-box {
+.retail .retail-grid .add-box {
   font-family: sukhumvitSemiB;
   font-size: 21px;
-  color: #00243730;
-  padding-top: 25px;
-  padding-left: 22px;
+  line-height: 21px;
+  margin-top: 35px;
+  padding: 22px 22px;
   width: 736px;
   height: 253px;
   -webkit-box-sizing: border-box;
@@ -1860,9 +1933,10 @@ p {
   cursor: pointer;
 }
 
-.retail .retail-grid .additional .send-btn {
+.retail .retail-grid .send-btn {
   position: absolute;
-  right: 0px;
+  right: 128px;
+  bottom: 48px;
   font-family: sukhumvitB;
   font-size: 36px;
   color: #FFFFFF;
@@ -1879,13 +1953,10 @@ p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+  border: none;
 }
 
-.retail .retail-grid .additional .send-btn::after {
-  content: "ส่ง";
-}
-
-.retail .retail-grid .additional .send-btn:hover {
+.retail .retail-grid .send-btn:hover {
   background-color: #FFC625;
 }
 /*# sourceMappingURL=style.css.map */

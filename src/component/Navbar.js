@@ -16,7 +16,7 @@ const Navbar = (props) => {
                 <li className='move-pls'>Operate ATK</li>
                 <h2 className='shopee-btn move-pls'>Shopee</h2>
                 <h2 className='contact-btn' onClick={()=>{
-                    props.setPage('B2Bbooth')
+                    props.setPage('contact')
                 }}>ติดต่อเรา</h2>
             </ul>
         </div>
