@@ -4,7 +4,7 @@ import mission from '../assets/images/mission.png';
 
 const Vision = () => {
   return (
-    <div>
+    <div className='vision'>
       <div className="vision-flex">
         <div className="container">
           <h2>VISION</h2>

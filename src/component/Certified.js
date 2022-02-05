@@ -1,10 +1,10 @@
 import React from 'react';
 import certified from '../assets/images/certified.png';
 
-const Certified = () => {
+const Certified = (props) => {
   return (
     <div>
-      <div className="certified-head">
+      <div className="certified-head" ref={props.certifiedRef}>
         <img src={certified} alt="certified logo"></img>
         <h1>Our Certified ATK</h1>
       </div>

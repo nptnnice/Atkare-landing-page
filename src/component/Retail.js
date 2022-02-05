@@ -1,6 +1,6 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import contactbar from "../assets/images/contactbar.png";
-import axios from 'axios'
+import axios from "axios";
 
 const Retail = (props) => {
   const [fname, setFname] = useState("");
@@ -9,10 +9,10 @@ const Retail = (props) => {
   const [phone, setPhone] = useState("");
   const [purpose, setPurpose] = useState("");
   const [add, setAdd] = useState("");
-  const [sendStatus,setSendStatus] = useState(false)
+  const [sendStatus, setSendStatus] = useState(false);
 
-  const onSend =(e)=>{
-    e.preventDefault()
+  const onSend = (e) => {
+    e.preventDefault();
     // axios.post('https://murmuring-stream-75951.herokuapp.com/newContact',{
     //   name : fname+ ' ' + lname,
     //   email: email,
@@ -23,19 +23,17 @@ const Retail = (props) => {
     // }).then(res=>{
     //   alert('ส่งสำเร็จ')
     // })
-    setSendStatus(true)
-  }
+    setSendStatus(true);
+  };
 
-  useEffect(()=>{
-    if(sendStatus==true)
-    {
-      let loop = setInterval(()=>{
-        setSendStatus(false)
-      }, 2000)
-      return () => clearInterval(loop)
+  useEffect(() => {
+    if (sendStatus == true) {
+      let loop = setInterval(() => {
+        setSendStatus(false);
+      }, 2000);
+      return () => clearInterval(loop);
     }
-  },[sendStatus])
-
+  }, [sendStatus]);
 
   return (
     <div className="retail">
@@ -137,15 +135,23 @@ const Retail = (props) => {
                 setAdd(e.target.value);
               }}
             />
-            {sendStatus==false? 
-            <button type="submit" className="send-btn" onClick={(e)=>onSend(e)}>
-              ส่ง
-            </button>:
-            <button type="submit" className="send-btn" onClick={(e)=>onSend(e)}> 
-              ส่งแล้ว
-            </button>
-            }
-           
+            {sendStatus == false ? (
+              <button
+                type="submit"
+                className="send-btn"
+                onClick={(e) => onSend(e)}
+              >
+                ส่ง
+              </button>
+            ) : (
+              <button
+                type="submit"
+                className="send-btn"
+                onClick={(e) => onSend(e)}
+              >
+                ส่งแล้ว
+              </button>
+            )}
           </div>
         </form>
       </div>

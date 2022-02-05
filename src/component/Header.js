@@ -2,6 +2,7 @@ import React from "react";
 import AnimaHead from "./AnimaHead";
 import Leftbar from "../assets/images/leftbar.png";
 import Rightbar from "../assets/images/rightbar.png";
+import close from "../assets/images/close.png";
 
 const Header = (props) => {
   return (
@@ -14,11 +15,10 @@ const Header = (props) => {
           <h1>ภูมิคุ้มกันโรคระบาดสำหรับ</h1>
           <AnimaHead />
           <p>
-            เพื่อให้ธุรกิจของคุณดำเนินต่อไปได้แม้มีโรคระบาด<br></br>
+            เพื่อให้ธุรกิจของคุณดำเนินต่อไปได้แม้มีโรคระบาด
             บริษัทจัดจำหน่ายและให้บริการตรวจ ATK
-            ถึงที่พร้อมผู้เชี่ยวชาญและให้บริการระบบ<br></br>
+            ถึงที่พร้อมผู้เชี่ยวชาญและให้บริการระบบ
             สำหรับบันทึกผลการตรวจแบบรายบุคคลเพื่อการใช้งานในระดับองค์กรให้ธุรกิจของคุณ
-            <br></br>
             มีทุกอย่างที่จำเป็นสำหรับการรับมือกับโรคระบาด เช่น COVID-19
           </p>
           <h2 className="contact-btn" onClick={()=>{
