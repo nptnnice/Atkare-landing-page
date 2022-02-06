@@ -21,7 +21,7 @@ const Footer = (props) => {
                     props.setPage('contact')
                 }}>
         ร่วมงานกับเรา
-        <p className="arrow">{">"}</p>
+        <span className="arrow">{">"}</span>
       </h2>
       <img src={icon} alt="icon" id="icon"></img>
       <div className="email-box">

@@ -593,6 +593,7 @@ p {
   .header .buy p {
     font-size: 14px;
     margin-bottom: 12px;
+    width: 230px;
   }
   .header .buy .buy-btn {
     width: 107px;
@@ -647,7 +648,7 @@ p {
 
 .bottom-flex h3 span {
   position: absolute;
-  padding-left: 10px;
+  padding-left: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-family: sukhumvitL;
@@ -658,23 +659,29 @@ p {
 }
 
 .bottom-flex h3:hover span {
-  padding-left: 16px;
+  padding-left: 12px;
 }
 
 @media screen and (max-width: 1350px) {
   .bottom-flex {
     height: 80px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
+    position: relative;
   }
   .bottom-flex p {
     font-size: 14px;
+    text-align: left;
+    width: 266px;
+    -webkit-transform: translateX(-35px);
+            transform: translateX(-35px);
   }
   .bottom-flex h3 {
+    position: absolute;
     font-size: 17px;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
   }
 }
 
@@ -1171,6 +1178,7 @@ p {
     font-size: 21px;
     text-align: right;
     margin-bottom: 262px;
+    margin-right: 32px;
   }
   .vision-flex .container h1 {
     font-size: 32px;
@@ -1197,7 +1205,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 220px;
   text-align: right;
   -webkit-transform: translateX(-28px);
           transform: translateX(-28px);
@@ -1206,9 +1213,11 @@ p {
 .mission-flex img {
   width: 528px;
   height: 456.34px;
-  margin-top: 200px;
-  -webkit-transform: translateY(-160px);
-          transform: translateY(-160px);
+  margin-top: -90px;
+}
+
+.mission-flex .container {
+  margin-top: 80px;
 }
 
 .mission-flex .container h2 {
@@ -1232,12 +1241,17 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: -240px;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .mission-flex .container {
+    margin-top: 38px;
   }
   .mission-flex .container h2 {
     font-size: 21px;
     text-align: right;
     margin-bottom: 262px;
+    margin-right: 32px;
   }
   .mission-flex .container h1 {
     font-size: 32px;
@@ -1250,8 +1264,8 @@ p {
   .mission-flex img {
     width: 279px;
     height: 241px;
-    -webkit-transform: translateY(268px);
-            transform: translateY(268px);
+    -webkit-transform: translateY(310px);
+            transform: translateY(310px);
   }
 }
 
@@ -1267,6 +1281,7 @@ p {
           justify-content: center;
   -webkit-column-gap: 42px;
           column-gap: 42px;
+  margin-top: 285px;
   margin-bottom: 304px;
   -webkit-transform: translateX(-106px);
           transform: translateX(-106px);
@@ -1289,8 +1304,8 @@ p {
     margin-bottom: 178px;
     -webkit-column-gap: 15px;
             column-gap: 15px;
-    -webkit-transform: translateX(-30px);
-            transform: translateX(-30px);
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
   }
   .certified-head h1 {
     font-size: 25px;
@@ -1388,29 +1403,33 @@ p {
   text-align: center;
 }
 
-.whyus .whyus-flex img {
+.whyus .whyus-flex .container1 img, .whyus .whyus-flex .container2 img {
   width: 184px;
   margin-bottom: 30px;
   -webkit-transform: translateX(8px);
           transform: translateX(8px);
 }
 
-.whyus .whyus-flex h4 {
+.whyus .whyus-flex .container1 h4, .whyus .whyus-flex .container2 h4 {
   font-family: yaroRg;
   font-size: 24px;
   color: #A50037;
 }
 
-.whyus .whyus-flex h3 {
+.whyus .whyus-flex .container1 h3, .whyus .whyus-flex .container2 h3 {
   font-family: yaroB;
   font-size: 36px;
   color: #002437;
 }
 
-.whyus .whyus-flex h2 {
+.whyus .whyus-flex .container1 h2, .whyus .whyus-flex .container2 h2 {
   font-family: yaroB;
   font-size: 48px;
   color: #002437;
+}
+
+.whyus .whyus-flex .container1 p, .whyus .whyus-flex .container2 p {
+  width: 406px;
 }
 
 @media screen and (max-width: 1350px) {
@@ -1452,17 +1471,21 @@ p {
   }
   .whyus .whyus-flex .container1 p, .whyus .whyus-flex .container2 p {
     font-size: 14px;
+    width: 201px;
   }
   .whyus .whyus-flex .container2 {
     text-align: right;
   }
   .whyus .whyus-flex .container2 img {
-    -webkit-transform: translateX(220px);
-            transform: translateX(220px);
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
   }
   .whyus .whyus-flex .container2 .record-flex {
-    -webkit-transform: translateX(-160px);
-            transform: translateX(-160px);
+    -webkit-transform: translateX(-154px);
+            transform: translateX(-154px);
+  }
+  .whyus .whyus-flex .container2 .record-flex h2 {
+    width: 200px;
   }
 }
 
@@ -1674,8 +1697,12 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-column-gap: 24px;
-            column-gap: 24px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    margin: auto;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+    width: 375px;
   }
   .operate .operate-mobile .person-flex {
     -webkit-box-orient: vertical;
@@ -1683,16 +1710,17 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 46px;
+    white-space: nowrap;
   }
   .operate .operate-mobile .person-flex img {
     width: 81px;
     height: 128px;
   }
-  .operate .operate-mobile .person-flex h3 {
+  .operate .operate-mobile .person-flex h3, .operate .operate-mobile .person-flex h2 {
     font-size: 18px;
   }
-  .operate .operate-mobile .person-flex h2 {
-    font-size: 24px;
+  .operate .operate-mobile .person-flex p {
+    font-size: 14px;
   }
   .operate .operate-mobile .operate-flex {
     -webkit-box-orient: vertical;
@@ -1715,7 +1743,6 @@ p {
     height: 53px;
     border-radius: 47px 0 0 47px;
     margin: 0;
-    margin-top: 9px;
   }
   .operate .operate-mobile .operate-flex .container1 .list-box1 p, .operate .operate-mobile .operate-flex .container1 .list-box2 p, .operate .operate-mobile .operate-flex .container1 .list-box3 p {
     width: 187px;
@@ -1744,6 +1771,7 @@ p {
   .operate .operate-mobile .operate-flex .container1 .list-box2 {
     width: 222px;
     height: 55px;
+    margin-top: 9px;
   }
   .operate .operate-mobile .operate-flex .container1 .list-box2 p {
     width: 160px;
@@ -1759,6 +1787,7 @@ p {
   .operate .operate-mobile .operate-flex .container1 .list-box3 {
     width: 223px;
     height: 55px;
+    margin-top: 9px;
   }
   .operate .operate-mobile .operate-flex .container1 .list-box3 p {
     width: 167px;
@@ -1995,6 +2024,8 @@ p {
   .footer {
     margin-top: 20px;
     height: 514px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .footer .text-box {
     width: 279px;
@@ -2011,12 +2042,12 @@ p {
   .footer .text-box h1 {
     font-size: 31px;
     line-height: 31px;
-    width: 218px;
+    width: 200px;
   }
   .footer .text-box h2 {
     font-size: 15px;
     line-height: 15px;
-    width: 218px;
+    width: 210px;
   }
   .footer .contact-btn {
     width: 192px;
@@ -2024,13 +2055,50 @@ p {
     font-size: 21px;
     line-height: 21px;
     padding-left: 22px;
+    -webkit-transform: unset;
+            transform: unset;
+    -webkit-transform: translate(36px, -12px);
+            transform: translate(36px, -12px);
   }
   .footer .contact-btn .arrow {
     font-size: 21px;
     line-height: 21px;
     width: 27px;
     height: 27px;
-    right: 0;
+    left: unset;
+    right: 7px;
+    top: 7px;
+    padding-top: 4px;
+    padding-left: 8px;
+  }
+  .footer .contact-btn:hover .arrow {
+    padding-left: 12px;
+  }
+  .footer #icon {
+    display: none;
+  }
+  .footer .email-box {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: unset;
+    margin-top: 66px;
+  }
+  .footer .email-box #email {
+    width: 26px;
+  }
+  .footer .email-box h4 {
+    margin-top: 4px;
+    font-size: 17px;
+  }
+  .footer p {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 10px;
+    white-space: nowrap;
+    bottom: unset;
+    margin-top: 121px;
   }
 }
 
