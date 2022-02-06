@@ -1146,6 +1146,10 @@ p {
   margin-top: 149.5px;
 }
 
+.vision-flex #bg1 {
+  display: none;
+}
+
 .vision-flex .container h2 {
   font-family: yaroB;
   font-size: 36px;
@@ -1165,6 +1169,7 @@ p {
 
 @media screen and (max-width: 1350px) {
   .vision-flex {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1172,7 +1177,19 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: auto;
     margin-top: 64px;
+    width: 375px;
+  }
+  .vision-flex #bg1 {
+    display: unset;
+    position: absolute;
+    width: 136px;
+    height: 136px;
+    right: 0;
+    -webkit-transform: translate(-24px, 80px);
+            transform: translate(-24px, 80px);
+    z-index: -1;
   }
   .vision-flex .container h2 {
     font-size: 21px;
@@ -1216,6 +1233,14 @@ p {
   margin-top: -90px;
 }
 
+.mission-flex #bg2 {
+  display: none;
+}
+
+.mission-flex #bg3 {
+  display: none;
+}
+
 .mission-flex .container {
   margin-top: 80px;
 }
@@ -1243,6 +1268,29 @@ p {
             align-items: center;
     -webkit-transform: unset;
             transform: unset;
+    position: relative;
+    width: 375px;
+    margin: auto;
+  }
+  .mission-flex #bg2 {
+    display: unset;
+    position: absolute;
+    width: 247px;
+    height: 247px;
+    right: 0;
+    -webkit-transform: translate(24px, -96px);
+            transform: translate(24px, -96px);
+    z-index: -1;
+  }
+  .mission-flex #bg3 {
+    display: unset;
+    position: absolute;
+    width: 138px;
+    height: 138px;
+    left: 0;
+    -webkit-transform: translate(8px, 190px);
+            transform: translate(8px, 190px);
+    z-index: -1;
   }
   .mission-flex .container {
     margin-top: 38px;
@@ -1250,7 +1298,7 @@ p {
   .mission-flex .container h2 {
     font-size: 21px;
     text-align: right;
-    margin-bottom: 262px;
+    margin-bottom: 297px;
     margin-right: 32px;
   }
   .mission-flex .container h1 {
@@ -1264,8 +1312,8 @@ p {
   .mission-flex img {
     width: 279px;
     height: 241px;
-    -webkit-transform: translateY(310px);
-            transform: translateY(310px);
+    -webkit-transform: translateY(324px);
+            transform: translateY(324px);
   }
 }
 
@@ -1282,7 +1330,7 @@ p {
   -webkit-column-gap: 42px;
           column-gap: 42px;
   margin-top: 285px;
-  margin-bottom: 304px;
+  margin-bottom: 178px;
   -webkit-transform: translateX(-106px);
           transform: translateX(-106px);
 }
@@ -1327,6 +1375,10 @@ p {
           column-gap: 132px;
 }
 
+.ATK #bg4 {
+  display: none;
+}
+
 .ATK .container {
   text-align: center;
 }
@@ -1368,6 +1420,20 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 178px;
+    width: 375px;
+    margin: auto;
+    position: relative;
+  }
+  .ATK #bg4 {
+    display: unset;
+    position: absolute;
+    width: 324px;
+    height: 324px;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(-110px, -220px);
+            transform: translate(-110px, -220px);
+    z-index: -1;
   }
   .ATK .container h2 {
     font-size: 24px;
@@ -1381,6 +1447,10 @@ p {
   .ATK .container h3 span {
     padding-left: 6px;
   }
+}
+
+.whyus #bg5 {
+  display: none;
 }
 
 .whyus h1 {
@@ -1433,6 +1503,22 @@ p {
 }
 
 @media screen and (max-width: 1350px) {
+  .whyus {
+    position: relative;
+    width: 375px;
+    margin: auto;
+  }
+  .whyus #bg5 {
+    display: unset;
+    position: absolute;
+    width: 277px;
+    height: 277px;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(-16px, -164px);
+            transform: translate(-16px, -164px);
+    z-index: -1;
+  }
   .whyus h1 {
     font-size: 28px;
     margin-top: 103px;
@@ -1541,6 +1627,10 @@ p {
 
 .operate {
   margin-bottom: 224px;
+}
+
+.operate #bg6 {
+  display: none;
 }
 
 .operate h1 {
@@ -1682,6 +1772,19 @@ p {
 @media screen and (max-width: 1350px) {
   .operate {
     margin-bottom: 0;
+    position: relative;
+    width: 375px;
+    margin: auto;
+  }
+  .operate #bg6 {
+    display: unset;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 0;
+    -webkit-transform: translate(-16px, 48px);
+            transform: translate(-16px, 48px);
+    z-index: -1;
   }
   .operate h1 {
     font-size: 28px;
@@ -1929,6 +2032,10 @@ p {
   width: 523px;
 }
 
+.footer #bg7, .footer #bg8 {
+  display: none;
+}
+
 .footer .contact-btn {
   width: 311px;
   margin: auto;
@@ -2026,6 +2133,7 @@ p {
     height: 514px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    z-index: 0;
   }
   .footer .text-box {
     width: 279px;
@@ -2038,6 +2146,7 @@ p {
     padding: 23px 29px 24px 32px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    position: relative;
   }
   .footer .text-box h1 {
     font-size: 31px;
@@ -2048,6 +2157,35 @@ p {
     font-size: 15px;
     line-height: 15px;
     width: 210px;
+  }
+  .footer .bg {
+    width: 375px;
+    height: 514px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .footer .bg #bg7 {
+    display: unset;
+    position: absolute;
+    width: 208px;
+    height: 208px;
+    left: 0;
+    -webkit-transform: translate(-48px, -24px);
+            transform: translate(-48px, -24px);
+    z-index: -1;
+  }
+  .footer .bg #bg8 {
+    display: unset;
+    position: absolute;
+    width: 403px;
+    height: 403px;
+    right: 0;
+    -webkit-transform: translate(150px, 70px);
+            transform: translate(150px, 70px);
+    z-index: -1;
   }
   .footer .contact-btn {
     width: 192px;

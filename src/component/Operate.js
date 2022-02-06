@@ -1,10 +1,12 @@
 import React from "react";
 import man from "../assets/images/man.png";
 import woman from "../assets/images/woman.png";
+import bg6 from "../assets/images/bg6.png";
 
 const Operate = (props) => {
   return (
     <div className="operate" ref={props.operateRef}>
+      <img src={bg6} alt="bg6" id='bg6' />
       <h1>How to operate ATKare</h1>
       <div className="operate-mobile">
         <div className="person-flex">

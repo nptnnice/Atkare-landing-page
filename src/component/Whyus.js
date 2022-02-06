@@ -1,10 +1,12 @@
 import React from "react";
 import hightraffic from "../assets/images/hightraffic.png";
 import record from "../assets/images/record.png";
+import bg5 from '../assets/images/bg5.png';
 
 const Whyus = (props) => {
   return (
     <div className="whyus" ref={props.whyusRef}>
+      <img src={bg5} alt="bg5" id="bg5" />
       <h1>Why Us ?</h1>
       <div className="whyus-flex">
         <div className="container1">

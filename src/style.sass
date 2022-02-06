@@ -2272,6 +2272,8 @@ p
     column-gap: 117px
     justify-content: center
     margin-top: 149.5px
+    #bg1
+        display: none
     .container
         h2
             font-family: yaroB
@@ -2286,9 +2288,20 @@ p
         height: 394.5px
 
     @media screen and (max-width: 1350px)
+        position: relative
         flex-direction: column
         align-items: center
+        margin: auto
         margin-top: 64px
+        width: 375px
+        #bg1
+            display: unset
+            position: absolute
+            width: 136px
+            height: 136px
+            right: 0
+            transform: translate(-24px,80px)
+            z-index: -1
         .container
             h2
                 font-size: 21px
@@ -2319,6 +2332,10 @@ p
         height: 456.34px
         margin-top: -90px
         // transform: translateY(-160px)
+    #bg2
+        display: none
+    #bg3
+        display: none
     .container
         margin-top: 80px
         h2
@@ -2335,12 +2352,31 @@ p
         align-items: center
         // margin-top: -240px
         transform: unset
+        position: relative
+        width: 375px
+        margin: auto
+        #bg2
+            display: unset
+            position: absolute
+            width: 247px
+            height: 247px
+            right: 0
+            transform: translate(24px,-96px)
+            z-index: -1
+        #bg3
+            display: unset
+            position: absolute
+            width: 138px
+            height: 138px
+            left: 0
+            transform: translate(8px,190px)
+            z-index: -1
         .container
             margin-top: 38px
             h2
                 font-size: 21px
                 text-align: right
-                margin-bottom: 262px
+                margin-bottom: 297px
                 margin-right: 32px
             h1
                 font-size: 32px
@@ -2352,7 +2388,7 @@ p
             width: 279px
             height: 241px
             // margin-top: 80px
-            transform: translateY(310px)
+            transform: translateY(324px)
 
 .certified-head
     display: flex
@@ -2360,7 +2396,7 @@ p
     justify-content: center
     column-gap: 42px
     margin-top: 285px
-    margin-bottom: 304px
+    margin-bottom: 178px
     transform: translateX(-106px)
     img
         width: 176px
@@ -2385,6 +2421,8 @@ p
     display: flex
     justify-content: center
     column-gap: 132px
+    #bg4
+        display: none
     .container
         text-align: center
         h2
@@ -2410,6 +2448,18 @@ p
     @media screen and (max-width: 1350px)
         flex-direction: column
         row-gap: 178px
+        width: 375px
+        margin: auto
+        position: relative
+        #bg4
+            display: unset
+            position: absolute
+            width: 324px
+            height: 324px
+            left: 0
+            top: 0
+            transform: translate(-110px,-220px)
+            z-index: -1
         .container
             h2
                 font-size: 24px
@@ -2421,6 +2471,8 @@ p
                     padding-left: 6px
 
 .whyus
+    #bg5
+        display: none
     h1
         font-family: yaroB
         font-size: 72px
@@ -2453,6 +2505,18 @@ p
                 width: 406px
 
     @media screen and (max-width: 1350px)
+        position: relative
+        width: 375px
+        margin: auto
+        #bg5
+            display: unset
+            position: absolute
+            width: 277px
+            height: 277px
+            left: 0
+            top: 0
+            transform: translate(-16px,-164px)
+            z-index: -1
         h1
             font-size: 28px
             margin-top: 103px
@@ -2526,6 +2590,8 @@ p
 
 .operate
     margin-bottom: 224px
+    #bg6
+        display: none
     h1
         font-family: yaroB
         font-size: 72px
@@ -2606,6 +2672,17 @@ p
 
     @media screen and (max-width: 1350px)
         margin-bottom: 0
+        position: relative
+        width: 375px
+        margin: auto
+        #bg6
+            display: unset
+            position: absolute
+            width: 450px
+            height: 450px
+            left: 0
+            transform: translate(-16px,48px)
+            z-index: -1
         h1
             font-size: 28px
             width: 238px
@@ -2789,6 +2866,8 @@ p
             color: $black
             line-height: 48px
             width: 523px
+    #bg7, #bg8
+            display: none
     .contact-btn
         @extend .btn
         width: 311px
@@ -2855,6 +2934,7 @@ p
         margin-top: 20px
         height: 514px
         box-sizing: border-box
+        z-index: 0
         .text-box
             width: 279px
             height: 264px
@@ -2862,6 +2942,7 @@ p
             row-gap: 18px
             padding: 23px 29px 24px 32px
             box-sizing: border-box
+            position: relative
             h1
                 font-size: 31px
                 line-height: 31px
@@ -2870,6 +2951,29 @@ p
                 font-size: 15px
                 line-height: 15px
                 width: 210px
+        .bg
+            width: 375px
+            height: 514px
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            #bg7
+                display: unset
+                position: absolute
+                width: 208px
+                height: 208px
+                left: 0
+                transform: translate(-48px, -24px)
+                z-index: -1
+            #bg8
+                display: unset
+                position: absolute
+                width: 403px
+                height: 403px
+                right: 0
+                transform: translate(150px, 70px)
+                z-index: -1
         .contact-btn
             width: 192px
             height: 41px
@@ -2910,7 +3014,6 @@ p
             white-space: nowrap
             bottom: unset
             margin-top: 121px
-
 
 .head-contact
     font-family: sukhumvitB

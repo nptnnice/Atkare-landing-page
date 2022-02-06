@@ -1,11 +1,15 @@
-import React from 'react';
-import vision from '../assets/images/vision.png';
-import mission from '../assets/images/mission.png';
+import React from "react";
+import vision from "../assets/images/vision.png";
+import mission from "../assets/images/mission.png";
+import bg1 from "../assets/images/bg1.png";
+import bg2 from "../assets/images/bg2.png";
+import bg3 from "../assets/images/bg3.png";
 
 const Vision = () => {
   return (
-    <div className='vision'>
+    <div>
       <div className="vision-flex">
+        <img src={bg1} alt="bg1" id="bg1" />
         <div className="container">
           <h2>VISION</h2>
           <h1>ยกระดับมาตรฐาน</h1>
@@ -18,6 +22,7 @@ const Vision = () => {
         <img src={vision} alt="vision"></img>
       </div>
       <div className="mission-flex">
+        <img src={bg2} alt="bg2" id="bg2" />
         <img src={mission} alt="mission"></img>
         <div className="container">
           <h2>MISSION</h2>
@@ -28,6 +33,7 @@ const Vision = () => {
             ให้ดำเนินต่อไปได้ในยุคโรคระบาด
           </p>
         </div>
+        <img src={bg3} alt="bg3" id="bg3" />
       </div>
     </div>
   );

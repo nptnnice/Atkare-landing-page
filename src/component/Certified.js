@@ -1,5 +1,6 @@
 import React from 'react';
 import certified from '../assets/images/certified.png';
+import bg4 from '../assets/images/bg4.png';
 
 const Certified = (props) => {
   return (
@@ -9,6 +10,7 @@ const Certified = (props) => {
         <h1>Our Certified ATK</h1>
       </div>
       <div className="ATK">
+      <img src={bg4} alt="bg4" id="bg4" />
         <div className="container">
           <h2>HIPBiotech</h2><br></br>
           <p>
