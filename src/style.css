@@ -561,6 +561,7 @@ p {
   .header p {
     font-size: 14px;
     max-width: 304px;
+    margin-top: 100px;
   }
   .header .contact-btn {
     width: 192px;
@@ -1131,6 +1132,341 @@ p {
           transform: scale(1.4) translate(-35.71429%, -72px) !important;
   margin-top: -20px;
   margin-left: 0px;
+}
+
+@media screen and (max-width: 1350px) {
+  .animation {
+    width: 375px;
+  }
+  .animation .top {
+    -webkit-transform: translate(-50%, -286px);
+            transform: translate(-50%, -286px);
+  }
+  .animation .bottom {
+    -webkit-transform: translate(-50%, -32px);
+            transform: translate(-50%, -32px);
+  }
+  .animation h1 {
+    font-size: 40px;
+    font-family: sukhumvitB;
+  }
+  .animation .one {
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+    opacity: 0;
+  }
+  .animation .one.first {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .one.second {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .one.third {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .one.fourth {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -67px);
+            transform: translate(-50%, -67px);
+  }
+  .animation .one.fifth {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .one.sixth {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .one.seventh {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .two {
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+    opacity: 0;
+  }
+  .animation .two.first {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .two.second {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .two.third {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .two.fourth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .two.fifth {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -67px);
+            transform: translate(-50%, -67px);
+  }
+  .animation .two.sixth {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .two.seventh {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .three {
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .three.first {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .three.second {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .three.third {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .three.fourth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .three.fifth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .three.sixth {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -67px);
+            transform: translate(-50%, -67px);
+  }
+  .animation .three.seventh {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .four {
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .four.first {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .four.second {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .four.third {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .four.fourth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .four.fifth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .four.sixth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .four.seventh {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -67px);
+            transform: translate(-50%, -67px);
+  }
+  .animation .five {
+    -webkit-transform: translate(-50%, -67px);
+            transform: translate(-50%, -67px);
+  }
+  .animation .five.first {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .five.second {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .five.third {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .five.fourth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .five.fifth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .five.sixth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .five.seventh {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .six {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+    opacity: 0;
+  }
+  .animation .six.first {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -67px);
+            transform: translate(-50%, -67px);
+  }
+  .animation .six.second {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .six.third {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .six.fourth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .six.fifth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .six.sixth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .six.seventh {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .seven {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+    opacity: 0;
+  }
+  .animation .seven.first {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .seven.second {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -67px);
+            transform: translate(-50%, -67px);
+  }
+  .animation .seven.third {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .seven.fourth {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .seven.fifth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .seven.sixth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .seven.seventh {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .eight {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+    opacity: 0;
+  }
+  .animation .eight.first {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .eight.second {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+  .animation .eight.third {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -67px);
+            transform: translate(-50%, -67px);
+  }
+  .animation .eight.fourth {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .eight.fifth {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -180px);
+            transform: translate(-50%, -180px);
+  }
+  .animation .eight.sixth {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
+  .animation .eight.seventh {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -250px);
+            transform: translate(-50%, -250px);
+  }
 }
 
 .vision-flex {
