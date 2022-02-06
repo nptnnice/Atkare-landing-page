@@ -22,7 +22,12 @@ const Header = (props) => {
             มีทุกอย่างที่จำเป็นสำหรับการรับมือกับโรคระบาด เช่น COVID-19
           </p>
           <h2 className="contact-btn" onClick={()=>{
-                    props.setPage('contact')
+                    props.setPage('contact');
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth",
+                    });
                 }}>
             ร่วมงานกับเรา
             <p className="arrow">{">"}</p>

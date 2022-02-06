@@ -25,17 +25,24 @@ const Footer = (props) => {
         className="contact-btn"
         onClick={() => {
           props.setPage("contact");
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
         }}
       >
         ร่วมงานกับเรา
         <span className="arrow">{">"}</span>
       </h2>
-      <img src={icon} alt="icon" id="icon"></img>
-      <div className="email-box">
-        <img src={email} alt="email" id="email"></img>
-        <h4>ATKareTH@gmail.com</h4>
+      <div className="footiest">
+        <img src={icon} alt="icon" id="icon"></img>
+        <div className="email-box">
+          <img src={email} alt="email" id="email"></img>
+          <h4>ATKareTH@gmail.com</h4>
+        </div>
+        <p>© 2022 Pinpoint Inter Group CO., LTD. All rights reserved.</p>
       </div>
-      <p>© 2022 Pinpoint Inter Group CO., LTD. All rights reserved.</p>
     </div>
   );
 };

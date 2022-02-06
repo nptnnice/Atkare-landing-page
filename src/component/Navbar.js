@@ -2,16 +2,20 @@ import React from "react";
 import logo from "../assets/images/logo.png";
 import close from "../assets/images/close.png";
 import email from "../assets/images/email.png";
-import {useState} from 'react';
+import { useState } from "react";
 
-const Navbar = (props) => { 
-
+const Navbar = (props) => {
   return (
     <div className="nav-bar">
       <div
-        className="logo" 
+        className="logo"
         onClick={() => {
           props.setPage("home");
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
         }}
       >
         <img alt="logo" src={logo} />
@@ -21,6 +25,7 @@ const Navbar = (props) => {
           <li
             className="move-pls"
             onClick={() => {
+              props.setPage("home");
               props.scrollToCertified();
             }}
           >
@@ -29,6 +34,7 @@ const Navbar = (props) => {
           <li
             className="move-pls"
             onClick={() => {
+              props.setPage("home");
               props.scrollToWhyus();
             }}
           >
@@ -37,6 +43,7 @@ const Navbar = (props) => {
           <li
             className="move-pls"
             onClick={() => {
+              props.setPage("home");
               props.scrollToOperate();
             }}
           >
@@ -47,13 +54,18 @@ const Navbar = (props) => {
             className="contact-btn"
             onClick={() => {
               props.setPage("contact");
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
             }}
           >
             ติดต่อเรา
           </h2>
         </ul>
       </div>
-      <div className="nav-btn" >
+      <div className="nav-btn">
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>

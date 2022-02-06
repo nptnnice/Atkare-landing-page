@@ -50,6 +50,7 @@ const App = () => {
     console.log(operateRef);
   }, [operateRef]);
 
+
   if (page === "home") {
     return (
       <div>
