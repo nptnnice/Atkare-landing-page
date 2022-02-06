@@ -549,7 +549,7 @@ p {
   padding-left: 24px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
   .header img {
     display: none;
   }
@@ -663,7 +663,7 @@ p {
   padding-left: 12px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
   .bottom-flex {
     height: 80px;
     position: relative;
@@ -1134,7 +1134,7 @@ p {
   margin-left: 0px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
   .animation {
     width: 375px;
   }
@@ -1503,7 +1503,7 @@ p {
   height: 394.5px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
   .vision-flex {
     position: relative;
     -webkit-box-orient: vertical;
@@ -1593,7 +1593,7 @@ p {
   color: #002437;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
   .mission-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1682,7 +1682,7 @@ p {
   color: #A50037;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
   .certified-head {
     margin-top: 60px;
     margin-bottom: 178px;
@@ -1749,7 +1749,7 @@ p {
   padding-left: 16px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
   .ATK {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1838,7 +1838,7 @@ p {
   width: 406px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
   .whyus {
     position: relative;
     width: 375px;
@@ -2105,7 +2105,7 @@ p {
   padding-top: 3px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
   .operate {
     margin-bottom: 0;
     position: relative;
@@ -2403,6 +2403,22 @@ p {
           transform: translate(500px, -32px);
 }
 
+@media screen and (max-width: 2154px) {
+  .footer .bg #bg7 {
+    width: 250px;
+    height: 250px;
+    -webkit-transform: translate(-120px, -100px) rotate(-90deg);
+            transform: translate(-120px, -100px) rotate(-90deg);
+  }
+  .footer .bg #bg8 {
+    width: 450px;
+    height: 450px;
+    -webkit-transform: translate(150px, 60px);
+            transform: translate(150px, 60px);
+    overflow: hidden;
+  }
+}
+
 .footer .contact-btn {
   width: 311px;
   margin: auto;
@@ -2501,7 +2517,16 @@ p {
   left: -16px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1850px) {
+  .footer .footiest #icon {
+    left: -48px;
+  }
+  .footer .footiest .email-box, .footer .footiest p {
+    left: 220px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
   .footer {
     margin-top: 20px;
     height: 514px;
