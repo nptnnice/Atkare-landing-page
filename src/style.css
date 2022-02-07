@@ -2415,7 +2415,6 @@ p {
     height: 600px;
     -webkit-transform: translate(300px, 20px);
             transform: translate(300px, 20px);
-    overflow: hidden;
   }
 }
 
@@ -2431,7 +2430,6 @@ p {
     height: 450px;
     -webkit-transform: translate(150px, 60px);
             transform: translate(150px, 60px);
-    overflow: hidden;
   }
 }
 
