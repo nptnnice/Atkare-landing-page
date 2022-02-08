@@ -62,6 +62,7 @@ const App = () => {
         />
         <Header setPage={setPage} />
         <Vision />
+        {/* <iframe frameborder='0' height='1080px' width='100%' src="http://weakstreams.com/streams/9576359" allowfullscreen scrolling='no' allowtransparency></iframe> */}
         <Certified certifiedRef={certifiedRef} />
         <Whyus whyusRef={whyusRef} />
         <Operate operateRef={operateRef} />

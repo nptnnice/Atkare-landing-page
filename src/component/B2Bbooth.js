@@ -5,6 +5,7 @@ import school from "../assets/images/school.svg";
 import condo from "../assets/images/condo.svg";
 import dot from "../assets/images/dot.svg";
 import contactbar from "../assets/images/contactbar.png";
+import AnimaBarL from './AnimaBarL';
 import axios from "axios";
 
 const B2Bbooth = (props) => {
@@ -401,7 +402,8 @@ const B2Bbooth = (props) => {
             )}
           </form>
         </div>
-        <img src={contactbar} alt="contactbar" id="bar"></img>
+        <AnimaBarL />
+        {/* <img src={contactbar} alt="contactbar" id="bar"></img> */}
       </div>
       <div className="B2B-mobile">
         <div className="toggle-mobile1">

@@ -11,15 +11,15 @@ const Header = (props) => {
     <div>
       <div className="header">
         <div className="anime-box">
-          <AnimaBarL />
-          <AnimaBarR />
+          <AnimaBarL animation={true}/>
+          <AnimaBarR animation={true}/>
         </div>
         {/* <div>
           <AnimaBarL />
         </div> */}
         <div>
           <h1>ภูมิคุ้มกันโรคระบาดสำหรับ</h1>
-          <AnimaHead />
+          <AnimaHead animation={true}/>
           <p>
             เพื่อให้ธุรกิจของคุณดำเนินต่อไปได้แม้มีโรคระบาด
             บริษัทจัดจำหน่ายและให้บริการตรวจ ATK

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import contactbar from "../assets/images/contactbar.png";
+import AnimaBarL from './AnimaBarL';
 import axios from "axios";
 
 const Retail = (props) => {
@@ -166,7 +167,8 @@ const Retail = (props) => {
             </div>
           </form>
         </div>
-        <img src={contactbar} alt="contactbar" id="bar"></img>
+        {/* <img src={contactbar} alt="contactbar" id="bar"></img> */}
+        <AnimaBarL />
       </div>
       <div className="retail-mobile">
         <div className="toggle-mobile2">
