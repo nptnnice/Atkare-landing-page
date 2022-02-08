@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8c71a282.css",
+    "main.js": "/static/js/main.567f0fb3.js",
+    "static/js/787.9c91f155.chunk.js": "/static/js/787.9c91f155.chunk.js",
+    "static/media/mission.png": "/static/media/mission.0fc1b3d79deae78372bc.png",
+    "static/media/contactbar.png": "/static/media/contactbar.3c102dae74de314145fb.png",
+    "static/media/SukhumvitSet-Light.ttf": "/static/media/SukhumvitSet-Light.dd01d5baeefa624cb699.ttf",
+    "static/media/vision.png": "/static/media/vision.8d4dbd1a0f9bfe95e923.png",
+    "static/media/SukhumvitSet-Bold.ttf": "/static/media/SukhumvitSet-Bold.199b4d73dcf8e8dedd71.ttf",
+    "static/media/SukhumvitSet-Medium.ttf": "/static/media/SukhumvitSet-Medium.e1fd49b5e0114c002dff.ttf",
+    "static/media/SukhumvitSet-SemiBold.ttf": "/static/media/SukhumvitSet-SemiBold.605549356e5123f57d82.ttf",
+    "static/media/YaroRg-Bold.ttf": "/static/media/YaroRg-Bold.708012ae6a94f7f98b73.ttf",
+    "static/media/YaroRg.ttf": "/static/media/YaroRg.69e2fec22244ee6aa28c.ttf",
+    "static/media/leftbar.png": "/static/media/leftbar.873a1dfac85aaebe3342.png",
+    "static/media/rightbar.png": "/static/media/rightbar.cc44eff1d4a6a2ba67b5.png",
+    "static/media/certified.png": "/static/media/certified.96b8e27bdb68bc14f90a.png",
+    "static/media/icon.png": "/static/media/icon.9dc73f1c9873a6df4e29.png",
+    "static/media/bg6.png": "/static/media/bg6.ea65ac758f8f8d118b07.png",
+    "static/media/bg8.png": "/static/media/bg8.a0d75bcd4c450b04d716.png",
+    "static/media/logo.png": "/static/media/logo.dbd2730aaa2192cff931.png",
+    "static/media/bg2.png": "/static/media/bg2.fb9cc7a6b18d57d62591.png",
+    "static/media/bg4.png": "/static/media/bg4.f66f922083c4d690b964.png",
+    "static/media/mall.svg": "/static/media/mall.896d2f0d73314519f3cb9fa6c9b3391f.svg",
+    "static/media/factory.svg": "/static/media/factory.60c8acae487e862b28326f653bcaa31d.svg",
+    "static/media/school.svg": "/static/media/school.f14fcbb5cfb03b35801be1461ed30d6f.svg",
+    "static/media/condo.svg": "/static/media/condo.7fdf27029e9b55b50681b7552bec79ce.svg",
+    "static/media/dot.svg": "/static/media/dot.837158de6bb4346d301d56b8422192a0.svg",
+    "index.html": "/index.html",
+    "main.8c71a282.css.map": "/static/css/main.8c71a282.css.map",
+    "main.567f0fb3.js.map": "/static/js/main.567f0fb3.js.map",
+    "787.9c91f155.chunk.js.map": "/static/js/787.9c91f155.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c71a282.css",
+    "static/js/main.567f0fb3.js"
+  ]
+}

@@ -3,13 +3,16 @@ import AnimaHead from "./AnimaHead";
 import Leftbar from "../assets/images/leftbar.png";
 import Rightbar from "../assets/images/rightbar.png";
 import close from "../assets/images/close.png";
+import AnimaBarL from "./AnimaBarL";
+import AnimaBarR from './AnimaBarR';
 
 const Header = (props) => {
   return (
     <div>
       <div className="header">
         <div>
-          <img src={Leftbar} alt="left"></img>
+          <AnimaBarL />
+          {/* <img src={Leftbar} alt="left"></img> */}
         </div>
         <div>
           <h1>ภูมิคุ้มกันโรคระบาดสำหรับ</h1>
@@ -41,7 +44,8 @@ const Header = (props) => {
           </div>
         </div>
         <div>
-          <img src={Rightbar} alt="left"></img>
+          {/* <img src={Rightbar} alt="left"></img> */}
+          <AnimaBarR />
         </div>
       </div>
       <div className="bottom-flex">
