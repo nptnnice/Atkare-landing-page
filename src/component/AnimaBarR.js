@@ -22,6 +22,10 @@ const AnimaBarR = () => {
         </div>
       </div>
       <div className="col2">
+        <div className="move-bar3">
+          <div className="circle-box"></div>
+          <div className="rec-box"></div>
+        </div>
         <div className="move-bar4">
           <div className="circle-box"></div>
           <div className="rec-box"></div>

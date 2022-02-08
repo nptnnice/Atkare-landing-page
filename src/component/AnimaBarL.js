@@ -22,10 +22,6 @@ const AnimaBarL = () => {
         </div>
       </div>
       <div className="col2">
-        <div className="move-bar4">
-          <div className="circle-box"></div>
-          <div className="rec-box"></div>
-        </div>
         <div className="move-bar3">
           <div className="circle-box"></div>
           <div className="rec-box"></div>
@@ -39,15 +35,15 @@ const AnimaBarL = () => {
           <div className="rec-box"></div>
         </div>
         <div className="move-bar4">
+          <div className="circle-box"></div>
+          <div className="rec-box"></div>
+        </div>
+        <div className="move-bar3">
           <div className="circle-box"></div>
           <div className="rec-box"></div>
         </div>
       </div>
-      <div className="col3">
-        <div className="move-bar2">
-          <div className="circle-box"></div>
-          <div className="rec-box"></div>
-        </div>
+      <div className="col3 remove">
         <div className="move-bar1">
           <div className="circle-box"></div>
           <div className="rec-box"></div>
@@ -57,6 +53,10 @@ const AnimaBarL = () => {
           <div className="rec-box"></div>
         </div>
         <div className="move-bar1">
+          <div className="circle-box"></div>
+          <div className="rec-box"></div>
+        </div>
+        <div className="move-bar2">
           <div className="circle-box"></div>
           <div className="rec-box"></div>
         </div>

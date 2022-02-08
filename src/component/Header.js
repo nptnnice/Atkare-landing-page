@@ -10,10 +10,13 @@ const Header = (props) => {
   return (
     <div>
       <div className="header">
-        <div>
+        <div className="anime-box">
           <AnimaBarL />
-          {/* <img src={Leftbar} alt="left"></img> */}
+          <AnimaBarR />
         </div>
+        {/* <div>
+          <AnimaBarL />
+        </div> */}
         <div>
           <h1>ภูมิคุ้มกันโรคระบาดสำหรับ</h1>
           <AnimaHead />
@@ -43,10 +46,9 @@ const Header = (props) => {
             </h2>
           </div>
         </div>
-        <div>
-          {/* <img src={Rightbar} alt="left"></img> */}
+        {/* <div>
           <AnimaBarR />
-        </div>
+        </div> */}
       </div>
       <div className="bottom-flex">
         <p>สำหรับลูกค้าของเราสามารถเช็คประวัติการตรวจ และตรวจใหม่ได้ที่นี่</p>
