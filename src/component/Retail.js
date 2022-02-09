@@ -168,7 +168,7 @@ const Retail = (props) => {
           </form>
         </div>
         {/* <img src={contactbar} alt="contactbar" id="bar"></img> */}
-        <AnimaBarL />
+        <AnimaBarL animation={false}/>
       </div>
       <div className="retail-mobile">
         <div className="toggle-mobile2">

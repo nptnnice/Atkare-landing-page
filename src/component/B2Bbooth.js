@@ -402,7 +402,7 @@ const B2Bbooth = (props) => {
             )}
           </form>
         </div>
-        <AnimaBarL />
+        <AnimaBarL animation={false}/>
         {/* <img src={contactbar} alt="contactbar" id="bar"></img> */}
       </div>
       <div className="B2B-mobile">

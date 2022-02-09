@@ -1816,6 +1816,8 @@ p
     max-width: 1920px
     width: 100%
     margin: auto
+    height: 2257px
+    overflow: hidden
     display: flex
     justify-content: space-between
     #bar
@@ -2288,6 +2290,8 @@ p
     margin: auto
     display: flex
     justify-content: space-between
+    height: 2257px
+    overflow: hidden
     #bar
         width: 256px
         @media screen and (max-width: 1600px)
@@ -2602,6 +2606,8 @@ p
 
 .col1
     transform: translateY(-550px)
+
+.move1
     animation: mymove-one 7s infinite
     animation-timing-function: linear
     @media screen and (max-width: 1450px)
@@ -2611,6 +2617,8 @@ p
 
 .col2
     transform: translateY(-400px)
+
+.move2
     animation: mymove-two 7s infinite
     animation-timing-function: linear
     @media screen and (max-width: 1450px)
@@ -2618,8 +2626,13 @@ p
         animation: mobile-two 7s infinite
         animation-timing-function: linear
 
+.move-more
+    transform: translateY(-250px)
+
 .col3
     transform: translateY(-550px)
+
+.move3
     animation: mymove-three 7s infinite
     animation-timing-function: linear
     @media screen and (max-width: 1450px)
