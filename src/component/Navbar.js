@@ -115,6 +115,12 @@ const Navbar = (props) => {
                 className="contact-btn"
                 onClick={() => {
                   props.setPage("contact");
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                  setSidebar("inactive");
                 }}
               >
                 ร่วมงานกับเรา<span>{">"}</span>
@@ -201,7 +207,12 @@ const Navbar = (props) => {
             </div>
           </div>
           <div className="nav-toggle show">
-            <img src={close} alt="close" id="close" onClick={() => setSidebar("inactive")}></img>
+            <img
+              src={close}
+              alt="close"
+              id="close"
+              onClick={() => setSidebar("inactive")}
+            ></img>
             <ul className="menu-mobile">
               <li
                 onClick={() => {
@@ -239,6 +250,12 @@ const Navbar = (props) => {
                 className="contact-btn"
                 onClick={() => {
                   props.setPage("contact");
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                  setSidebar("inactive");
                 }}
               >
                 ร่วมงานกับเรา<span>{">"}</span>
