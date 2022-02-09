@@ -84,7 +84,7 @@ p {
   color: #002437;
 }
 
-.btn, .nav-toggle .container .buy-btn, .nav-toggle .container .contact-btn, .nav-bar .menu-bar .shopee-btn, .nav-bar .menu-bar .contact-btn, .header .contact-btn, .header .buy .buy-btn, .footer .contact-btn {
+.btn, .nav-bar .menu-bar .shopee-btn, .nav-bar .menu-bar .contact-btn, .header .contact-btn, .header .buy .buy-btn, .footer .contact-btn {
   font-family: sukhumvitB;
   font-size: 36px;
   line-height: 62px;
@@ -100,66 +100,65 @@ p {
 }
 
 .nav-toggle {
-  z-index: 2;
-  position: fixed;
-  right: -20px;
-  height: 100vh;
-  width: 299px;
-  top: 0;
-  margin: 0;
   background-color: #F7F4ED;
-  border-radius: 20px;
-  -webkit-box-shadow: rgba(33, 26, 26, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-          box-shadow: rgba(33, 26, 26, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 279px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  border-radius: 20px 0 0 20px;
+  -webkit-box-shadow: -5px 0px 15px #0000001A;
+          box-shadow: -5px 0px 15px #0000001A;
+  padding: 48px 16px 44px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: none;
 }
 
 .nav-toggle #close {
-  cursor: pointer;
-  z-index: 3;
   width: 16px;
-  position: absolute;
-  top: 48px;
-  right: 48px;
+  height: 16px;
+  margin-left: 228px;
+  right: 24px;
+  cursor: pointer;
 }
 
 .nav-toggle .menu-mobile {
+  margin: 52px 0 249px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-top: 78px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .nav-toggle .menu-mobile li {
+  list-style: none;
   font-family: yaroRg;
   font-size: 24px;
   line-height: 24px;
   color: #D8A64A;
-  list-style: none;
-  margin-left: 8px;
-  margin-top: 50px;
+  margin-top: 48px;
   cursor: pointer;
+  white-space: nowrap;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .nav-toggle .menu-mobile li::after {
   content: "";
   display: block;
   width: 0px;
-  height: 3px;
+  height: 2px;
   background-color: #FFC625;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -176,9 +175,6 @@ p {
 }
 
 .nav-toggle .container {
-  position: absolute;
-  top: 567px;
-  right: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,50 +187,48 @@ p {
           align-items: center;
 }
 
-.nav-toggle .container .buy-btn {
+.nav-toggle .container .buy-btn, .nav-toggle .container .contact-btn {
+  background-color: #D8A64A;
+  width: 185px;
+  height: 41px;
+  border-radius: 47px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 5px 7px #00000029;
+          box-shadow: 5px 5px 7px #00000029;
+  cursor: pointer;
   font-family: sukhumvitB;
   font-size: 21px;
   line-height: 21px;
   color: #FFFFFF;
-  background-color: #D8A64A;
-  width: 185px;
-  height: 41px;
   padding-top: 12px;
   padding-left: 23px;
   white-space: nowrap;
 }
 
-.nav-toggle .container .buy-btn span {
+.nav-toggle .container .buy-btn span, .nav-toggle .container .contact-btn span {
   margin-left: 78px;
   font-family: sukhumvitL;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
-.nav-toggle .container .buy-btn:hover {
+.nav-toggle .container .buy-btn:hover, .nav-toggle .container .contact-btn:hover {
   background-color: #FFC625;
 }
 
-.nav-toggle .container .buy-btn:hover span {
+.nav-toggle .container .buy-btn:hover span, .nav-toggle .container .contact-btn:hover span {
   margin-left: 82px;
 }
 
 .nav-toggle .container .contact-btn {
-  font-family: sukhumvitB;
-  font-size: 21px;
-  line-height: 21px;
-  color: #FFFFFF;
   background-color: #A50037;
-  width: 185px;
-  height: 41px;
-  padding-top: 12px;
-  padding-left: 23px;
-  margin-top: 16px;
-  white-space: nowrap;
+  margin: 16px 0 39px;
 }
 
 .nav-toggle .container .contact-btn span {
-  margin-left: 11px;
+  margin-left: 12px;
   font-family: sukhumvitL;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -245,19 +239,19 @@ p {
 }
 
 .nav-toggle .container .contact-btn:hover span {
-  margin-left: 15px;
+  margin-left: 16px;
 }
 
 .nav-toggle .container .or-contact {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 13px;
-          column-gap: 13px;
-  margin-top: 39px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+  margin-bottom: 30px;
 }
 
 .nav-toggle .container .or-contact hr {
@@ -267,11 +261,11 @@ p {
 .nav-toggle .container .or-contact h2 {
   font-family: sukhumvitL;
   font-size: 18px;
+  line-height: 18px;
   color: #002437;
 }
 
 .nav-toggle .container .email-box {
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,12 +276,11 @@ p {
           column-gap: 11px;
 }
 
-.nav-toggle .container .email-box img {
+.nav-toggle .container .email-box #email {
   width: 26px;
 }
 
 .nav-toggle .container .email-box h2 {
-  padding-top: 8px;
   font-family: yaroRg;
   font-size: 17px;
   line-height: 17px;
@@ -295,20 +288,14 @@ p {
 }
 
 @media screen and (max-width: 1440px) {
-  .nav-toggle .nav-toggle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .nav-toggle {
+    display: unset;
   }
 }
 
 .show {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 
 .nav-bar {
@@ -329,7 +316,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 10;
+  z-index: 3;
 }
 
 .nav-bar .logo {
@@ -2593,10 +2580,10 @@ p {
 
 @media screen and (max-width: 1850px) {
   .footer .footiest #icon {
-    left: -48px;
+    left: -150px;
   }
   .footer .footiest .email-box, .footer .footiest p {
-    left: 220px;
+    left: 150px;
   }
 }
 

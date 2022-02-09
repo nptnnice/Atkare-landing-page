@@ -75,47 +75,46 @@ p
     box-shadow: 5px 5px 7px #00000029
     cursor: pointer
 
-
 .nav-toggle
-    z-index: 2
-    position: fixed
-    right: -20px
-    height: 100vh
-    width: 299px
-    top: 0
-    margin: 0
     background-color: $cream
-    border-radius: 20px
-    box-shadow: rgba(33, 26, 26, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
+    width: 279px
+    height: 100vh
+    position: fixed
+    right: 0
+    z-index: 10
+    border-radius: 20px 0 0 20px
+    box-shadow: -5px 0px 15px #0000001A
+    padding: 48px 16px 44px 16px
+    box-sizing: border-box
     transform: translateX(100%)
-    transition: transform .2s ease-in-out
+    transition: 0.3s ease-in-out
+    display: none
     #close
-        cursor: pointer
-        z-index: 3
         width: 16px
-        position: absolute
-        top: 48px
-        right: 48px
+        height: 16px
+        margin-left: 228px
+        right: 24px
+        cursor: pointer
     .menu-mobile
+        margin: 52px 0 249px
         display: flex
-        flex-direction: column
         align-items: flex-start
-        padding-top: 78px
-        box-sizing: border-box
+        flex-direction: column
         li
+            list-style: none
             font-family: yaroRg
             font-size: 24px
             line-height: 24px
             color: $yellow
-            list-style: none
-            margin-left: 8px
-            margin-top: 50px
+            margin-top: 48px
             cursor: pointer
+            white-space: nowrap
+            transition: 0.2s
             &::after
                 content: ""
                 display: block
                 width: 0px
-                height: 3px
+                height: 2px
                 background-color: $brightYellow
                 transition: 0.3s ease-in-out
                 margin-left: 50%
@@ -125,26 +124,25 @@ p
                     width: 100%
                     margin-left: 0
     .container
-        position: absolute
-        // transition: transform 0.3s ease-in
-        top: 567px
-        right: 24px
         display: flex
         flex-direction: column
         align-items: center
-        .buy-btn
-            @extend .btn
+        .buy-btn, .contact-btn
+            background-color: $yellow
+            width: 185px
+            height: 41px
+            border-radius: 47px
+            margin: 0
+            box-sizing: border-box
+            box-shadow: 5px 5px 7px #00000029
+            cursor: pointer
             font-family: sukhumvitB
             font-size: 21px
             line-height: 21px
             color: $white
-            background-color: $yellow
-            width: 185px
-            height: 41px
             padding-top: 12px
             padding-left: 23px
             white-space: nowrap
-            // transition: 0.2s ease-in-out
             span
                 margin-left: 78px
                 font-family: sukhumvitL
@@ -154,58 +152,44 @@ p
                 span
                     margin-left: 82px
         .contact-btn
-            @extend .btn
-            font-family: sukhumvitB
-            font-size: 21px
-            line-height: 21px
-            color: $white
             background-color: $red
-            width: 185px
-            height: 41px
-            padding-top: 12px
-            padding-left: 23px
-            margin-top: 16px
-            white-space: nowrap
-            // transition: 0.2s ease-in-out
+            margin: 16px 0 39px
             span
-                margin-left: 11px
+                margin-left: 12px
                 font-family: sukhumvitL
                 transition: 0.2s ease-in-out
             &:hover
                 background-color: $brightred
                 span
-                    margin-left: 15px
+                    margin-left: 16px
         .or-contact
-            align-items: center
             display: flex
-            column-gap: 13px
-            margin-top: 39px
+            align-items: center
+            column-gap: 12px
+            margin-bottom: 30px
             hr
                 width: 96px
             h2
                 font-family: sukhumvitL
                 font-size: 18px
+                line-height: 18px
                 color: $black
         .email-box
-            margin-top: 30px
             display: flex
             align-items: center
             column-gap: 11px
-            img
+            #email
                 width: 26px
             h2
-                padding-top: 8px
                 font-family: yaroRg
                 font-size: 17px
                 line-height: 17px
                 color: $black
-
     @media screen and (max-width: 1440px)
-        .nav-toggle
-            display: flex
+        display: unset
+
 .show
     transform: translateX(0%)
-    transition: transform .2s ease-in-out
 
 .nav-bar
     background-color: $white
@@ -217,7 +201,7 @@ p
     display: flex
     align-items: center
     justify-content: space-between
-    z-index: 10
+    z-index: 3
     .logo
         padding-left: 47px
         padding-top: 16px
@@ -1671,9 +1655,9 @@ p
             left: -16px
         @media screen and (max-width: 1850px)
             #icon
-                left: -48px
+                left: -150px
             .email-box, p
-                left: 220px
+                left: 150px
 
     @media screen and (max-width: 1450px)
         margin-top: 20px
@@ -2599,7 +2583,7 @@ p
     column-gap: 32px
     @media screen and (max-width: 1450px)
         column-gap: 12px
-        
+
 .remove
     @media screen and (max-width: 1450px)
         display: none
