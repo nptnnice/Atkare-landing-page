@@ -10,6 +10,7 @@ const Vision = () => {
     <div>
       <div className="vision-flex">
         <img src={bg1} alt="bg1" id="bg1" />
+        <img src={vision} alt="vision"></img>
         <div className="container">
           <h2>VISION</h2>
           <h1>ยกระดับมาตรฐาน</h1>
@@ -19,7 +20,6 @@ const Vision = () => {
             สำหรับธุรกิจในยุค New-Normal
           </p>
         </div>
-        <img src={vision} alt="vision"></img>
       </div>
       <div className="mission-flex">
         <img src={bg2} alt="bg2" id="bg2" />

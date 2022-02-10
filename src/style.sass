@@ -1004,6 +1004,7 @@ p
     #bg1
         display: none
     .container
+        transform: translateX(-560px)
         h2
             font-family: yaroB
             font-size: 36px
@@ -1015,10 +1016,12 @@ p
     img
         width: 443.31px
         height: 394.5px
+        transform: translateX(640px)
 
     @media screen and (max-width: 1366px)
         column-gap: 80px
         .container
+            transform: translateX(-480px)
             h2
                 font-size: 30px
             h1
@@ -1027,38 +1030,43 @@ p
                 font-size: 21px
         img
             width: 400px
-            height: 350px
+            height: 360px
+            transform: translateX(540px)
 
     @media screen and (max-width: 1184px)
         flex-direction: column
         align-items: center
-        position: relative
+        padding-top: 120px
         .container
+            transform: unset
+            h2
+                transform: translateY(-360px)
+                text-align: right
             h1
-                margin-bottom: 300px
-            img
-                position: absolute
-                top: 0px
+                margin-top: 100px
+                text-align: center
+            p
+                text-align: center
+        img
+            transform: unset
+            transform: translateY(80px)
 
     @media screen and (max-width: 900px)
-        position: relative
         flex-direction: column
         align-items: center
         padding-top: 64px
-        // margin: auto
-        // margin-top: 64px
-        // width: 375px
+        position: relative
         #bg1
             display: unset
             position: absolute
             width: 197px
             height: 197px
-            // right: 0
-            bottom: 0
-            transform: translate(100px,-140px)
+            top: 0
+            transform: translate(120px,8px)
             z-index: -1
         .container
             h2
+                transform: unset
                 font-size: 21px
                 text-align: right
                 margin-bottom: 262px
@@ -1070,10 +1078,13 @@ p
                 font-size: 14px
                 text-align: center
         img
+            position: absolute
             width: 243px
             height: 216px
-            margin-top: -365px
-            // transform: translateY(-365px)
+            transform: translateY(-50px)
+
+
+       
 
 .mission-flex
     display: flex
@@ -1121,65 +1132,39 @@ p
     @media screen and (max-width: 1184px)
         flex-direction: column
         align-items: center
-        // margin-top: -240px
-        transform: unset
-        position: relative
-        width: 100%
-        text-align: center
-        overflow: hidden
-        margin-bottom: 44px
+        padding-top: 120px
         .container
-            margin-top: 38px
+            transform: unset
             h2
-                font-size: 21px
+                transform: translateY(-360px)
                 text-align: right
-                margin-bottom: 297px
-                margin-right: 32px
             h1
-                font-size: 32px
+                margin-top: 100px
                 text-align: center
             p
-                font-size: 14px
                 text-align: center
         img
-            width: 279px
-            height: 241px
-            // margin-top: 80px
-            transform: translateY(324px)
+            transform: unset
+            transform: translateY(180px)
 
     @media screen and (max-width: 900px)
         flex-direction: column
         align-items: center
-        // margin-top: -240px
-        transform: unset
-        position: relative
-        width: 100%
-        text-align: center
-        overflow: hidden
-        margin-bottom: 44px
+        padding-top: 64px
         #bg2
             display: unset
             position: absolute
-            width: 357px
-            height: 357px
-            // right: 0
-            bottom: 0
-            transform: translate(100px,-280px)
-            z-index: -1
-        #bg3
-            display: unset
-            position: absolute
-            width: 199px
-            height: 199px
+            width: 253px
+            height: 253px
             top: 0
-            transform: translate(-110px,430px)
+            transform: translate(120px,40px)
             z-index: -1
         .container
-            margin-top: 38px
             h2
+                transform: unset
                 font-size: 21px
                 text-align: right
-                margin-bottom: 297px
+                margin-bottom: 262px
                 margin-right: 32px
             h1
                 font-size: 32px
@@ -1188,10 +1173,11 @@ p
                 font-size: 14px
                 text-align: center
         img
-            width: 279px
-            height: 241px
-            // margin-top: 80px
-            transform: translateY(324px)
+            position: absolute
+            width: 243px
+            height: 216px
+            transform: translateY(-50px)
+
 
 .certified-head
     display: flex
