@@ -42,6 +42,9 @@ h1,h2,h3,h4,h5,h6,p
     margin: 0
     cursor: default
 
+a
+    text-decoration: none
+
 ::placeholder
     color: #00243730
 
@@ -62,6 +65,7 @@ p
     font-family: sukhumvitL
     font-size: 24px
     color: $black
+
 
 .btn
     font-family: sukhumvitB
@@ -113,7 +117,6 @@ p
             transition: 0.2s
             &:hover
                 color: $brightYellow
-
 
     .container
         display: flex
@@ -264,15 +267,29 @@ p
         display: none
         flex-direction: column
         justify-content: space-around
-        width: 30px
-        height: 32px
+        width: 28px
+        height: 30px
         cursor: pointer
         z-index: 1
         .line
             background-color: $black
-            height: 4px
+            height: 2px
             width: 100%
             border-radius: 40px
+    @media screen and (max-width: 1680px)
+        .menu-bar
+            li
+                font-size: 22px
+                line-height: 22px
+            .shopee-btn
+                width: 167px
+                font-size: 32px
+                padding-left: 28px
+            .contact-btn
+                width: 225px
+                font-size: 32px
+                padding-left: 52px
+
     @media screen and (max-width: 1440px)
         overflow: hidden
         .logo
@@ -382,10 +399,30 @@ p
         display: flex
         max-width: 1920px
         width: 100%
-        justify-content: space-between
+        justify-content: center
+        column-gap: 1350px
         position: absolute
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 1476px)
+        .anime-box
+            display: none
+
+    @media screen and (max-width: 1366px)
+        h1
+            font-size: 42px
+        p
+            font-size: 21px
+        .contact-btn
+            font-size: 32px
+            padding-left: 40px
+        .buy
+            .buy-btn
+                font-size: 32px
+                padding-left: 52px
+        .anime-box
+            display: none
+
+    @media screen and (max-width: 900px)
         height: 650px
         overflow: hidden
         img
@@ -480,7 +517,13 @@ p
             span
                 padding-left: 12px
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 1366px)
+        p
+            font-size: 21px
+        h3
+            font-size: 24px
+
+    @media screen and (max-width: 900px)
         height: 80px
         position: relative
         overflow: hidden
@@ -746,7 +789,7 @@ p
         margin-top: -20px
         margin-left: 0px
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 900px)
         width: 375px
         .top
             transform: translate(-50%,-286px)
@@ -974,7 +1017,20 @@ p
         width: 443.31px
         height: 394.5px
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 1366px)
+        column-gap: 80px
+        .container
+            h2
+                font-size: 30px
+            h1
+                font-size: 50px
+            p
+                font-size: 21px
+        img
+            width: 400px
+            height: 350px
+
+    @media screen and (max-width: 900px)
         position: relative
         flex-direction: column
         align-items: center
@@ -1037,7 +1093,21 @@ p
             font-size: 60px
             color: $black
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 1366px)
+        column-gap: 70px
+        transform: translateX(0px)
+        .container
+            h2
+                font-size: 30px
+            h1
+                font-size: 50px
+            p
+                font-size: 21px
+        img
+            width: 400px
+            height: 350px
+
+    @media screen and (max-width: 900px)
         flex-direction: column
         align-items: center
         // margin-top: -240px
@@ -1089,8 +1159,8 @@ p
     justify-content: center
     column-gap: 42px
     // margin-top: 285px
-    margin-bottom: 178px
-    transform: translateX(-106px)
+    margin-bottom: 314px
+    transform: translateX(-100px)
     img
         width: 176px
         height: 173.85px
@@ -1099,7 +1169,16 @@ p
         font-size: 72px
         color: $red
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 1366px)
+        column-gap: 30px
+        transform: translateX(-80px)
+        h1
+            font-size: 60px
+        img
+            width: 150px
+            height: 150px
+
+    @media screen and (max-width: 900px)
         margin-bottom: 178px
         column-gap: 8px
         transform: translateX(0px)
@@ -1139,7 +1218,17 @@ p
                 span
                     padding-left: 14px
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 1366px)
+        column-gap: 120px
+        .container
+            h2
+                font-size: 32px
+            p
+                font-size: 21px
+            h3
+                font-size: 24px
+
+    @media screen and (max-width: 900px)
         display: flex
         flex-direction: column
         align-items: center
@@ -1201,7 +1290,26 @@ p
             p
                 width: 406px
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 1366px)
+        h1
+            font-size: 60px
+        .whyus-flex
+            .container1, .container2
+                img
+                    width: 150px
+                    margin-bottom: 20px
+                h4
+                    font-size: 21px
+                h3
+                    font-size: 32px
+                h2
+                    font-size: 40px
+                p
+                    font-size: 21px
+                    width: 300px
+                    margin: auto
+
+    @media screen and (max-width: 900px)
         position: relative
         width: 100%
         text-align: center
@@ -1368,7 +1476,91 @@ p
                     padding-left: 11px
                     padding-top: 3px
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 1366px)
+        h1
+            font-size: 60px
+        .person-flex
+            column-gap: 40px
+            h2
+                font-size: 32px
+        .operate-flex
+            column-gap: 40px
+            .container1, .container2
+                .list-box1, .list-box2, .list-box3, .list-box4, .list-box5, .list-box6
+                    height: 56px
+                    p
+                        font-size: 21px
+                .list-box1
+                    width: 462px
+                    p
+                        margin-left: 8px
+                    .num
+                        padding-left: 14px
+                        padding-top: 4px
+                        width: 40px
+                        height: 40px
+                        top: 8px
+                        left: 8px
+                .list-box2
+                    width: 370px
+                    p
+                        margin-left: 8px
+                    .num
+                        padding-left: 10px
+                        padding-top: 3px
+                        width: 40px
+                        height: 40px
+                        top: 8px
+                        left: 8px
+                .list-box3
+                    width: 564px
+                    p
+                        margin-left: 8px
+                    .num
+                        padding-left: 10px
+                        padding-top: 3px
+                        width: 40px
+                        height: 40px
+                        top: 8px
+                        left: 8px
+            .container2
+                .list-box4
+                    width: 462px
+                    p
+                        margin-right: 8px
+                    .num
+                        padding-left: 14px
+                        padding-top: 4px
+                        width: 40px
+                        height: 40px
+                        top: 8px
+                        left: 64px
+                .list-box5
+                    width: 520px
+                    p
+                        margin-left: 8px
+                    .num
+                        padding-left: 10px
+                        padding-top: 3px
+                        width: 40px
+                        height: 40px
+                        top: 8px
+                        left: 8px
+                .list-box6
+                    width: 564px
+                    p
+                        margin-left: 0px
+                    .num
+                        padding-left: 10px
+                        padding-top: 3px
+                        width: 40px
+                        height: 40px
+                        top: 8px
+                        left: 164px
+            
+            
+
+    @media screen and (max-width: 900px)
         margin-bottom: 0
         position: relative
         width: 100%
@@ -1666,13 +1858,43 @@ p
             color: $black
             bottom: 36px
             left: -16px
-        @media screen and (max-width: 1850px)
-            #icon
-                left: -150px
-            .email-box, p
-                left: 150px
 
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 1830px)
+        .footiest
+            #icon
+                left: -100px
+            .email-box
+                left: 180px
+            p
+                left: 180px
+        
+
+    @media screen and (max-width: 1366px)
+        .text-box
+            width: 992px
+            h1
+                font-size: 60px
+                width: 450px
+            h2
+                font-size: 30px
+        .email-box
+            #email
+                font-size: 36px
+            h4
+                font-size: 18px
+            p
+                font-size: 16px
+        .contact-btn
+            transform: translate(300px, -34px)
+        .footiest
+            #icon
+                left: 20px
+            .email-box
+                left: 300px
+            p
+                left: 300px
+
+    @media screen and (max-width: 900px)
         margin-top: 10px
         height: 514px
         box-sizing: border-box
@@ -1727,6 +1949,8 @@ p
             &:hover
                 .arrow
                     padding-left: 12px
+        .contact-btn
+            transform: translateX(-50px)
         .footiest
             // border: 1px solid $red
             width: 375px
@@ -2074,7 +2298,7 @@ p
             border: none
             &:hover
                 background-color: $brightYellow
-    @media screen and (max-width: 1370px)
+    @media screen and (max-width: 900px)
         display: none
 
 .toggle-mobile
@@ -2111,10 +2335,25 @@ p
 .B2B-mobile
     padding-top: 120px
     display: none
+    flex-direction: column
+    align-items: flex-start
+    row-gap: 12px
+    width: 343px
+    margin: auto
+
+    h1
+        font-family: sukhumvitB
+        font-size: 24px
+        line-height: 24px
+        color: $black
+
     .toggle-mobile1
         @extend .toggle-mobile
 
-    @media screen and (max-width: 1370px)
+    @media screen and (max-width: 1366px)
+        display: flex
+
+    @media screen and (max-width: 900px)
         display: flex
 
 .input-mobile
@@ -2280,7 +2519,7 @@ p
             margin-bottom: 66px
             &:hover
                 background-color: $brightYellow
-    @media screen and (max-width: 1370px)
+    @media screen and (max-width: 900px)
         display: unset
 
 .retail
@@ -2299,7 +2538,7 @@ p
         @extend .toggle-bar
         .move-btn
             transform: translateX(340px)
-    @media screen and (max-width: 1370px)
+    @media screen and (max-width: 900px)
         display: none
 
     .retail-grid
@@ -2446,19 +2685,32 @@ p
             border: none
             &:hover
                 background-color: $brightYellow
-    @media screen and (max-width: 1370px)
+    @media screen and (max-width: 900px)
         display: none
 
 .retail-mobile
     padding-top: 120px
     display: none
+    flex-direction: column
+    align-items: flex-start
+    row-gap: 12px
+    width: 343px
+    margin: auto
+    h1
+        font-family: sukhumvitB
+        font-size: 24px
+        line-height: 24px
+        color: $black
     .toggle-mobile2
         @extend .toggle-mobile
         .move-btn
             left: unset
             right: 6px
 
-    @media screen and (max-width: 1370px)
+    @media screen and (max-width: 1366px)
+        display: flex
+
+    @media screen and (max-width: 900px)
         display: flex
 
 .Retailform-mobile
@@ -2507,7 +2759,7 @@ p
             &:hover
                 background-color: $brightYellow
 
-    @media screen and (max-width: 1370px)
+    @media screen and (max-width: 900px)
         display: unset
 
 .bar-template
@@ -2539,7 +2791,7 @@ p
         left: 10px
         box-shadow: 8px 8px 15px #0000001A
         box-sizing: border-box
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 900px)
         width: 22px
         height: 178px
         margin-top: 14px
@@ -2570,7 +2822,7 @@ p
     .rec-box
         height: 224px
         top: 62px
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 900px)
         .circle-box
             top: 4px
         .rec-box
@@ -2586,7 +2838,7 @@ p
     .rec-box
         height: 224px
         top: 62px
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 900px)
         .circle-box
             top: 4px
         .rec-box
@@ -2596,11 +2848,11 @@ p
 .bar
     display: flex
     column-gap: 32px
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 900px)
         column-gap: 12px
 
 .remove
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 900px)
         display: none
 
 .col1
@@ -2609,7 +2861,7 @@ p
 .move1
     animation: mymove-one 7s infinite
     animation-timing-function: linear
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 900px)
         transform: translateY(-550px)
         animation: mobile-one 7s infinite
         animation-timing-function: linear
@@ -2620,7 +2872,7 @@ p
 .move2
     animation: mymove-two 7s infinite
     animation-timing-function: linear
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 900px)
         transform: translateY(-650px)
         animation: mobile-two 7s infinite
         animation-timing-function: linear
@@ -2634,7 +2886,7 @@ p
 .move3
     animation: mymove-three 7s infinite
     animation-timing-function: linear
-    @media screen and (max-width: 1450px)
+    @media screen and (max-width: 900px)
         transform: translateY(-550px)
         animation: mobile-three 7s infinite
         animation-timing-function: linear

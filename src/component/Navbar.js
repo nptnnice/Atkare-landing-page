@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const Navbar = (props) => {
   const [sidebar, setSidebar] = useState("");
+  let url = "https://shopee.co.th/mynameispawares?categoryId=100001&itemId=10386127014";
 
   const toggleSidebar = () => {
     if (sidebar == "" || sidebar == "inactive") {
@@ -54,7 +55,7 @@ const Navbar = (props) => {
                 >
                   Operate ATK
                 </li>
-                <h2 className="shopee-btn move-pls">Shopee</h2>
+                <a href={url} className="shopee-btn move-pls">Shopee</a>
                 <h2
                   className="contact-btn"
                   onClick={() => {
@@ -108,9 +109,9 @@ const Navbar = (props) => {
               </li>
             </ul>
             <div className="container">
-              <div className="buy-btn">
+              <a href={url} className="buy-btn">
                 ซื้อเลย<span>{">"}</span>
-              </div>
+              </a>
               <div
                 className="contact-btn"
                 onClick={() => {
@@ -184,7 +185,7 @@ const Navbar = (props) => {
                 >
                   Operate ATK
                 </li>
-                <h2 className="shopee-btn move-pls">Shopee</h2>
+                <a href={url} className="shopee-btn move-pls">Shopee</a>
                 <h2
                   className="contact-btn"
                   onClick={() => {
@@ -243,9 +244,9 @@ const Navbar = (props) => {
               </li>
             </ul>
             <div className="container">
-              <div className="buy-btn">
+              <a href={url} className="buy-btn">
                 ซื้อเลย<span>{">"}</span>
-              </div>
+              </a>
               <div
                 className="contact-btn"
                 onClick={() => {

@@ -41,7 +41,7 @@ const Footer = (props) => {
           <img src={icon} alt="icon" id="icon"></img>
           <div className="email-box">
             <img src={email} alt="email" id="email"></img>
-            <h4>ATKareTH@gmail.com</h4>
+            <h4>ATKareATK@gmail.com</h4>
           </div>
           <p>© 2022 Pinpoint Inter Group CO., LTD. All rights reserved.</p>
         </div>

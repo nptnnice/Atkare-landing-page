@@ -7,6 +7,8 @@ import AnimaBarL from "./AnimaBarL";
 import AnimaBarR from './AnimaBarR';
 
 const Header = (props) => {
+  let url = "https://shopee.co.th/mynameispawares?categoryId=100001&itemId=10386127014";
+
   return (
     <div>
       <div className="header">
@@ -40,10 +42,10 @@ const Header = (props) => {
           </h2>
           <div className="buy">
             <p>หรือสามารถสั่งซื้อได้ผ่านช่องทางการจำหน่ายออนไลน์ เช่น Shopee</p>
-            <h2 className="buy-btn">
+            <a href={url} className="buy-btn">
               ซื้อเลย
               <span>{">"}</span>
-            </h2>
+            </a>
           </div>
         </div>
         {/* <div>

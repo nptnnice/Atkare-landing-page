@@ -406,6 +406,7 @@ const B2Bbooth = (props) => {
         {/* <img src={contactbar} alt="contactbar" id="bar"></img> */}
       </div>
       <div className="B2B-mobile">
+        <h1>ร่วมงานกับเรา</h1>
         <div className="toggle-mobile1">
           <div className="move-btn"></div>
           <h1
