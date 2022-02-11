@@ -421,6 +421,36 @@ p
         .anime-box
             display: none
 
+    @media screen and (max-width: 1280px)
+        height: unset
+        h1
+            font-size: 34px
+        p
+            font-size: 18px
+        .contact-btn
+            width: 240px
+            height: 54px
+            font-size: 26px
+            line-height: 26px
+            padding-left: 20px
+            padding-top: 16px
+            .arrow
+                width: 40px
+                height: 40px
+                top: 7px
+                right: 7px
+        .buy
+            .buy-btn
+                width: 180px
+                height: 54px
+                font-size: 26px
+                line-height: 26px
+                white-space: nowrap
+                padding-left: 40px
+                padding-top: 16px
+        .anime-box
+            display: none
+
     @media screen and (max-width: 900px)
         height: 650px
         overflow: hidden
@@ -521,6 +551,13 @@ p
             font-size: 21px
         h3
             font-size: 24px
+
+    @media screen and (max-width: 1280px)
+        column-gap: 32px
+        p
+            font-size: 18px
+        h3
+            font-size: 21px
 
     @media screen and (max-width: 900px)
         height: 80px
@@ -1033,23 +1070,29 @@ p
             height: 360px
             transform: translateX(540px)
 
-    @media screen and (max-width: 1184px)
+    @media screen and (max-width: 1280px)
         flex-direction: column
         align-items: center
-        padding-top: 120px
+        padding-top: 100px
         .container
             transform: unset
             h2
-                transform: translateY(-360px)
+                transform: translateY(-260px)
                 text-align: right
+                font-size: 24px
             h1
                 margin-top: 100px
                 text-align: center
+                font-size: 40px
+                margin-top: 60px
             p
                 text-align: center
+                font-size: 18px
         img
+            width: 300px
+            height: 260px
             transform: unset
-            transform: translateY(80px)
+            transform: translateY(60px)
 
     @media screen and (max-width: 900px)
         flex-direction: column
@@ -1129,23 +1172,30 @@ p
             width: 450px
             height: 400px
 
-    @media screen and (max-width: 1184px)
+    @media screen and (max-width: 1280px)
         flex-direction: column
         align-items: center
-        padding-top: 120px
+        padding-top: 150px
+        margin-bottom: 40px
         .container
             transform: unset
             h2
-                transform: translateY(-360px)
+                transform: translateY(-260px)
                 text-align: right
+                font-size: 24px
             h1
                 margin-top: 100px
                 text-align: center
+                font-size: 40px
+                margin-top: 50px
             p
                 text-align: center
+                font-size: 18px
         img
+            width: 300px
+            height: 260px
             transform: unset
-            transform: translateY(180px)
+            transform: translateY(124px)
 
     @media screen and (max-width: 900px)
         flex-direction: column
@@ -1204,6 +1254,15 @@ p
             width: 150px
             height: 150px
 
+    @media screen and (max-width: 1280px)
+        margin-bottom: 200px
+        transform: translateX(-60px)
+        h1
+            font-size: 42px
+        img
+            width: 100px
+            height: 100px
+
     @media screen and (max-width: 900px)
         margin-bottom: 178px
         column-gap: 8px
@@ -1253,6 +1312,26 @@ p
                 font-size: 21px
             h3
                 font-size: 24px
+
+    @media screen and (max-width: 1280px)
+        display: flex
+        flex-direction: column
+        align-items: center
+        row-gap: 200px
+        width: 100%
+        text-align: center
+        // margin: auto
+        position: relative
+        // overflow: hidden
+        .container
+            h2
+                font-size: 32px
+            p
+                font-size: 18px
+            h3
+                font-size: 21px
+                span
+                    padding-left: 6px
 
     @media screen and (max-width: 900px)
         display: flex
@@ -1334,6 +1413,38 @@ p
                     font-size: 21px
                     width: 300px
                     margin: auto
+
+    @media screen and (max-width: 1280px)
+        h1
+            font-size: 42px
+            margin-top: 103px
+            margin-bottom: 38px
+        .whyus-flex
+            flex-direction: column
+            row-gap: 46px
+            align-items: center
+            .container1, .container2
+                display: flex
+                text-align: left
+                column-gap: 20px
+                img
+                    width: 160px
+                    height: 160px
+                h4
+                    font-size: 18px
+                h3
+                    font-size: 24px
+                h2
+                    font-size: 32px
+                p
+                    font-size: 18px
+                    width: 260px
+            .container2
+                text-align: right
+                img
+                    transform: translateX(250px)
+                .record-flex
+                    transform: translateX(-220px)
 
     @media screen and (max-width: 900px)
         position: relative
@@ -2009,7 +2120,7 @@ p
     .footiest
         position: relative
         // border: 1px solid $red
-        width: 1152px
+        // width: 1152px
         height: 270px
         margin: 0 auto
         #icon
@@ -2055,13 +2166,6 @@ p
                 width: 450px
             h2
                 font-size: 30px
-        .email-box
-            #email
-                font-size: 36px
-            h4
-                font-size: 18px
-            p
-                font-size: 16px
         .contact-btn
             transform: translate(300px, -34px)
         .footiest
@@ -2070,6 +2174,52 @@ p
             .email-box
                 left: 300px
             p
+                left: 300px
+
+    @media screen and (max-width: 1280px)
+        margin-top: 100px
+        height: 640px
+        .text-box
+            margin: auto
+            width: 800px
+            height: 280px
+            column-gap: 48px
+            h1
+                font-size: 48px
+                line-height: 50px
+                width: 480px
+            h2
+                font-size: 21px
+                line-height: 28px
+        .bg
+            height: 640px
+            #bg8
+                width: 504px
+                height: 504px
+        .contact-btn
+            position: absolute
+            width: 250px
+            height: 56px
+            font-size: 26px
+            left: 50%
+            transform: translate(100px, -34px)
+            // transform: translate(640px, -34px)
+            margin: 0
+            .arrow
+                left: 200px
+                top: 7px
+        .footiest
+            #icon
+                left: 20px
+            .email-box
+                bottom: 100px
+                left: 300px
+                #email
+                    width: 52px
+                h4
+                    font-size: 21px
+            p
+                font-size: 14px
                 left: 300px
 
     @media screen and (max-width: 900px)

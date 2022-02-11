@@ -642,6 +642,44 @@ p {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .header {
+    height: unset;
+  }
+  .header h1 {
+    font-size: 34px;
+  }
+  .header p {
+    font-size: 18px;
+  }
+  .header .contact-btn {
+    width: 240px;
+    height: 54px;
+    font-size: 26px;
+    line-height: 26px;
+    padding-left: 20px;
+    padding-top: 16px;
+  }
+  .header .contact-btn .arrow {
+    width: 40px;
+    height: 40px;
+    top: 7px;
+    right: 7px;
+  }
+  .header .buy .buy-btn {
+    width: 180px;
+    height: 54px;
+    font-size: 26px;
+    line-height: 26px;
+    white-space: nowrap;
+    padding-left: 40px;
+    padding-top: 16px;
+  }
+  .header .anime-box {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .header {
     height: 650px;
@@ -783,6 +821,19 @@ p {
   }
   .bottom-flex h3 {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .bottom-flex {
+    -webkit-column-gap: 32px;
+            column-gap: 32px;
+  }
+  .bottom-flex p {
+    font-size: 18px;
+  }
+  .bottom-flex h3 {
+    font-size: 21px;
   }
 }
 
@@ -1662,7 +1713,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1184px) {
+@media screen and (max-width: 1280px) {
   .vision-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1671,29 +1722,35 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 120px;
+    padding-top: 100px;
   }
   .vision-flex .container {
     -webkit-transform: unset;
             transform: unset;
   }
   .vision-flex .container h2 {
-    -webkit-transform: translateY(-360px);
-            transform: translateY(-360px);
+    -webkit-transform: translateY(-260px);
+            transform: translateY(-260px);
     text-align: right;
+    font-size: 24px;
   }
   .vision-flex .container h1 {
     margin-top: 100px;
     text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
   }
   .vision-flex .container p {
     text-align: center;
+    font-size: 18px;
   }
   .vision-flex img {
+    width: 300px;
+    height: 260px;
     -webkit-transform: unset;
             transform: unset;
-    -webkit-transform: translateY(80px);
-            transform: translateY(80px);
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
   }
 }
 
@@ -1812,7 +1869,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1184px) {
+@media screen and (max-width: 1280px) {
   .mission-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1821,29 +1878,36 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 120px;
+    padding-top: 150px;
+    margin-bottom: 40px;
   }
   .mission-flex .container {
     -webkit-transform: unset;
             transform: unset;
   }
   .mission-flex .container h2 {
-    -webkit-transform: translateY(-360px);
-            transform: translateY(-360px);
+    -webkit-transform: translateY(-260px);
+            transform: translateY(-260px);
     text-align: right;
+    font-size: 24px;
   }
   .mission-flex .container h1 {
     margin-top: 100px;
     text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
   }
   .mission-flex .container p {
     text-align: center;
+    font-size: 18px;
   }
   .mission-flex img {
+    width: 300px;
+    height: 260px;
     -webkit-transform: unset;
             transform: unset;
-    -webkit-transform: translateY(180px);
-            transform: translateY(180px);
+    -webkit-transform: translateY(124px);
+            transform: translateY(124px);
   }
 }
 
@@ -1937,6 +2001,21 @@ p {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .certified-head {
+    margin-bottom: 200px;
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+  .certified-head h1 {
+    font-size: 42px;
+  }
+  .certified-head img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .certified-head {
     margin-bottom: 178px;
@@ -2017,6 +2096,37 @@ p {
   }
   .ATK .container h3 {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .ATK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 200px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .ATK .container h2 {
+    font-size: 32px;
+  }
+  .ATK .container p {
+    font-size: 18px;
+  }
+  .ATK .container h3 {
+    font-size: 21px;
+  }
+  .ATK .container h3 span {
+    padding-left: 6px;
   }
 }
 
@@ -2135,6 +2245,60 @@ p {
     font-size: 21px;
     width: 300px;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .whyus h1 {
+    font-size: 42px;
+    margin-top: 103px;
+    margin-bottom: 38px;
+  }
+  .whyus .whyus-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 46px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .whyus .whyus-flex .container1, .whyus .whyus-flex .container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .whyus .whyus-flex .container1 img, .whyus .whyus-flex .container2 img {
+    width: 160px;
+    height: 160px;
+  }
+  .whyus .whyus-flex .container1 h4, .whyus .whyus-flex .container2 h4 {
+    font-size: 18px;
+  }
+  .whyus .whyus-flex .container1 h3, .whyus .whyus-flex .container2 h3 {
+    font-size: 24px;
+  }
+  .whyus .whyus-flex .container1 h2, .whyus .whyus-flex .container2 h2 {
+    font-size: 32px;
+  }
+  .whyus .whyus-flex .container1 p, .whyus .whyus-flex .container2 p {
+    font-size: 18px;
+    width: 260px;
+  }
+  .whyus .whyus-flex .container2 {
+    text-align: right;
+  }
+  .whyus .whyus-flex .container2 img {
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+  }
+  .whyus .whyus-flex .container2 .record-flex {
+    -webkit-transform: translateX(-220px);
+            transform: translateX(-220px);
   }
 }
 
@@ -3084,7 +3248,6 @@ p {
 
 .footer .footiest {
   position: relative;
-  width: 1152px;
   height: 270px;
   margin: 0 auto;
 }
@@ -3152,15 +3315,6 @@ p {
   .footer .text-box h2 {
     font-size: 30px;
   }
-  .footer .email-box #email {
-    font-size: 36px;
-  }
-  .footer .email-box h4 {
-    font-size: 18px;
-  }
-  .footer .email-box p {
-    font-size: 16px;
-  }
   .footer .contact-btn {
     -webkit-transform: translate(300px, -34px);
             transform: translate(300px, -34px);
@@ -3172,6 +3326,67 @@ p {
     left: 300px;
   }
   .footer .footiest p {
+    left: 300px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    margin-top: 100px;
+    height: 640px;
+  }
+  .footer .text-box {
+    margin: auto;
+    width: 800px;
+    height: 280px;
+    -webkit-column-gap: 48px;
+            column-gap: 48px;
+  }
+  .footer .text-box h1 {
+    font-size: 48px;
+    line-height: 50px;
+    width: 480px;
+  }
+  .footer .text-box h2 {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .footer .bg {
+    height: 640px;
+  }
+  .footer .bg #bg8 {
+    width: 504px;
+    height: 504px;
+  }
+  .footer .contact-btn {
+    position: absolute;
+    width: 250px;
+    height: 56px;
+    font-size: 26px;
+    left: 50%;
+    -webkit-transform: translate(100px, -34px);
+            transform: translate(100px, -34px);
+    margin: 0;
+  }
+  .footer .contact-btn .arrow {
+    left: 200px;
+    top: 7px;
+  }
+  .footer .footiest #icon {
+    left: 20px;
+  }
+  .footer .footiest .email-box {
+    bottom: 100px;
+    left: 300px;
+  }
+  .footer .footiest .email-box #email {
+    width: 52px;
+  }
+  .footer .footiest .email-box h4 {
+    font-size: 21px;
+  }
+  .footer .footiest p {
+    font-size: 14px;
     left: 300px;
   }
 }
