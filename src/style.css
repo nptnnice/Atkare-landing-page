@@ -653,11 +653,11 @@ p {
     font-size: 18px;
   }
   .header .contact-btn {
-    width: 240px;
+    width: 245px;
     height: 54px;
     font-size: 26px;
     line-height: 26px;
-    padding-left: 18px;
+    padding-left: 16px;
     padding-top: 16px;
   }
   .header .contact-btn .arrow {
@@ -665,9 +665,9 @@ p {
     height: 36px;
     top: 8px;
     right: 8px;
-    font-size: 24px;
-    line-height: 24px;
-    padding-top: 8px;
+    font-size: 26px;
+    line-height: 26px;
+    padding-top: 6px;
   }
   .header .buy .buy-btn {
     width: 180px;
@@ -2301,8 +2301,8 @@ p {
             transform: translateX(250px);
   }
   .whyus .whyus-flex .container2 .record-flex {
-    -webkit-transform: translateX(-220px);
-            transform: translateX(-220px);
+    -webkit-transform: translateX(-240px);
+            transform: translateX(-240px);
   }
 }
 
@@ -2750,9 +2750,9 @@ p {
     width: 290px;
     height: 42px;
     border-radius: 47px;
-    font-size: 21px;
-    line-height: 21px;
-    padding-top: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 13px;
     padding-left: 16px;
     white-space: nowrap;
     position: absolute;
@@ -2782,7 +2782,7 @@ p {
     border-radius: 24px;
     top: 11px;
     left: 56px;
-    padding-top: 10px;
+    padding-top: 13px;
     padding-left: 12px;
   }
   .operate .operate-mobile .operate-flex .container1 .list-box2 .num {
@@ -2801,7 +2801,7 @@ p {
     border-radius: 24px;
     right: 11px;
     top: 10px;
-    padding-top: 11px;
+    padding-top: 13px;
     padding-right: 45px;
     white-space: nowrap;
     text-align: right;
@@ -2826,13 +2826,13 @@ p {
     width: 320px;
     height: 42px;
     border-radius: 47px;
-    font-size: 21px;
-    line-height: 21px;
+    font-size: 18px;
+    line-height: 18px;
     padding-top: 10px;
     padding-left: 16px;
     white-space: nowrap;
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 6px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -2858,11 +2858,11 @@ p {
     border-radius: 24px;
     top: 11px;
     left: 56px;
-    padding-top: 10px;
+    padding-top: 12px;
     padding-left: 16px;
   }
   .operate .operate-mobile .operate-flex .container2 .list-box5 .num {
-    top: 11px;
+    top: 12px;
     left: 11px;
     padding-left: 12px;
   }
@@ -2876,8 +2876,8 @@ p {
     height: 42px;
     border-radius: 24px;
     right: 11px;
-    top: 10px;
-    padding-top: 11px;
+    top: 11px;
+    padding-top: 13px;
     padding-right: 45px;
     white-space: nowrap;
     text-align: right;
@@ -3309,6 +3309,8 @@ p {
 @media screen and (max-width: 1366px) {
   .footer .text-box {
     width: 992px;
+    height: 320px;
+    padding-top: 38px;
     padding-left: 30px;
     padding-right: 30px;
     -webkit-column-gap: 40px;
@@ -3316,10 +3318,12 @@ p {
   }
   .footer .text-box h1 {
     font-size: 60px;
+    line-height: 70px;
     width: 450px;
   }
   .footer .text-box h2 {
     font-size: 30px;
+    line-height: 40px;
   }
   .footer .contact-btn {
     font-size: 32px;
@@ -3328,6 +3332,7 @@ p {
             transform: translate(300px, -34px);
   }
   .footer .footiest {
+    position: absolute;
     -webkit-transform: translateX(40px);
             transform: translateX(40px);
   }
@@ -3359,24 +3364,26 @@ p {
 
 @media screen and (max-width: 1280px) {
   .footer {
+    -webkit-transform: none;
+            transform: none;
     margin-top: 100px;
     height: 640px;
   }
   .footer .text-box {
-    margin: auto;
     width: 800px;
     height: 280px;
     -webkit-column-gap: 48px;
             column-gap: 48px;
+    padding-top: 36px;
   }
   .footer .text-box h1 {
     font-size: 48px;
-    line-height: 50px;
-    width: 480px;
+    line-height: 58px;
+    width: 500px;
   }
   .footer .text-box h2 {
-    font-size: 21px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 34px;
   }
   .footer .bg {
     height: 640px;
@@ -3386,18 +3393,40 @@ p {
     height: 504px;
   }
   .footer .contact-btn {
-    position: absolute;
-    width: 250px;
-    height: 56px;
+    width: 246px;
+    height: 54px;
     font-size: 26px;
-    left: 50%;
-    -webkit-transform: translate(100px, -34px);
-            transform: translate(100px, -34px);
-    margin: 0;
+    line-height: 26px;
+    padding-left: 18px;
+    -webkit-transform: translate(240px, -28px);
+            transform: translate(240px, -28px);
   }
   .footer .contact-btn .arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 26px;
+    line-height: 26px;
+    padding-top: 6px;
+    top: 8px;
     left: 200px;
-    top: 7px;
+  }
+  .footer .bg #bg7 {
+    width: 280px;
+    height: 280px;
+    left: 50%;
+    -webkit-transform: translate(-550px, -40px) rotate(-90deg);
+            transform: translate(-550px, -40px) rotate(-90deg);
+  }
+  .footer .bg #bg8 {
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    -webkit-transform: translate(200px, 40px);
+            transform: translate(200px, 40px);
+  }
+  .footer .footiest {
+    position: absolute;
+    margin: auto;
   }
 }
 
