@@ -521,14 +521,14 @@ p {
   margin-bottom: 48px;
   white-space: nowrap;
   position: relative;
-  padding-left: 24px;
+  padding-left: 18px;
   text-align: left;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
 
 .header .contact-btn .arrow {
-  right: 14px;
+  right: 11px;
   top: 11px;
   padding-left: 11px;
   line-height: 42px;
@@ -631,7 +631,7 @@ p {
   }
   .header .contact-btn {
     font-size: 32px;
-    padding-left: 40px;
+    padding-left: 32px;
   }
   .header .buy .buy-btn {
     font-size: 32px;
@@ -657,14 +657,17 @@ p {
     height: 54px;
     font-size: 26px;
     line-height: 26px;
-    padding-left: 20px;
+    padding-left: 18px;
     padding-top: 16px;
   }
   .header .contact-btn .arrow {
-    width: 40px;
-    height: 40px;
-    top: 7px;
-    right: 7px;
+    width: 36px;
+    height: 36px;
+    top: 8px;
+    right: 8px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 8px;
   }
   .header .buy .buy-btn {
     width: 180px;
@@ -2221,7 +2224,8 @@ p {
 }
 
 .whyus .whyus-flex .container1 p, .whyus .whyus-flex .container2 p {
-  width: 406px;
+  width: 346px;
+  margin: auto;
 }
 
 @media screen and (max-width: 1366px) {
@@ -2633,10 +2637,11 @@ p {
     left: 8px;
   }
   .operate .operate-flex .container2 .list-box4 {
-    width: 462px;
+    width: 474px;
   }
   .operate .operate-flex .container2 .list-box4 p {
     margin-right: 8px;
+    white-space: nowrap;
   }
   .operate .operate-flex .container2 .list-box4 .num {
     padding-left: 14px;
@@ -3125,8 +3130,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 98px;
-          column-gap: 98px;
   background-color: #FFFFFF;
   width: 1152px;
   height: 352px;
@@ -3139,7 +3142,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  padding: 48px 53px 73px 32px;
+  padding: 48px 0px 32px;
   z-index: 2;
 }
 
@@ -3149,20 +3152,20 @@ p {
   color: #A50037;
   text-align: left;
   line-height: 80px;
-  width: 450px;
+  width: 500px;
 }
 
 .footer .text-box h2 {
   font-family: sukhumvitM;
   font-size: 36px;
   color: #002437;
-  line-height: 48px;
-  width: 523px;
+  line-height: 46px;
+  width: 560px;
 }
 
 .footer .bg {
   width: 100%;
-  height: 780px;
+  height: 732px;
   position: absolute;
   top: -55px;
   left: 50%;
@@ -3205,7 +3208,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 13px;
-  padding-left: 24px;
+  padding-left: 18px;
   position: relative;
   -webkit-transform: translate(360px, -34px);
           transform: translate(360px, -34px);
@@ -3214,7 +3217,7 @@ p {
   font-family: sukhumvitB;
   font-size: 36px;
   color: #FFFFFF;
-  line-height: 62px;
+  line-height: 36px;
   z-index: 3;
 }
 
@@ -3247,20 +3250,23 @@ p {
 }
 
 .footer .footiest {
-  position: relative;
-  height: 270px;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer .footiest #icon {
-  position: absolute;
   width: 229px;
-  bottom: 4px;
-  left: -320px;
+  -webkit-transform: translateX(-560px);
+          transform: translateX(-560px);
 }
 
 .footer .footiest .email-box {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3269,8 +3275,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: 117px;
-  left: -16px;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
 }
 
 .footer .footiest .email-box #email {
@@ -3288,25 +3294,25 @@ p {
   font-family: yaroRg;
   font-size: 18px;
   color: #002437;
-  bottom: 36px;
-  left: -16px;
+  white-space: nowrap;
+  -webkit-transform: translate(-270px, 180px);
+          transform: translate(-270px, 180px);
 }
 
-@media screen and (max-width: 1830px) {
-  .footer .footiest #icon {
-    left: -100px;
-  }
-  .footer .footiest .email-box {
-    left: 180px;
-  }
-  .footer .footiest p {
-    left: 180px;
+@media screen and (max-width: 1760px) {
+  .footer .footiest {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
 }
 
 @media screen and (max-width: 1366px) {
   .footer .text-box {
     width: 992px;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
   }
   .footer .text-box h1 {
     font-size: 60px;
@@ -3316,17 +3322,38 @@ p {
     font-size: 30px;
   }
   .footer .contact-btn {
+    font-size: 32px;
+    padding-left: 32px;
     -webkit-transform: translate(300px, -34px);
             transform: translate(300px, -34px);
   }
-  .footer .footiest #icon {
-    left: 20px;
+  .footer .footiest {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
   }
-  .footer .footiest .email-box {
-    left: 300px;
+  .footer .footiest #icon {
+    width: 200px;
+    height: 200px;
+  }
+  .footer .footiest .email-box #email {
+    width: 50px;
+  }
+  .footer .footiest .email-box h4 {
+    font-size: 21px;
   }
   .footer .footiest p {
-    left: 300px;
+    font-size: 16px;
+    -webkit-transform: translate(-300px, 160px);
+            transform: translate(-300px, 160px);
+  }
+  .footer .bg #bg7 {
+    -webkit-transform: translate(-750px, -40px) rotate(-90deg);
+            transform: translate(-750px, -40px) rotate(-90deg);
+  }
+  .footer .bg #bg8 {
+    left: 50%;
+    -webkit-transform: translate(250px, 40px);
+            transform: translate(250px, 40px);
   }
 }
 
@@ -3371,23 +3398,6 @@ p {
   .footer .contact-btn .arrow {
     left: 200px;
     top: 7px;
-  }
-  .footer .footiest #icon {
-    left: 20px;
-  }
-  .footer .footiest .email-box {
-    bottom: 100px;
-    left: 300px;
-  }
-  .footer .footiest .email-box #email {
-    width: 52px;
-  }
-  .footer .footiest .email-box h4 {
-    font-size: 21px;
-  }
-  .footer .footiest p {
-    font-size: 14px;
-    left: 300px;
   }
 }
 

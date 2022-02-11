@@ -343,11 +343,11 @@ p
         margin-bottom: 48px
         white-space: nowrap
         position: relative
-        padding-left: 24px
+        padding-left: 18px
         text-align: left
         transition: 0.2s ease-out
         .arrow
-            right: 14px
+            right: 11px
             top: 11px
             padding-left: 11px
             line-height: 42px
@@ -413,7 +413,7 @@ p
             font-size: 21px
         .contact-btn
             font-size: 32px
-            padding-left: 40px
+            padding-left: 32px
         .buy
             .buy-btn
                 font-size: 32px
@@ -432,13 +432,16 @@ p
             height: 54px
             font-size: 26px
             line-height: 26px
-            padding-left: 20px
+            padding-left: 18px
             padding-top: 16px
             .arrow
-                width: 40px
-                height: 40px
-                top: 7px
-                right: 7px
+                width: 36px
+                height: 36px
+                top: 8px
+                right: 8px
+                font-size: 24px
+                line-height: 24px
+                padding-top: 8px
         .buy
             .buy-btn
                 width: 180px
@@ -1126,9 +1129,6 @@ p
             height: 216px
             transform: translateY(-50px)
 
-
-       
-
 .mission-flex
     display: flex
     width: 100%
@@ -1227,7 +1227,6 @@ p
             width: 243px
             height: 216px
             transform: translateY(-50px)
-
 
 .certified-head
     display: flex
@@ -1393,7 +1392,8 @@ p
                 font-size: 48px
                 color: $black
             p
-                width: 406px
+                width: 346px
+                margin: auto
 
     @media screen and (max-width: 1366px)
         h1
@@ -1662,9 +1662,10 @@ p
                         left: 8px
             .container2
                 .list-box4
-                    width: 462px
+                    width: 474px
                     p
                         margin-right: 8px
+                        white-space: nowrap
                     .num
                         padding-left: 14px
                         padding-top: 4px
@@ -2030,7 +2031,7 @@ p
     // overflow: hidden
     .text-box
         display: flex
-        column-gap: 98px
+        // column-gap: 98px
         background-color: $white
         width: 1152px
         height: 352px
@@ -2039,7 +2040,7 @@ p
         box-shadow: 5px 5px 15px #0000001A
         justify-content: center
         margin: auto
-        padding: 48px 53px 73px 32px
+        padding: 48px 0px 32px
         z-index: 2
         h1
             font-family: sukhumvitB
@@ -2047,18 +2048,18 @@ p
             color: $red
             text-align: left
             line-height: 80px
-            width: 450px
+            width: 500px
         h2
             font-family: sukhumvitM
             font-size: 36px
             color: $black
-            line-height: 48px
-            width: 523px
+            line-height: 46px
+            width: 560px
 
     .bg
         // border: 1px solid $red
         width: 100%
-        height: 780px
+        height: 732px
         position: absolute
         top: -55px
         left: 50%
@@ -2088,14 +2089,14 @@ p
         display: flex
         align-items: center
         padding-top: 13px
-        padding-left: 24px
+        padding-left: 18px
         position: relative
         transform: translate(360px, -34px)
         transition: 0.2s ease-out
         font-family: sukhumvitB
         font-size: 36px
         color: $white
-        line-height: 62px
+        line-height: 36px
         z-index: 3
         .arrow
             position: absolute
@@ -2118,23 +2119,20 @@ p
                 color: $brightred
                 padding-left: 15px
     .footiest
-        position: relative
-        // border: 1px solid $red
-        // width: 1152px
-        height: 270px
-        margin: 0 auto
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 36px
+        display: flex
+        // column-gap: 100px
         #icon
-            position: absolute
             width: 229px
-            bottom: 4px
-            left: -320px
+            transform: translateX(-560px)
         .email-box
-            position: absolute
             display: flex
             column-gap: 16px
             align-items: center
-            bottom: 117px
-            left: -16px
+            transform: translateX(-500px)
             #email
                 width: 68px
             h4
@@ -2146,35 +2144,49 @@ p
             font-family: yaroRg
             font-size: 18px
             color: $black
-            bottom: 36px
-            left: -16px
+            white-space: nowrap
+            transform: translate(-270px, 180px)
 
-    @media screen and (max-width: 1830px)
+    @media screen and (max-width: 1760px)
         .footiest
-            #icon
-                left: -100px
-            .email-box
-                left: 180px
-            p
-                left: 180px
+            transform: translateX(-100px)
+            
 
     @media screen and (max-width: 1366px)
         .text-box
             width: 992px
+            padding-left: 30px
+            padding-right: 30px
+            column-gap: 40px
             h1
                 font-size: 60px
                 width: 450px
             h2
                 font-size: 30px
         .contact-btn
+            font-size: 32px
+            padding-left: 32px
             transform: translate(300px, -34px)
         .footiest
+            transform: translateX(40px)
             #icon
-                left: 20px
+                width: 200px
+                height: 200px
             .email-box
-                left: 300px
+                #email
+                    width: 50px
+                h4
+                    font-size: 21px
             p
-                left: 300px
+                font-size: 16px
+                transform: translate(-300px, 160px)
+        .bg
+            #bg7
+                // left: 50%
+                transform: translate(-750px, -40px) rotate(-90deg)
+            #bg8
+                left: 50%
+                transform: translate(250px, 40px)
 
     @media screen and (max-width: 1280px)
         margin-top: 100px
@@ -2209,18 +2221,21 @@ p
                 left: 200px
                 top: 7px
         .footiest
-            #icon
-                left: 20px
-            .email-box
-                bottom: 100px
-                left: 300px
-                #email
-                    width: 52px
-                h4
-                    font-size: 21px
-            p
-                font-size: 14px
-                left: 300px
+            // position: absolute
+            // left: 50%
+            // transform: translateX(-50%)
+            // #icon
+            //     // left: 20px
+            // .email-box
+            //     bottom: 100px
+            //     // left: 300px
+            //     #email
+            //         width: 52px
+            //     h4
+            //         font-size: 21px
+            // p
+            //     font-size: 14px
+            //     // left: 300px
 
     @media screen and (max-width: 900px)
         margin-top: 10px
