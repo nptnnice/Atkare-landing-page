@@ -1881,8 +1881,11 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 150px;
+    padding-top: 0;
+    margin-top: 40px;
     margin-bottom: 40px;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   .mission-flex .container {
     -webkit-transform: unset;
@@ -1924,23 +1927,35 @@ p {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 64px;
+    margin-top: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    margin-bottom: 0;
   }
   .mission-flex #bg2 {
     display: unset;
     position: absolute;
-    width: 253px;
-    height: 253px;
-    top: 0;
-    -webkit-transform: translate(120px, 40px);
-            transform: translate(120px, 40px);
+    width: 357px;
+    height: 357px;
+    -webkit-transform: translate(120px, -120px);
+            transform: translate(120px, -120px);
+    z-index: -1;
+  }
+  .mission-flex #bg3 {
+    display: unset;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: translate(-120px, 100px);
+            transform: translate(-120px, 100px);
     z-index: -1;
   }
   .mission-flex .container h2 {
-    -webkit-transform: unset;
-            transform: unset;
+    -webkit-transform: none;
+            transform: none;
     font-size: 21px;
     text-align: right;
-    margin-bottom: 262px;
+    margin-bottom: 256px;
     margin-right: 32px;
   }
   .mission-flex .container h1 {
@@ -1955,8 +1970,8 @@ p {
     position: absolute;
     width: 243px;
     height: 216px;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(45px);
+            transform: translateY(45px);
   }
 }
 
@@ -2998,7 +3013,7 @@ p {
     top: 9px;
     left: 10px;
     padding-top: 8px;
-    padding-left: 0px;
+    padding-left: 12px;
   }
   .operate .operate-mobile .operate-flex .container1 .list-box2 {
     width: 252px;
@@ -3009,12 +3024,14 @@ p {
     width: 160px;
     height: 36px;
     border-radius: 24px;
+    top: 9px;
     right: 38px;
     padding-top: 10px;
     padding-left: 12px;
   }
   .operate .operate-mobile .operate-flex .container1 .list-box2 .num {
     top: 9.5px;
+    padding-left: 10px;
   }
   .operate .operate-mobile .operate-flex .container1 .list-box3 {
     width: 260px;
@@ -3026,6 +3043,7 @@ p {
     height: 41px;
     border-radius: 24px;
     right: 10px;
+    top: 7px;
     padding-top: 3px;
     padding-right: 45px;
     white-space: unset;
@@ -3033,6 +3051,7 @@ p {
   }
   .operate .operate-mobile .operate-flex .container1 .list-box3 .num {
     top: 9.5px;
+    padding-left: 10px;
   }
   .operate .operate-mobile .operate-flex .container2 {
     -webkit-box-align: end;
@@ -3073,7 +3092,7 @@ p {
     top: 10px;
     left: 10px;
     padding-top: 8px;
-    padding-left: 0px;
+    padding-left: 12px;
   }
   .operate .operate-mobile .operate-flex .container2 .list-box5 {
     width: 220px;
@@ -3081,10 +3100,10 @@ p {
   }
   .operate .operate-mobile .operate-flex .container2 .list-box5 p {
     line-height: 18px;
-    width: 154px;
-    height: 43px;
+    width: 150px;
+    height: 42px;
     border-radius: 24px;
-    right: 14px;
+    left: 45px;
     top: 6px;
     padding-top: 4px;
     padding-right: 40px;
@@ -3093,6 +3112,7 @@ p {
   }
   .operate .operate-mobile .operate-flex .container2 .list-box5 .num {
     top: 9.5px;
+    padding-left: 10px;
   }
   .operate .operate-mobile .operate-flex .container2 .list-box6 {
     width: 256px;
@@ -3103,7 +3123,7 @@ p {
     height: 43px;
     border-radius: 24px;
     top: 6.5px;
-    right: 14px;
+    left: 54px;
     padding-top: 4px;
     padding-right: 60px;
     white-space: unset;
@@ -3112,6 +3132,7 @@ p {
   }
   .operate .operate-mobile .operate-flex .container2 .list-box6 .num {
     top: 9.5px;
+    padding-left: 10px;
   }
 }
 
@@ -3425,8 +3446,38 @@ p {
             transform: translate(200px, 40px);
   }
   .footer .footiest {
-    position: absolute;
-    margin: auto;
+    width: 800px;
+    height: 180px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    text-align: center;
+  }
+  .footer .footiest #icon {
+    display: none;
+  }
+  .footer .footiest .email-box {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transform: translate(90%);
+            transform: translate(90%);
+  }
+  .footer .footiest .email-box #email {
+    width: 40px;
+  }
+  .footer .footiest .email-box h4 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .footer .footiest p {
+    -webkit-transform: none;
+            transform: none;
+    font-size: 14px;
+    white-space: nowrap;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: 16px;
   }
 }
 
@@ -3446,8 +3497,8 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 16px;
-    padding-top: 64px;
-    padding-left: 22px;
+    padding-top: 24px;
+    padding-left: 16px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: relative;
@@ -3455,7 +3506,7 @@ p {
   .footer .text-box h1 {
     font-size: 31px;
     line-height: 34px;
-    width: 220px;
+    width: 224px;
   }
   .footer .text-box h2 {
     font-size: 15px;
@@ -3502,39 +3553,42 @@ p {
   .footer .contact-btn:hover .arrow {
     padding-left: 12px;
   }
-  .footer .contact-btn {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-  }
   .footer .footiest {
     width: 375px;
-    height: 0;
+    height: 90px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: 0;
+    text-align: center;
   }
   .footer .footiest #icon {
     display: none;
   }
   .footer .footiest .email-box {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    bottom: unset;
-    margin-top: 66px;
+    -webkit-transform: translate(62px);
+            transform: translate(62px);
+    height: 20px;
+    bottom: 64px;
   }
   .footer .footiest .email-box #email {
     width: 26px;
   }
   .footer .footiest .email-box h4 {
-    margin-top: 4px;
     font-size: 17px;
+    line-height: 17px;
+    padding-top: 8px;
   }
   .footer .footiest p {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: none;
+            transform: none;
     font-size: 10px;
+    line-height: 10px;
     white-space: nowrap;
-    bottom: unset;
-    margin-top: 121px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: 36px;
   }
 }
 
@@ -3543,7 +3597,7 @@ p {
   font-size: 60px;
   color: #002437;
   padding-top: 191px;
-  padding-left: 192px;
+  padding-left: 48px;
 }
 
 .form-box, .b2b-booth .B2B-grid, .retail .retail-grid {
@@ -3557,7 +3611,6 @@ p {
           box-shadow: 5px 5px 15px #00000029;
   background-color: #FFFFFF;
   margin-top: 16px;
-  margin-left: 144px;
   margin-bottom: 385px;
   padding: 41px 48px 32px 48px;
   display: -ms-grid;
@@ -3578,7 +3631,7 @@ p {
   width: 688px;
   height: 80px;
   border-radius: 47px;
-  margin-left: 192px;
+  margin-left: 48px;
   margin-top: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -3632,19 +3685,11 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.b2b-booth #bar {
-  width: 256px;
-}
-
-@media screen and (max-width: 1600px) {
-  .b2b-booth #bar {
-    display: none;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 294px;
+          column-gap: 294px;
 }
 
 .b2b-booth .B2B-grid {
@@ -4016,6 +4061,141 @@ p {
   background-color: #FFC625;
 }
 
+@media screen and (max-width: 1850px) {
+  .b2b-booth {
+    -webkit-column-gap: 100px;
+            column-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 1630px) {
+  .b2b-booth .bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .b2b-booth .head-contact {
+    font-size: 48px;
+    padding-left: 48px;
+  }
+  .b2b-booth .toggle-btn {
+    margin-left: 48px;
+    width: 500px;
+    height: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 80px;
+            column-gap: 80px;
+  }
+  .b2b-booth .toggle-btn h1, .b2b-booth .toggle-btn h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .b2b-booth .toggle-btn .move-btn {
+    width: 250px;
+    height: 48px;
+    top: 11px;
+  }
+  .b2b-booth .form-box, .b2b-booth .B2B-grid, .b2b-booth .retail .retail-grid, .retail .b2b-booth .retail-grid {
+    height: 1820px;
+    width: 860px;
+    -ms-grid-rows: 128px 490px 720px 320px;
+        grid-template-rows: 128px 490px 720px 320px;
+  }
+  .b2b-booth .form-box h1, .b2b-booth .B2B-grid h1, .b2b-booth .retail .retail-grid h1, .retail .b2b-booth .retail-grid h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .b2b-booth .form-box p, .b2b-booth .B2B-grid p, .b2b-booth .retail .retail-grid p, .retail .b2b-booth .retail-grid p {
+    font-size: 21px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+  .b2b-booth .form-box .general-topic, .b2b-booth .B2B-grid .general-topic, .b2b-booth .retail .retail-grid .general-topic, .retail .b2b-booth .retail-grid .general-topic {
+    font-size: 32px;
+    margin-top: 16px;
+  }
+  .b2b-booth .form-box .general, .b2b-booth .B2B-grid .general, .b2b-booth .retail .retail-grid .general, .retail .b2b-booth .retail-grid .general {
+    font-size: 18px;
+    margin-top: 32px;
+  }
+  .b2b-booth .form-box .general .name-flex, .b2b-booth .B2B-grid .general .name-flex, .b2b-booth .retail .retail-grid .general .name-flex, .retail .b2b-booth .retail-grid .general .name-flex, .b2b-booth .form-box .general .contact-flex, .b2b-booth .B2B-grid .general .contact-flex, .b2b-booth .retail .retail-grid .general .contact-flex, .retail .b2b-booth .retail-grid .general .contact-flex {
+    display: unset;
+  }
+  .b2b-booth .form-box .general .name-flex .container, .b2b-booth .B2B-grid .general .name-flex .container, .b2b-booth .retail .retail-grid .general .name-flex .container, .retail .b2b-booth .retail-grid .general .name-flex .container, .b2b-booth .form-box .general .contact-flex .container, .b2b-booth .B2B-grid .general .contact-flex .container, .b2b-booth .retail .retail-grid .general .contact-flex .container, .retail .b2b-booth .retail-grid .general .contact-flex .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .b2b-booth .form-box .general .contact-flex .email-box, .b2b-booth .B2B-grid .general .contact-flex .email-box, .b2b-booth .retail .retail-grid .general .contact-flex .email-box, .retail .b2b-booth .retail-grid .general .contact-flex .email-box, .b2b-booth .form-box .general .contact-flex .phone-box, .b2b-booth .B2B-grid .general .contact-flex .phone-box, .b2b-booth .retail .retail-grid .general .contact-flex .phone-box, .retail .b2b-booth .retail-grid .general .contact-flex .phone-box {
+    width: 360px;
+  }
+  .b2b-booth .form-box .company-topic, .b2b-booth .B2B-grid .company-topic, .b2b-booth .retail .retail-grid .company-topic, .retail .b2b-booth .retail-grid .company-topic {
+    font-size: 32px;
+    margin-top: 72px;
+  }
+  .b2b-booth .form-box .company, .b2b-booth .B2B-grid .company, .b2b-booth .retail .retail-grid .company, .retail .b2b-booth .retail-grid .company {
+    margin-top: 0px;
+  }
+  .b2b-booth .form-box .company label, .b2b-booth .B2B-grid .company label, .b2b-booth .retail .retail-grid .company label, .retail .b2b-booth .retail-grid .company label, .b2b-booth .form-box .company h5, .b2b-booth .B2B-grid .company h5, .b2b-booth .retail .retail-grid .company h5, .retail .b2b-booth .retail-grid .company h5 {
+    font-size: 18px;
+  }
+  .b2b-booth .form-box .company .container, .b2b-booth .B2B-grid .company .container, .b2b-booth .retail .retail-grid .company .container, .retail .b2b-booth .retail-grid .company .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .b2b-booth .form-box .company .container .company-box, .b2b-booth .B2B-grid .company .container .company-box, .b2b-booth .retail .retail-grid .company .container .company-box, .retail .b2b-booth .retail-grid .company .container .company-box {
+    width: 480px;
+  }
+  .b2b-booth .form-box .company .company-type, .b2b-booth .B2B-grid .company .company-type, .b2b-booth .retail .retail-grid .company .company-type, .retail .b2b-booth .retail-grid .company .company-type {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 192px 192px;
+        grid-template-columns: 192px 192px;
+    -ms-grid-rows: 192px 192px;
+        grid-template-rows: 192px 192px;
+    grid-gap: 16px;
+    margin-bottom: 16px;
+  }
+  .b2b-booth .form-box .company .other-box, .b2b-booth .B2B-grid .company .other-box, .b2b-booth .retail .retail-grid .company .other-box, .retail .b2b-booth .retail-grid .company .other-box {
+    margin-top: 32px;
+  }
+  .b2b-booth .form-box .company .other-selected, .b2b-booth .B2B-grid .company .other-selected, .b2b-booth .retail .retail-grid .company .other-selected, .retail .b2b-booth .retail-grid .company .other-selected {
+    margin-top: 32px;
+    width: 400px;
+  }
+  .b2b-booth .form-box .company .other-selected .insert, .b2b-booth .B2B-grid .company .other-selected .insert, .b2b-booth .retail .retail-grid .company .other-selected .insert, .retail .b2b-booth .retail-grid .company .other-selected .insert {
+    width: 380px;
+    height: 48px;
+    left: 10px;
+    top: 8px;
+  }
+  .b2b-booth .form-box .company .other-selected img, .b2b-booth .B2B-grid .company .other-selected img, .b2b-booth .retail .retail-grid .company .other-selected img, .retail .b2b-booth .retail-grid .company .other-selected img, .b2b-booth .form-box .company .other-selected label, .b2b-booth .B2B-grid .company .other-selected label, .b2b-booth .retail .retail-grid .company .other-selected label, .retail .b2b-booth .retail-grid .company .other-selected label {
+    display: none;
+  }
+  .b2b-booth .form-box .add-topic, .b2b-booth .B2B-grid .add-topic, .b2b-booth .retail .retail-grid .add-topic, .retail .b2b-booth .retail-grid .add-topic {
+    font-size: 32px;
+  }
+  .b2b-booth .form-box .add-box, .b2b-booth .B2B-grid .add-box, .b2b-booth .retail .retail-grid .add-box, .retail .b2b-booth .retail-grid .add-box {
+    width: 480px;
+  }
+  .b2b-booth .form-box .send-btn, .b2b-booth .B2B-grid .send-btn, .b2b-booth .retail .retail-grid .send-btn, .retail .b2b-booth .retail-grid .send-btn {
+    right: 56px;
+    bottom: 32px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .b2b-booth {
     display: none;
@@ -4086,6 +4266,11 @@ p {
   font-size: 24px;
   line-height: 24px;
   color: #002437;
+  display: none;
+}
+
+.B2B-mobile .toggle-mobile1 {
+  display: none;
 }
 
 @media screen and (max-width: 1366px) {
@@ -4098,6 +4283,14 @@ p {
 
 @media screen and (max-width: 900px) {
   .B2B-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .B2B-mobile h1 {
+    display: unset;
+  }
+  .B2B-mobile .toggle-mobile1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4590,6 +4783,26 @@ p {
 
 .retail .retail-grid .send-btn:hover {
   background-color: #FFC625;
+}
+
+@media screen and (max-width: 1850px) {
+  .retail {
+    -webkit-column-gap: 100px;
+            column-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 1630px) {
+  .retail .bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .retail .form-box, .retail .b2b-booth .B2B-grid, .b2b-booth .retail .B2B-grid, .retail .retail-grid {
+    height: 1820px;
+    width: 860px;
+  }
 }
 
 @media screen and (max-width: 900px) {
