@@ -1892,7 +1892,6 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 0;
     padding-top: 150px;
     margin-bottom: 40px;
     -webkit-transform: translate(0%, -100px);
@@ -1904,8 +1903,9 @@ p {
     position: absolute;
     width: 357px;
     height: 357px;
-    -webkit-transform: translate(180px, -220px);
-            transform: translate(180px, -220px);
+    margin: 0;
+    -webkit-transform: translate(180px, -250px);
+            transform: translate(180px, -250px);
     z-index: -1;
   }
   .mission-flex #bg3 {
