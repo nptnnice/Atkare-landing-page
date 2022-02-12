@@ -1726,6 +1726,17 @@ p {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 100px;
+    position: relative;
+  }
+  .vision-flex #bg1 {
+    display: unset;
+    position: absolute;
+    width: 197px;
+    height: 197px;
+    top: 0;
+    -webkit-transform: translate(180px, 40px);
+            transform: translate(180px, 40px);
+    z-index: -1;
   }
   .vision-flex .container {
     -webkit-transform: unset;
@@ -1882,10 +1893,29 @@ p {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 0;
-    margin-top: 40px;
+    padding-top: 150px;
     margin-bottom: 40px;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translate(0%, -100px);
+            transform: translate(0%, -100px);
+    position: relative;
+  }
+  .mission-flex #bg2 {
+    display: unset;
+    position: absolute;
+    width: 357px;
+    height: 357px;
+    -webkit-transform: translate(180px, -220px);
+            transform: translate(180px, -220px);
+    z-index: -1;
+  }
+  .mission-flex #bg3 {
+    display: unset;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: translate(-150px, 100px);
+            transform: translate(-150px, 100px);
+    z-index: -1;
   }
   .mission-flex .container {
     -webkit-transform: unset;
@@ -2134,6 +2164,16 @@ p {
     text-align: center;
     position: relative;
   }
+  .ATK #bg4 {
+    display: unset;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 0;
+    -webkit-transform: translate(-200px, -250px);
+            transform: translate(-200px, -250px);
+    z-index: -1;
+  }
   .ATK .container h2 {
     font-size: 32px;
   }
@@ -2268,10 +2308,22 @@ p {
 }
 
 @media screen and (max-width: 1280px) {
+  .whyus {
+    position: relative;
+  }
   .whyus h1 {
     font-size: 42px;
     margin-top: 103px;
     margin-bottom: 38px;
+  }
+  .whyus #bg5 {
+    display: unset;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-transform: translate(250px, -170px);
+            transform: translate(250px, -170px);
+    z-index: -1;
   }
   .whyus .whyus-flex {
     -webkit-box-orient: vertical;
@@ -2713,6 +2765,15 @@ p {
             align-items: center;
     text-align: center;
     overflow: hidden;
+  }
+  .operate #bg6 {
+    display: unset;
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    -webkit-transform: translate(16px, 240px);
+            transform: translate(16px, 240px);
+    z-index: -1;
   }
   .operate .operate-mobile {
     display: -webkit-box;
@@ -4569,21 +4630,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 2257px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 294px;
+          column-gap: 294px;
+  height: 2000px;
   overflow: hidden;
-}
-
-.retail #bar {
-  width: 256px;
-}
-
-@media screen and (max-width: 1600px) {
-  .retail #bar {
-    display: none;
-  }
 }
 
 .retail .toggle-btn .move-btn {
@@ -4799,9 +4852,106 @@ p {
 }
 
 @media screen and (max-width: 1280px) {
+  .retail {
+    height: 2000px;
+  }
+  .retail .head-contact {
+    font-size: 48px;
+    padding-left: 48px;
+  }
+  .retail .toggle-btn {
+    margin-left: 48px;
+    width: 500px;
+    height: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 80px;
+            column-gap: 80px;
+  }
+  .retail .toggle-btn h1, .retail .toggle-btn h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .retail .toggle-btn .move-btn {
+    width: 250px;
+    height: 48px;
+    top: 11px;
+    -webkit-transform: translateX(227px);
+            transform: translateX(227px);
+  }
   .retail .form-box, .retail .b2b-booth .B2B-grid, .b2b-booth .retail .B2B-grid, .retail .retail-grid {
-    height: 1820px;
+    height: 1400px;
     width: 860px;
+    -ms-grid-rows: 128px 420px 350px 320px;
+        grid-template-rows: 128px 420px 350px 320px;
+    margin-bottom: 100px;
+  }
+  .retail .form-box h1, .retail .b2b-booth .B2B-grid h1, .b2b-booth .retail .B2B-grid h1, .retail .retail-grid h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .retail .form-box p, .retail .b2b-booth .B2B-grid p, .b2b-booth .retail .B2B-grid p, .retail .retail-grid p {
+    font-size: 21px;
+    line-height: 32px;
+    padding-top: 24px;
+  }
+  .retail .form-box p span, .retail .b2b-booth .B2B-grid p span, .b2b-booth .retail .B2B-grid p span, .retail .retail-grid p span {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .retail .form-box .general-topic, .retail .b2b-booth .B2B-grid .general-topic, .b2b-booth .retail .B2B-grid .general-topic, .retail .retail-grid .general-topic {
+    font-size: 32px;
+    margin-top: 16px;
+  }
+  .retail .form-box .general, .retail .b2b-booth .B2B-grid .general, .b2b-booth .retail .B2B-grid .general, .retail .retail-grid .general {
+    font-size: 18px;
+    margin-top: 32px;
+  }
+  .retail .form-box .general .name-flex, .retail .b2b-booth .B2B-grid .general .name-flex, .b2b-booth .retail .B2B-grid .general .name-flex, .retail .retail-grid .general .name-flex, .retail .form-box .general .contact-flex, .retail .b2b-booth .B2B-grid .general .contact-flex, .b2b-booth .retail .B2B-grid .general .contact-flex, .retail .retail-grid .general .contact-flex {
+    display: unset;
+  }
+  .retail .form-box .general .name-flex .container, .retail .b2b-booth .B2B-grid .general .name-flex .container, .b2b-booth .retail .B2B-grid .general .name-flex .container, .retail .retail-grid .general .name-flex .container, .retail .form-box .general .contact-flex .container, .retail .b2b-booth .B2B-grid .general .contact-flex .container, .b2b-booth .retail .B2B-grid .general .contact-flex .container, .retail .retail-grid .general .contact-flex .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 14px;
+  }
+  .retail .form-box .general .name-flex .container label, .retail .b2b-booth .B2B-grid .general .name-flex .container label, .b2b-booth .retail .B2B-grid .general .name-flex .container label, .retail .retail-grid .general .name-flex .container label, .retail .form-box .general .contact-flex .container label, .retail .b2b-booth .B2B-grid .general .contact-flex .container label, .b2b-booth .retail .B2B-grid .general .contact-flex .container label, .retail .retail-grid .general .contact-flex .container label {
+    font-size: 18px;
+  }
+  .retail .form-box .general .name-flex .container .firstname-box, .retail .b2b-booth .B2B-grid .general .name-flex .container .firstname-box, .b2b-booth .retail .B2B-grid .general .name-flex .container .firstname-box, .retail .retail-grid .general .name-flex .container .firstname-box, .retail .form-box .general .name-flex .container .lastname-box, .retail .b2b-booth .B2B-grid .general .name-flex .container .lastname-box, .b2b-booth .retail .B2B-grid .general .name-flex .container .lastname-box, .retail .retail-grid .general .name-flex .container .lastname-box, .retail .form-box .general .contact-flex .container .firstname-box, .retail .b2b-booth .B2B-grid .general .contact-flex .container .firstname-box, .b2b-booth .retail .B2B-grid .general .contact-flex .container .firstname-box, .retail .retail-grid .general .contact-flex .container .firstname-box, .retail .form-box .general .contact-flex .container .lastname-box, .retail .b2b-booth .B2B-grid .general .contact-flex .container .lastname-box, .b2b-booth .retail .B2B-grid .general .contact-flex .container .lastname-box, .retail .retail-grid .general .contact-flex .container .lastname-box {
+    margin-bottom: 0px;
+  }
+  .retail .form-box .general .contact-flex, .retail .b2b-booth .B2B-grid .general .contact-flex, .b2b-booth .retail .B2B-grid .general .contact-flex, .retail .retail-grid .general .contact-flex {
+    margin-bottom: 14px;
+  }
+  .retail .form-box .general .contact-flex .email-box, .retail .b2b-booth .B2B-grid .general .contact-flex .email-box, .b2b-booth .retail .B2B-grid .general .contact-flex .email-box, .retail .retail-grid .general .contact-flex .email-box, .retail .form-box .general .contact-flex .phone-box, .retail .b2b-booth .B2B-grid .general .contact-flex .phone-box, .b2b-booth .retail .B2B-grid .general .contact-flex .phone-box, .retail .retail-grid .general .contact-flex .phone-box {
+    width: 360px;
+    margin-bottom: 0px;
+  }
+  .retail .form-box .purpose-topic, .retail .b2b-booth .B2B-grid .purpose-topic, .b2b-booth .retail .B2B-grid .purpose-topic, .retail .retail-grid .purpose-topic {
+    font-size: 32px;
+    margin-top: 16px;
+  }
+  .retail .form-box .purpose-box, .retail .b2b-booth .B2B-grid .purpose-box, .b2b-booth .retail .B2B-grid .purpose-box, .retail .retail-grid .purpose-box {
+    width: 480px;
+    height: 300px;
+  }
+  .retail .form-box .add-topic, .retail .b2b-booth .B2B-grid .add-topic, .b2b-booth .retail .B2B-grid .add-topic, .retail .retail-grid .add-topic {
+    font-size: 32px;
+  }
+  .retail .form-box .add-box, .retail .b2b-booth .B2B-grid .add-box, .b2b-booth .retail .B2B-grid .add-box, .retail .retail-grid .add-box {
+    width: 480px;
+    height: 300px;
+  }
+  .retail .form-box .send-btn, .retail .b2b-booth .B2B-grid .send-btn, .b2b-booth .retail .B2B-grid .send-btn, .retail .retail-grid .send-btn {
+    right: 56px;
+    bottom: 32px;
   }
 }
 
@@ -4824,6 +4974,7 @@ p {
   row-gap: 12px;
   width: 343px;
   margin: auto;
+  display: none;
 }
 
 .retail-mobile h1 {
@@ -4831,11 +4982,40 @@ p {
   font-size: 24px;
   line-height: 24px;
   color: #002437;
+  display: none;
+}
+
+.retail-mobile .toggle-mobile2 {
+  display: none;
 }
 
 .retail-mobile .toggle-mobile2 .move-btn {
   left: unset;
   right: 6px;
+}
+
+@media screen and (max-width: 1366px) {
+  .retail-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .retail-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .retail-mobile h1 {
+    display: unset;
+  }
+  .retail-mobile .toggle-mobile2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1366px) {
