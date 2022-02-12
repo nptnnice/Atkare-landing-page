@@ -441,7 +441,7 @@ p
                 right: 8px
                 font-size: 26px
                 line-height: 26px
-                padding-top: 6px
+                padding-top: 5px
         .buy
             .buy-btn
                 width: 180px
@@ -1465,14 +1465,15 @@ p
         position: relative
         h1
             font-size: 42px
-            margin-top: 103px
+            margin-top: 150px
             margin-bottom: 38px
         #bg5
             display: unset
             position: absolute
             width: 300px
             height: 300px
-            transform: translate(250px,-170px)
+            left: 50%
+            transform: translate(-240px,-170px)
             z-index: -1
         .whyus-flex
             flex-direction: column
@@ -2520,21 +2521,23 @@ p
             .name-flex
                 display: flex
                 column-gap: 16px
-                width: 736px
-                .firstname-box, .lastname-box
-                    font-family: sukhumvitSemiB
-                    font-size: 21px
-                    line-height: 21px
-                    padding-top: 17px
-                    padding-left: 22px
-                    padding-bottom: 16px
-                    width: 360px
-                    height: 56px
-                    box-sizing: border-box
-                    border: 1px solid $black
-                    border-radius: 28px
-                    margin-top: 3px
-                    margin-bottom: 14px
+                .container
+                    display: flex
+                    flex-direction: column
+                    .firstname-box, .lastname-box
+                        font-family: sukhumvitSemiB
+                        font-size: 21px
+                        line-height: 21px
+                        padding-top: 17px
+                        padding-left: 22px
+                        padding-bottom: 16px
+                        width: 360px
+                        height: 56px
+                        box-sizing: border-box
+                        border: 1px solid $black
+                        border-radius: 28px
+                        margin-top: 3px
+                        margin-bottom: 14px
             .job-box
                 font-family: sukhumvitSemiB
                 font-size: 21px
@@ -3067,7 +3070,7 @@ p
     display: flex
     justify-content: center
     column-gap: 294px
-    height: 2000px
+    height: 2257px
     overflow: hidden
     .toggle-btn
         @extend .toggle-bar
@@ -3110,20 +3113,23 @@ p
             .name-flex
                 display: flex
                 column-gap: 16px
-                .firstname-box, .lastname-box
-                    font-family: sukhumvitSemiB
-                    font-size: 21px
-                    line-height: 21px
-                    padding-top: 17px
-                    padding-left: 22px
-                    padding-bottom: 16px
-                    width: 360px
-                    height: 56px
-                    box-sizing: border-box
-                    border: 1px solid $black
-                    border-radius: 28px
-                    margin-top: 3px
-                    margin-bottom: 30px
+                .container
+                    display: flex
+                    flex-direction: column
+                    .firstname-box, .lastname-box
+                        font-family: sukhumvitSemiB
+                        font-size: 21px
+                        line-height: 21px
+                        padding-top: 17px
+                        padding-left: 22px
+                        padding-bottom: 16px
+                        width: 360px
+                        height: 56px
+                        box-sizing: border-box
+                        border: 1px solid $black
+                        border-radius: 28px
+                        margin-top: 3px
+                        margin-bottom: 30px
             .contact-flex
                 display: flex
                 column-gap: 16px

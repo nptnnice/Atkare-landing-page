@@ -4,17 +4,18 @@ import Leftbar from "../assets/images/leftbar.png";
 import Rightbar from "../assets/images/rightbar.png";
 import close from "../assets/images/close.png";
 import AnimaBarL from "./AnimaBarL";
-import AnimaBarR from './AnimaBarR';
+import AnimaBarR from "./AnimaBarR";
 
 const Header = (props) => {
-  let url = "https://shopee.co.th/mynameispawares?categoryId=100001&itemId=10386127014";
+  let url =
+    "https://shopee.co.th/mynameispawares?categoryId=100001&itemId=10386127014";
 
   return (
     <div>
       <div className="header">
         <div className="anime-box">
-          <AnimaBarL animation={true}/>
-          <AnimaBarR animation={true}/>
+          <AnimaBarL animation={true} />
+          <AnimaBarR animation={true} />
         </div>
         {/* <div>
           <AnimaBarL />
@@ -24,19 +25,21 @@ const Header = (props) => {
           <AnimaHead />
           <p>
             เพื่อให้ธุรกิจของคุณดำเนินต่อไปได้แม้มีโรคระบาด
-            บริษัทจัดจำหน่ายและให้บริการตรวจ ATK
-            ถึงที่พร้อมผู้เชี่ยวชาญและให้บริการระบบ
-            สำหรับบันทึกผลการตรวจแบบรายบุคคลเพื่อการใช้งานในระดับองค์กรให้ธุรกิจของคุณ
-            มีทุกอย่างที่จำเป็นสำหรับการรับมือกับโรคระบาด เช่น COVID-19
+            บริษัทจัดจำหน่ายและให้บริการตรวจ ATK ถึงที่
+            พร้อมผู้เชี่ยวชาญและให้บริการระบบสำหรับบันทึกผลการตรวจแบบรายบุคคลเพื่อการใช้งานในระดับองค์กรให้ธุรกิจของคุณมีทุกอย่างที่จำเป็นสำหรับการรับมือกับโรคระบาด
+            เช่น COVID-19
           </p>
-          <h2 className="contact-btn" onClick={()=>{
-                    props.setPage('contact');
-                    window.scrollTo({
-                      top: 0,
-                      left: 0,
-                      behavior: "smooth",
-                    });
-                }}>
+          <h2
+            className="contact-btn"
+            onClick={() => {
+              props.setPage("contact");
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             ร่วมงานกับเรา
             <p className="arrow">{">"}</p>
           </h2>

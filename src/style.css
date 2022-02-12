@@ -667,7 +667,7 @@ p {
     right: 8px;
     font-size: 26px;
     line-height: 26px;
-    padding-top: 6px;
+    padding-top: 5px;
   }
   .header .buy .buy-btn {
     width: 180px;
@@ -2313,7 +2313,7 @@ p {
   }
   .whyus h1 {
     font-size: 42px;
-    margin-top: 103px;
+    margin-top: 150px;
     margin-bottom: 38px;
   }
   .whyus #bg5 {
@@ -2321,8 +2321,9 @@ p {
     position: absolute;
     width: 300px;
     height: 300px;
-    -webkit-transform: translate(250px, -170px);
-            transform: translate(250px, -170px);
+    left: 50%;
+    -webkit-transform: translate(-240px, -170px);
+            transform: translate(-240px, -170px);
     z-index: -1;
   }
   .whyus .whyus-flex {
@@ -3794,10 +3795,19 @@ p {
   display: flex;
   -webkit-column-gap: 16px;
           column-gap: 16px;
-  width: 736px;
 }
 
-.b2b-booth .B2B-grid .general .name-flex .firstname-box, .b2b-booth .B2B-grid .general .name-flex .lastname-box {
+.b2b-booth .B2B-grid .general .name-flex .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.b2b-booth .B2B-grid .general .name-flex .container .firstname-box, .b2b-booth .B2B-grid .general .name-flex .container .lastname-box {
   font-family: sukhumvitSemiB;
   font-size: 21px;
   line-height: 21px;
@@ -4635,7 +4645,7 @@ p {
           justify-content: center;
   -webkit-column-gap: 294px;
           column-gap: 294px;
-  height: 2000px;
+  height: 2257px;
   overflow: hidden;
 }
 
@@ -4705,7 +4715,17 @@ p {
           column-gap: 16px;
 }
 
-.retail .retail-grid .general .name-flex .firstname-box, .retail .retail-grid .general .name-flex .lastname-box {
+.retail .retail-grid .general .name-flex .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.retail .retail-grid .general .name-flex .container .firstname-box, .retail .retail-grid .general .name-flex .container .lastname-box {
   font-family: sukhumvitSemiB;
   font-size: 21px;
   line-height: 21px;
